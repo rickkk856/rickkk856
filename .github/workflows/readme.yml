@@ -2,7 +2,7 @@ name: Update readme
 
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,15 +20,13 @@ jobs:
       - name: Generate readme
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
-          password: ${{ secrets.PASSWORD }}
         run: node build-svg.js
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v4.4.0
         with:
           author_name: Ricardo Cesar Rodrigues
           author_email: rcrodrigues.arq2@gmail.com
-          password: ${{ secrets.PASSWORD }}
           message: "Auto updating my readme"
           add: "*.svg"
         env:
