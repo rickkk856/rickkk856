@@ -19,11 +19,11 @@ jobs:
 
       - name: Generate readme
         env:
-          WEATHER_API_KEY: ${{ secrets.ACCWEATHER_API_KEY }}
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: node build-svg.js
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v4.4.0
+        uses: EndBug/add-and-commit@v4
         with:
           author_name: Ricardo Cesar Rodrigues
           author_email: rcrodrigues.arq2@gmail.com
