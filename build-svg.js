@@ -1,9 +1,11 @@
+const WEATHER_DOMAIN = process.env.WEATHER_API_KEY
+
 let fs = require('fs')
 let got = require('got')
 let qty = require('js-quantities')
 let formatDistance = require('date-fns/formatDistance')
 
-let WEATHER_DOMAIN = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/44945?apikey=v8WFUPNwVldyAC952AW2sF9LHPxrHRmR'
+//let WEATHER_DOMAIN = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/44945?apikey=XXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 const emojis = {
   1: '☀️',
