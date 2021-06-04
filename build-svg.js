@@ -1,11 +1,9 @@
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY
-
 let fs = require('fs')
 let got = require('got')
 let qty = require('js-quantities')
 let formatDistance = require('date-fns/formatDistance')
 
-let WEATHER_DOMAIN = 'http://dataservice.accuweather.com'
+let WEATHER_DOMAIN = 'dataservice.accuweather.com/forecasts/v1/daily/1day/44945?apikey=v8WFUPNwVldyAC952AW2sF9LHPxrHRmR'
 
 const emojis = {
   1: '☀️',
@@ -59,11 +57,8 @@ const psTime = formatDistance(new Date(2020, 11, 14), today, {
   addSuffix: false,
 })
 
-// Today's weather
-const locationKey = '44945'
-let url = `forecasts/v1/daily/1day/${locationKey}?apikey=${WEATHER_API_KEY}`
 
-got(url, { prefixUrl: WEATHER_DOMAIN })
+got(WEATHER_DOMAIN)
   .then((response) => {
     console.log(response.body)
     let json = JSON.parse(response.body)
