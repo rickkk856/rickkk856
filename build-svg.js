@@ -1,7 +1,5 @@
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 
-let WEATHER_DOMAIN = WEATHER_API_KEY
-
 let fs = require('fs')
 let got = require('got')
 let qty = require('js-quantities')
