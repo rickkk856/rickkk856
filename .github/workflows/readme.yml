@@ -20,6 +20,7 @@ jobs:
       - name: Generate readme
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          password: ${{ secrets.PASSWORD }}
         run: node build-svg.js
 
       - name: Commit changes
@@ -27,6 +28,7 @@ jobs:
         with:
           author_name: rickkk856
           author_email: rcrodrigues.arq2@gmail.com
+          password: ${{ secrets.PASSWORD }}
           message: "Auto updating my readme"
           add: "*.svg"
         env:
