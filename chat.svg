@@ -301,7 +301,7 @@
   <g transform="translate(10, 120)" class="msg-3">
     <rect width="460" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I’m a MSc Architecture Student in Design Process. </text>
-    <text x="15" y="50">I've been training AI models for about about 2 years now.</text>
+    <text x="15" y="50">I've been training AI models for about over 2 years now.</text>
   </g>
 
   <!-- typing 4 -->
@@ -376,6 +376,6 @@
   <!-- Have a great... -->
   <g transform="translate(10, 288)" class="msg-6">
     <rect width="225" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Have a great Friday! <tspan class="emoji">👋</tspan></text>  
+    <text x="15" y="27">Have a great Saturday! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
