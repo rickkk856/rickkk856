@@ -274,8 +274,9 @@
 
   <!-- From Londrina... -->
   <g transform="translate(10, 48)" class="msg-2">
-    <rect width="400" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="415" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I Study at Londrina State University where it’s </text>
+    <text x="15" y="27">I'm located at São Paulo Capital - BR, where it’s </text>
     <text x="15" y="50">supposed to be {degF}° F ({degC}° C) and <tspan class="emoji">{weatherEmoji}</tspan> today.</text>
   </g>
 
@@ -300,8 +301,8 @@
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
     <rect width="460" height="66.1302" rx="18.0355" class="bubble" />
-    <text x="15" y="27">I’m a MSc Architecture Student in Design Process. </text>
-    <text x="15" y="50">I've been training AI models for about {psTime} now.</text>
+    <text x="15" y="27">I’m a MSc in Architectural Design Process with AI. </text>
+    <text x="15" y="50">and have been training AI models for about {psTime}.</text>
   </g>
 
   <!-- typing 4 -->
@@ -324,7 +325,7 @@
 
   <!-- Portifolio -->
   <g transform="translate(10, 192)" class="msg-4">
-    <rect width="540" height="42" rx="18.0355" class="bubble" />
+    <rect width="545" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">
       You can find my latest projects at
       <a xlink:href="behance.net/ricardorodrigu17">behance.net/ricardorodrigu17</a>
@@ -351,7 +352,7 @@
 
   <!-- Thanks -->
   <g transform="translate(10, 240)" class="msg-5">
-    <rect width="225" height="42" rx="18.0355" class="bubble" />
+    <rect width="220" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">Thanks for stopping by</text>
   </g>
 
@@ -375,7 +376,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 288)" class="msg-6">
-    <rect width="225" height="42" rx="18.0355" class="bubble" />
+    <rect width="245" height="42" rx="18.0355" class="bubble" />
     <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
