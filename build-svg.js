@@ -3,7 +3,7 @@ let got = require('got')
 let qty = require('js-quantities')
 let formatDistance = require('date-fns/formatDistance')
 
-let WEATHER_DOMAIN = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/44945?apikey=v8WFUPNwVldyAC952AW2sF9LHPxrHRmR'
+let WEATHER_DOMAIN = 'https://dataservice.accuweather.com/forecasts/v1/daily/1day/45881?apikey=v8WFUPNwVldyAC952AW2sF9LHPxrHRmR'
 
 const emojis = {
   1: '☀️',
