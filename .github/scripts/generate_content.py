@@ -5,7 +5,7 @@ import json
 import textwrap
 
 # --- Configuration ---
-GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
+GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # --- Static Profile Info ---
