@@ -139,8 +139,8 @@ def generate_svg_chat(ai_quote):
     return svg_content
 
 def update_readme(svg_content): # Changed to accept svg_content directly
-    """Updates the readme.md file with the new embedded SVG."""
-    readme_path = "readme.md"
+    """Updates the README.md file with the new embedded SVG."""
+    readme_path = "README.md"
     
     # Ensure a readme.md exists, create if not
     if not os.path.exists(readme_path):
@@ -172,7 +172,7 @@ def update_readme(svg_content): # Changed to accept svg_content directly
 
     with open(readme_path, 'w') as f:
         f.write(updated_readme_content)
-    print("readme.md updated successfully with embedded SVG.")
+    print("README.md updated successfully with embedded SVG.")
 
 if __name__ == "__main__":
     print("Starting content generation...")
