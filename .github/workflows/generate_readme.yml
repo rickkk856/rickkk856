@@ -6,7 +6,7 @@ on:
       - main # Or your default branch like 'master'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
   schedule:
-    - cron: '0 0 * * 2' # Runs every Tuesday at 00:00 UTC
+    - cron: '0 0 * * *' # Runs every day at 00:00 UTC
 
 jobs:
   update-readme:

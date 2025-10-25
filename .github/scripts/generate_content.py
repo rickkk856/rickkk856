@@ -70,10 +70,9 @@ def get_ai_quote():
 
 def wrap_text(text, max_width, font_size):
     """Wraps text to fit within a given SVG width, estimating character count."""
-    # This is an approximation. A more precise method would involve measuring rendered text.
-    # For a fixed-width font, char_width = font_size * 0.6 (approx). For variable, it's harder.
-    # We'll use a conservative estimate for typical sans-serif fonts.
-    chars_per_line = int(max_width / (font_size * 0.6)) # Rough estimate
+    # This is an approximation. For a fixed-width font, char_width = font_size * 0.6 (approx).
+    # For variable width fonts, it's more complex, but this gives a reasonable estimate.
+    chars_per_line = int(max_width / (font_size * 0.6)) 
     wrapped_lines = textwrap.wrap(text, width=chars_per_line)
     return wrapped_lines
 
@@ -139,8 +138,8 @@ def generate_svg_chat(ai_quote):
 '''
     return svg_content
 
-def update_readme(svg_filename):
-    """Updates the readme.md file with the new SVG."""
+def update_readme(svg_content): # Changed to accept svg_content directly
+    """Updates the readme.md file with the new embedded SVG."""
     readme_path = "readme.md"
     
     # Ensure a readme.md exists, create if not
@@ -158,22 +157,22 @@ def update_readme(svg_filename):
     start_marker = "<!-- GENERATED_SVG_START -->"
     end_marker = "<!-- GENERATED_SVG_END -->"
 
-    # Create the new SVG embed markdown
-    new_svg_markdown = f"{start_marker}\n![Dynamic Profile Card]({svg_filename})\n{end_marker}"
+    # Create the new embedded SVG markdown (just the SVG content itself)
+    new_svg_block = f"{start_marker}\n{svg_content}\n{end_marker}"
 
     # Find and replace the old SVG block
     if start_marker in readme_content and end_marker in readme_content:
         pre_svg = readme_content.split(start_marker)[0]
         post_svg = readme_content.split(end_marker)[1]
-        updated_readme_content = f"{pre_svg}{new_svg_markdown}{post_svg}"
+        updated_readme_content = f"{pre_svg}{new_svg_block}{post_svg}"
     else:
         # If markers are not found, append/insert at a sensible place
         print("Warning: SVG markers not found in readme.md. Appending SVG to the end.")
-        updated_readme_content = f"{readme_content}\n\n{new_svg_markdown}"
+        updated_readme_content = f"{readme_content}\n\n{new_svg_block}"
 
     with open(readme_path, 'w') as f:
         f.write(updated_readme_content)
-    print("readme.md updated successfully.")
+    print("readme.md updated successfully with embedded SVG.")
 
 if __name__ == "__main__":
     print("Starting content generation...")
@@ -181,10 +180,11 @@ if __name__ == "__main__":
     print(f"Fetched AI Quote: {ai_quote}")
 
     svg_content = generate_svg_chat(ai_quote)
-    svg_filename = "rickkk856.svg" # Name of your SVG file
-    with open(svg_filename, 'w') as f:
-        f.write(svg_content)
-    print(f"{svg_filename} generated successfully.")
+    # We no longer need to save it as a separate file, just update readme
+    # svg_filename = "rickkk856.svg"
+    # with open(svg_filename, 'w') as f:
+    #     f.write(svg_content)
+    # print(f"{svg_filename} generated successfully.")
 
-    update_readme(svg_filename)
+    update_readme(svg_content) # Pass the SVG content directly
     print("Content generation complete.")
