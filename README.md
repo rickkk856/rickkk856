@@ -3,7 +3,7 @@
 Welcome to my GitHub profile. This space is dynamically updated!
 
 <!-- GENERATED_SVG_START -->
-<!-- The animated SVG will be inserted here by the GitHub Action -->
+[![](https://raw.githubusercontent.com/rickkk856/rickkk856/rickkk856.svg)](https://www.behance.net/ricardorodrigu17)
 <!-- GENERATED_SVG_END -->
 
 ## About Me
