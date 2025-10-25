@@ -3,7 +3,61 @@
 Welcome to my GitHub profile. This space is dynamically updated!
 
 <!-- GENERATED_SVG_START -->
-<!-- The animated SVG will be inserted here by the GitHub Action -->
+
+<svg width="500" viewBox="0 0 500 359.6" height="359.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bubble-bg { fill: #333333; rx: 10px; ry: 10px; }
+    .bubble-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 16px; fill: #FFFFFF; }
+  </style>
+
+  <rect x="20" y="15" width="450" height="60" class="bubble-bg">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.0s" fill="freeze"/>
+  </rect>
+
+  <text x="40" y="46.0" class="bubble-text">
+    <tspan> Hi, I'm Ricardo. </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.0s" fill="freeze"/>
+  </text>
+
+  <rect x="20" y="90" width="450" height="60" class="bubble-bg">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.7s" fill="freeze"/>
+  </rect>
+
+  <text x="40" y="121.0" class="bubble-text">
+    <tspan> I'm located at São Paulo, SP, Brazil. </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.7s" fill="freeze"/>
+  </text>
+
+  <rect x="20" y="165" width="450" height="74.8" class="bubble-bg">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
+  </rect>
+
+  <text x="40" y="196.0" class="bubble-text">
+    <tspan> Did you know that: AI advancements are </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
+  </text>
+
+  <text x="40" y="218.4" class="bubble-text">
+    <tspan> accelerating innovation globally. </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
+  </text>
+
+  <rect x="20" y="254.8" width="450" height="74.8" class="bubble-bg">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
+  </rect>
+
+  <text x="40" y="285.8" class="bubble-text">
+    <tspan> Thanks for stopping by and have a nice </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
+  </text>
+
+  <text x="40" y="308.2" class="bubble-text">
+    <tspan> Saturday! </tspan>
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
+  </text>
+
+</svg>
+
 <!-- GENERATED_SVG_END -->
 
 ## About Me
