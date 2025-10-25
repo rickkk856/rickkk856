@@ -3,6 +3,7 @@
 Welcome to my GitHub profile. This space is dynamically updated!
 
 <!-- GENERATED_SVG_START -->
+[![](https://raw.githubusercontent.com/rickkk856/rickkk856/main/rickkk856.svg)](https://www.behance.net/ricardorodrigu17)
 [![](https://raw.githubusercontent.com/rickkk856/rickkk856/rickkk856.svg)](https://www.behance.net/ricardorodrigu17)
 <!-- GENERATED_SVG_END -->
 
