@@ -34,11 +34,11 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Generative%20AI%20now%20produces%20realistic%20video%20and%203D%20models%20from%20text.%20Multimodal%20breakthroughs%20are%20rapidly%20transforming%20creative%20fields." alt="AI Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1500&color=A78BFA&center=true&vCenter=true&multiline=true&width=650&height=145&lines=OpenAI%27s%20Sora%20generates%20realistic%2C%20minute-long%20videos%20from%3Btext%20prompts%2C%20marking%20a%20significant%20leap%20in%20multimodal%3Bgenerative%20AI%20capabilities." alt="AI Quote" />
 </p>
 
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:29 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:49 UTC</sub>
 </p>
 
 <br/>
@@ -134,7 +134,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:29 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 12:49 UTC</sub>
 </p>
 
 </div>
