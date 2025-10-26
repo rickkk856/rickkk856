@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
   schedule:
-    - cron: '0 */12 * * *' # Runs every 12 hours for more frequent updates
+    - cron: '0 0 * * *' # Runs every Midnight UTC
 
 jobs:
   update-readme:

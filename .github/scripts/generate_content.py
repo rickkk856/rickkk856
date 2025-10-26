@@ -25,7 +25,7 @@ def get_ai_quote():
 
     current_day = datetime.now().strftime("%A")   
 
-    prompt = f"Hi, Today is {current_day}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences, no conversational filler."
+    prompt = f"Hi, Today is {current_day}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
     
     data = {
         "contents": [{
@@ -99,7 +99,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('</div>')
     html_parts.append('')
     html_parts.append('<p align="center">')
-    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote" />')
+    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote" />')
     html_parts.append('</p>')
     html_parts.append('')
     html_parts.append('<p align="center">')
@@ -136,7 +136,9 @@ def generate_profile_html(ai_quote):
     html_parts.append('</table>')
     html_parts.append('')
     html_parts.append('<br/>')
+    html_parts.append('')
     html_parts.append('### 🤝 Let\'s Connect')
+    html_parts.append('')
     html_parts.append('<p align="center">')
     html_parts.append('  <a href="https://linkedin.com/in/rcrarq"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>')
     html_parts.append('  <a href="https://www.behance.net/ricardorodrigu17"><img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white"/></a>')
@@ -155,7 +157,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('---')
     html_parts.append('<p align="center">')
     html_parts.append('  <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i><br/>')
-    html_parts.append(f'  <sub>Last updated: {last_updated}</sub>')
+    #html_parts.append(f'  <sub>Last updated: {last_updated}</sub>')
     html_parts.append('</p>')
     html_parts.append('</div>')
     
