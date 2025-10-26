@@ -23,14 +23,19 @@ def get_ai_quote():
         "x-goog-api-key": GOOGLE_API_KEY
     }
 
-    current_day = datetime.now().strftime("%A")   
+    now = datetime.now()
+    formatted_date = now.strftime("%d of %B %Y")  
 
-    prompt = f"Hi, Today is {current_day}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
+    prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
     
     data = {
-        "contents": [{
-            "parts": [{"text": prompt}]
-        }]
+        "tools": [{"name": "google_search"}],  # Enables web-grounded responses
+        "contents": [
+            {
+                "role": "user",
+                "parts": [{"text": prompt}]
+            }
+        ]
     }
 
     try:
