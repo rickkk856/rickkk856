@@ -34,11 +34,11 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1500&color=A78BFA&center=true&vCenter=true&multiline=true&width=650&height=145&lines=OpenAI%27s%20Sora%20generates%20realistic%2C%20minute-long%20videos%20from%3Btext%20prompts%2C%20marking%20a%20significant%20leap%20in%20multimodal%3Bgenerative%20AI%20capabilities." alt="AI Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=0&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=650&height=425&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
 </p>
 
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:49 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</sub>
 </p>
 
 <br/>
@@ -134,7 +134,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:49 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 12:55 UTC</sub>
 </p>
 
 </div>
