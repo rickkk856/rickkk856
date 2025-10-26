@@ -30,15 +30,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=120&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=80&widht=150&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=45" width="650px"/>
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1500&color=A78BFA&center=true&vCenter=true&multiline=true&width=650&height=145&lines=OpenAI%27s%20Sora%20generates%20realistic%2C%20minute-long%20videos%20from%3Btext%20prompts%2C%20marking%20a%20significant%20leap%20in%20multimodal%3Bgenerative%20AI%20capabilities." alt="AI Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=275&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
 </p>
-
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:49 UTC</sub>
+  <i>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</i>
 </p>
 
 <br/>
@@ -48,27 +47,9 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 ### 🚀 Core Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,aws,gcp,react,typescript,docker&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />
 </p>
 
-<!-- GitHub Stats with Custom Theme -->
-<br/>
-
-<table align="center">
-  <tr>
-    <td>
-      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rickkk856&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=667eea&text_color=c9d1d9" />
-    </td>
-    <td>
-      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rickkk856&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9" />
-    </td>
-  </tr>
-</table>
-
-<!-- Activity Graph -->
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rickkk856&custom_title=Contribution%20Graph&bg_color=0d1117&color=a78bfa&line=667eea&point=c9d1d9&area_color=667eea&title_color=fff&area=true&hide_border=true" width="100%"/>
 
 <!-- Tech Stack Grid -->
 <br/>
@@ -79,19 +60,19 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
   <tr>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/AI%20%26%20ML-FF6B6B?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-      <br/><sub><b>TensorFlow • PyTorch<br/>Scikit-learn • OpenCV</b></sub>
+      <br/><sub><b>TensorFlow • PyTorch</b><br/><b>Scikit-learn • OpenCV</b><br/><b>SciPy</b></sub>
     </td>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/GenAI%20%26%20LLM-4ECDC4?style=for-the-badge&logo=openai&logoColor=white"/>
-      <br/><sub><b>LangChain • Vertex AI<br/>Amazon Bedrock • n8n</b></sub>
+      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents</b></sub>
     </td>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/Cloud%20%26%20DevOps-95E1D3?style=for-the-badge&logo=amazonaws&logoColor=white"/>
-      <br/><sub><b>AWS • GCP • Lambda<br/>GitHub Actions • Docker</b></sub>
+      <br/><sub><b>AWS • Lambda</b><br/><b>Google Cloud Platform</b><br/><b>GitHub Actions • Docker</b></sub>
     </td>
     <td align="center" width="25%">
-      <img src="https://img.shields.io/badge/Data%20Science-F38181?style=for-the-badge&logo=pandas&logoColor=white"/>
-      <br/><sub><b>Pandas • NumPy<br/>Power BI • SQL</b></sub>
+      <img src="https://img.shields.io/badge/Data%20Viz-FFB703?style=for-the-badge&logo=powerbi&logoColor=white"/>
+      <br/><sub><b>PowerBi • Plotly</b><br/><b>Matplotlib • Seaborn</b><br/><b>Numpy • Pandas</b></sub>
     </td>
   </tr>
 </table>
@@ -134,62 +115,10 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:49 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 12:55 UTC</sub>
 </p>
 
 </div>
 
 <!-- GENERATED_CONTENT_END -->
 
-## 📖 About Me
-
-I'm a MSc in Architectural Design Process with AI, and I've been training AI models for almost 5 years.
-You can find my latest projects at [behance.net/ricardorodrigu17](https://www.behance.net/ricardorodrigu17)
-
-## 🎯 Core Skills  
-
-### 🤖 Artificial Intelligence & Machine Learning  
-- Agentic AI
-- Deep Learning 
-- Predictive Modeling (Regression, Classification, Time-Series)  
-- Feature Engineering & Model Optimization    
-
-### 👁️ Computer Vision & Image Processing  
-- Object Detection & Tracking  
-- Instance & Semantic Segmentation  
-- Image Similarity Metrics, Dimensionality Reduction, and Data Augmentation  
-
-### 📊 Data Science & Analytics  
-- Data Cleaning, Transformation, and Visualization (Python, R, Power BI)  
-- Geospatial & Remote Sensing Analysis (GIS, Satellite Imagery) 
-- Google Earth Engine for Classification and Regression Geo-Spatial Modelling 
-- Hypothesis Testing, Applied Statistics, and Process Mapping  
-- End-to-End Data Pipelines (ETL, API Integration, Automation)  
-
-### 💻 Programming & Tools  
-- **Languages:** Python, SQL, R, JavaScript, TypeScript  
-- **Frameworks (ML):** TensorFlow, PyTorch, Scikit-learn, OpenCV, Pandas, NumPy  
-- **Frameworks (GenAI / LLM):** LangChain, n8n, Google Vertex AI ADK (Agent Development Toolkit), Strands Agents, Amazon Bedrock  
-- **Platforms:** Power BI, Power Apps, Power Pages, Power Automate
-- **Cloud Services:** Amazon Web Services (AWS), Google Cloud Platform (GCP)  
-- **DevOps & Deployment:** GitHub Actions, AWS Lambda, EC2
-
-### 🎨 Design & Visualization  
-- Computational Design & Generative Systems  
-- UI/UX, Human-Centered Design  
-- 3D Modeling & Visualization
-
-### 🌍 Soft Skills & Collaboration  
-- Agile Methodologies (Scrum, Kanban)  
-- Cross-Cultural Teamwork Experience (Brazil, Portugal, Peru, UK, USA, India, Djibouti & Republic of Marshall Islands) 
-- Research & Technical Writing (ACADIA, eCAADe, CAADRIA, IJAC)
-
-## 📫 Connect With Me
-- [LinkedIn](https://linkedin.com/in/rcrarq)
-- [Behance](https://www.behance.net/ricardorodrigu17)
-- [YouTube](https://www.youtube.com/@ricardocesarrodrigues837)
-- [ResearchGate](https://www.researchgate.net/profile/Ricardo-Rodrigues-26)
-- [Google Scholar](https://scholar.google.com.br/citations?user=mVCXbNIAAAAJ&hl=pt-BR&oi=ao)
-
----
-<i>💫 This README is powered by GitHub Actions and Google AI Studio</i>
