@@ -5,43 +5,48 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-
 <!-- Profile Header with Blue Gradient Animation -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,10,18,24&height=180&section=header&text=Ricardo%20Rodrigues&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>
-
 <!-- Animated Typing Effect -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%7C+Data+Scientist;MSc+Architectural+Design+%2B+AI;5%2B+Years+Training+AI+Models" alt="Typing SVG" />
+  <picture>
+    <!-- Dark Mode -->
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%7C+Data+Scientist;MSc+Architectural+Design+%2B+AI;5%2B+Years+Training+AI+Models" media="(prefers-color-scheme: dark)"/>
+    <!-- Light Mode -->
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=000000&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%7C+Data+Scientist;MSc+Architectural+Design+%2B+AI;5%2B+Years+Training+AI+Models" media="(prefers-color-scheme: light)"/>
+    <!-- Fallback -->
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%7C+Data+Scientist;MSc+Architectural+Design+%2B+AI;5%2B+Years+Training+AI+Models" alt="Typing SVG"/>
+  </picture>
 </p>
-
 <!-- Dynamic Status Cards -->
 <table align="center">
   <tr>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=0D1117" alt="Location"/>
+      <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Sunday-00BFFF?style=for-the-badge&labelColor=0D1117" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Sunday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
-
-<!-- AI Insight Section -->
 <br/>
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=10,14,20&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=ffffff&fontAlignY=45" width="650px"/>
 </div>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=As%20of%20October%2026%2C%202025%2C%20reports%20indicate%20that%20OpenAI%20is%3Bdeveloping%20a%20generative%20music%20tool%2C%20signaling%20a%20potential%3Bnew%20frontier%20in%20AI-driven%20creativity.%20This%20development%3Bfollows%20a%20month%20of%20significant%20advancements%20in%20multimodal%3Bgenerative%20AI.%20Notably%2C%20OpenAI%27s%20Sora%202%2C%20their%20advanced%3Bvideo%20generation%20model%2C%20became%20publicly%20available%20on%3BMicrosoft%20Azure%20AI%20Foundry%20in%20October%2C%20allowing%20free%20users%3Bto%20generate%2015-second%20videos.%20Such%20innovations%20highlight%20the%3Brapid%20commercial%20adoption%20and%20expanding%20capabilities%20of%3Bgenerative%20AI%20in%20media%20creation%20this%20year." alt="AI Quote" />
+  <picture>
+    <!-- Dark Mode -->
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=As%20of%20October%2026%2C%202025%2C%20OpenAI%20is%20reportedly%20developing%20a%3Bnew%20generative%20music%20tool%2C%20poised%20to%20create%20original%20music%3Bfrom%20text%20and%20audio%20prompts.%20This%20initiative%20marks%20OpenAI%27s%3Bsignificant%20foray%20into%20AI-driven%20music%20generation%2C%20building%3Bupon%20previous%20projects.%20The%20upcoming%20tool%20is%20expected%20to%3Bheighten%20competition%20in%20the%20generative%20music%20space%2C%3Bchallenging%20existing%20platforms.%20Discussions%20around%3Bcopyright%2C%20ethics%2C%20and%20potential%20partnerships%20with%20music%3Binstitutions%20are%20ongoing%20as%20these%20advanced%20creative%3Bcapabilities%20emerge." media="(prefers-color-scheme: dark)"/>
+    <!-- Light Mode -->
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=As%20of%20October%2026%2C%202025%2C%20OpenAI%20is%20reportedly%20developing%20a%3Bnew%20generative%20music%20tool%2C%20poised%20to%20create%20original%20music%3Bfrom%20text%20and%20audio%20prompts.%20This%20initiative%20marks%20OpenAI%27s%3Bsignificant%20foray%20into%20AI-driven%20music%20generation%2C%20building%3Bupon%20previous%20projects.%20The%20upcoming%20tool%20is%20expected%20to%3Bheighten%20competition%20in%20the%20generative%20music%20space%2C%3Bchallenging%20existing%20platforms.%20Discussions%20around%3Bcopyright%2C%20ethics%2C%20and%20potential%20partnerships%20with%20music%3Binstitutions%20are%20ongoing%20as%20these%20advanced%20creative%3Bcapabilities%20emerge." media="(prefers-color-scheme: light)"/>
+    <!-- Fallback -->
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=As%20of%20October%2026%2C%202025%2C%20OpenAI%20is%20reportedly%20developing%20a%3Bnew%20generative%20music%20tool%2C%20poised%20to%20create%20original%20music%3Bfrom%20text%20and%20audio%20prompts.%20This%20initiative%20marks%20OpenAI%27s%3Bsignificant%20foray%20into%20AI-driven%20music%20generation%2C%20building%3Bupon%20previous%20projects.%20The%20upcoming%20tool%20is%20expected%20to%3Bheighten%20competition%20in%20the%20generative%20music%20space%2C%3Bchallenging%20existing%20platforms.%20Discussions%20around%3Bcopyright%2C%20ethics%2C%20and%20potential%20partnerships%20with%20music%3Binstitutions%20are%20ongoing%20as%20these%20advanced%20creative%3Bcapabilities%20emerge." alt="AI Quote"/>
+  </picture>
 </p>
-
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 14:35 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 15:25 UTC</sub>
 </p>
-
 <br/>
-
 ### 🚀 Core Technologies
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />
