@@ -33,11 +33,11 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=Generative%20AI%20continues%20its%20rapid%20evolution%2C%20particularly%20in%3Bmultimodal%20capabilities.%20Recent%20advancements%20now%20allow%3Bmodels%20to%20seamlessly%20process%20and%20generate%20content%20across%3Bvarious%20formats%2C%20including%20text%2C%20audio%2C%20and%20visual%20data.%3BOpenAI%27s%20GPT-4o%2C%20unveiled%20this%20May%2C%20exemplifies%20this%20by%3Benabling%20real-time%20voice%20interactions%2C%20video%20analysis%2C%20and%3Beven%20emotion%20detection.%20This%20integration%20heralds%20a%20new%20era%3Bof%20more%20intuitive%20and%20human-like%20AI%20experiences.%20Such%3Bsignificant%20progress%20underscores%20the%20dynamic%20landscape%20of%3Bgenerative%20AI%20throughout%202024." alt="AI Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20advancements%20are%20accelerating%20innovation%20globally." alt="AI Quote" />
 </p>
 
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 14:18 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 14:24 UTC</sub>
 </p>
 
 <br/>
