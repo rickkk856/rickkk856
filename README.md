@@ -30,22 +30,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=80&widht=150&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=45" width="650px"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>
 </div>
 
 <p align="center">
-<<<<<<< HEAD
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=275&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
-=======
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=0&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=650&height=425&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
->>>>>>> 3b6fecb0a9029e250fc4dda897930216f85bb097
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=Recent%20generative%20AI%20advancements%20highlight%20a%20significant%3Bshift%20towards%20multimodality.%20Models%20like%20GPT-4o%20now%3Bseamlessly%20process%20and%20generate%20text%2C%20audio%2C%20images%2C%20and%3Bvideo.%20This%20integration%20allows%20for%20more%20natural%20and%3Bintuitive%20human-AI%20interactions.%20The%20emerging%20concept%20of%20%22AI%3Bagents%22%20leverages%20these%20capabilities%2C%20enabling%20AI%20to%20plan%2C%3Bexecute%2C%20and%20iterate%20on%20complex%20tasks%20independently.%20Such%3Bagents%20could%20soon%20revolutionize%20workflow%20automation%20and%3Bpersonal%20assistance%2C%20moving%20beyond%20simple%20prompt-response%3Bsystems." alt="AI Quote" />
 </p>
+
 <p align="center">
-<<<<<<< HEAD
-  <i>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</i>
-=======
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</sub>
->>>>>>> 3b6fecb0a9029e250fc4dda897930216f85bb097
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 13:56 UTC</sub>
 </p>
 
 <br/>
@@ -57,10 +50,6 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />
 </p>
-
-
-<!-- Tech Stack Grid -->
-<br/>
 
 ### 🛠️ Tech Stack
 
@@ -123,7 +112,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:55 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 13:56 UTC</sub>
 </p>
 
 </div>
