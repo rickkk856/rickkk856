@@ -4,20 +4,45 @@ Welcome to my GitHub profile. This space is dynamically updated!
 
 <!-- GENERATED_CONTENT_START -->
 
-<div align="center">
+<div align="left">
+  <style>
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    .chat-bubble {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      max-width: 400px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.4;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+      animation: typing 2s steps(40) forwards, blink 1s infinite;
+    }
+  </style>
   <table>
     <tr>
       <td>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+        <div class="chat-bubble" style="animation-delay: 0s; width: 0;">
           👋 Hi, I'm Ricardo!
         </div>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+        <div class="chat-bubble" style="animation-delay: 2.5s; width: 0;">
           📍 I'm located at São Paulo, SP, Brazil
         </div>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+        <div class="chat-bubble" style="animation-delay: 5.0s; width: 0;">
           💡 AI advancements are accelerating innovation globally.
         </div>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+        <div class="chat-bubble" style="animation-delay: 7.5s; width: 0;">
           🙏 Thanks for stopping by and have a nice Sunday!
         </div>
       </td>
