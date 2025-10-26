@@ -6,6 +6,7 @@ import textwrap
 
 # --- Configuration ---
 GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+#GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # --- Static Profile Info ---
@@ -26,10 +27,11 @@ def get_ai_quote():
     now = datetime.now()
     formatted_date = now.strftime("%d of %B %Y")  
 
+    # Your prompt is already good for encouraging a search, especially "recent update or fact"
     prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
     
     data = {
-        "tools": [{"name": "google_search"}],  # Enables web-grounded responses
+        "tools": [{"googleSearch": {}}],  # CORRECTED: This is the correct way to enable Google Search tool
         "contents": [
             {
                 "role": "user",
@@ -55,6 +57,9 @@ def get_ai_quote():
 
     except requests.exceptions.RequestException as e:
         print(f"Error calling Google AI Studio API: {e}")
+        # Add response text for debugging server-side errors
+        if e.response is not None:
+            print(f"Response text: {e.response.text}")
         return "AI advancements are accelerating innovation globally."
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
