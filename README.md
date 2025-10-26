@@ -26,19 +26,56 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
   </tr>
 </table>
 
-<!-- AI-Generated Insight Card with Glassmorphism Effect -->
+<!-- AI-Generated Insight Card with Streaming Animation -->
 <br/>
 
-```yaml
-┌─────────────────────────────────────────────────────────────────┐
-│  💡 AI INSIGHT OF THE DAY                                       │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  AI advancements are accelerating innovation globally.
-│                                                                 │
-│  🤖 Powered by Google Gemini • Updated: 12:01 UTC          │
-└─────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3); max-width: 650px; margin: 15px auto;">
+          <div style="color: #fff; font-family: 'Courier New', monospace; font-size: 14px; margin-bottom: 15px; opacity: 0.9;">
+            💡 AI INSIGHT OF THE DAY
+          </div>
+          <div id="ai-quote" style="color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; min-height: 50px; text-align: left;">
+            <span id="quote-text"></span><span id="cursor" style="animation: blink 1s infinite;">|</span>
+          </div>
+          <div style="color: rgba(255,255,255,0.7); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 15px; text-align: right;">
+            🤖 Powered by Google Gemini 2.5 • Updated: 12:22 UTC
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  (function() {
+    const quote = "OpenAI\'s Sora generates realistic, complex video scenes from text prompts. This represents a significant leap in text-to-video capabilities.";
+    const quoteEl = document.getElementById('quote-text');
+    const cursor = document.getElementById('cursor');
+    let i = 0;
+    
+    function typeWriter() {
+      if (i < quote.length) {
+        quoteEl.textContent += quote.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      } else {
+        cursor.style.display = 'none';
+      }
+    }
+    
+    setTimeout(typeWriter, 500);
+  })();
+</script>
+
+<style>
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+</style>
 
 <!-- Animated Skill Bars -->
 <br/>
@@ -132,7 +169,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:01 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 12:22 UTC</sub>
 </p>
 
 </div>
