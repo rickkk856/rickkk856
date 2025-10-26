@@ -3,27 +3,36 @@ name: Update Profile README
 on:
   push:
     branches:
-      - main # Or your default branch like 'master'
+      - main
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
   schedule:
-    - cron: '0 0 * * *' # Runs every day at 00:00 UTC
+    - cron: '0 */6 * * *' # Runs every 6 hours for more frequent updates
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Generate AI Quote and SVG
+      - name: Generate AI Quote and Update README
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: python .github/scripts/generate_content.py
@@ -31,9 +40,14 @@ jobs:
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "feat: Update profile README with new AI quote and dynamic info"
-          file_pattern: 'README.md' # Only commit the README since SVG is embedded
-          # Optional: Configure the commit author
-          # commit_user_name: 'GitHub Actions Bot'
-          # commit_user_email: 'action@github.com'
-          # commit_author: 'GitHub Actions Bot <action@github.com>'
+          commit_message: "✨ feat: Update profile with fresh AI insight"
+          file_pattern: 'README.md'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          commit_author: 'Ricardo <62864640+rickkk856@users.noreply.github.com>'
+          
+      - name: Verify update
+        run: |
+          echo "✅ Profile updated successfully!"
+          echo "Last commit:"
+          git log -1 --oneline

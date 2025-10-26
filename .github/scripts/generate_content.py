@@ -1,11 +1,10 @@
-#.github/scripts/generate_content.py
 import os
 import requests
 from datetime import datetime
 import json
 
 # --- Configuration ---
-GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # --- Static Profile Info ---
@@ -18,13 +17,21 @@ def get_ai_quote():
         print("Error: GOOGLE_API_KEY environment variable not set.")
         return "AI is constantly evolving, bringing new possibilities."
 
-    headers = {"Content-Type": "application/json"}
-    prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-3 sentences, maximum 25 words, no conversational filler like 'Did you know that:'."
-    data = {"contents": [{"parts": [{"text": prompt}]}]}
-    params = {"key": GOOGLE_API_KEY}
+    headers = {
+        "Content-Type": "application/json",
+        "x-goog-api-key": GOOGLE_API_KEY
+    }
+    
+    prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-3 sentences, maximum 25 words, no conversational filler."
+    
+    data = {
+        "contents": [{
+            "parts": [{"text": prompt}]
+        }]
+    }
 
     try:
-        response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, params=params, timeout=10)
+        response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=15)
         response.raise_for_status()
         response_data = response.json()
         
@@ -73,19 +80,56 @@ def generate_profile_html(ai_quote):
   </tr>
 </table>
 
-<!-- AI-Generated Insight Card with Glassmorphism Effect -->
+<!-- AI-Generated Insight Card with Streaming Animation -->
 <br/>
 
-```yaml
-┌─────────────────────────────────────────────────────────────────┐
-│  💡 AI INSIGHT OF THE DAY                                       │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  {ai_quote[:80]}{'...' if len(ai_quote) > 80 else ''}
-│                                                                 │
-│  🤖 Powered by Google Gemini • Updated: {current_time}          │
-└─────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3); max-width: 650px; margin: 15px auto;">
+          <div style="color: #fff; font-family: 'Courier New', monospace; font-size: 14px; margin-bottom: 15px; opacity: 0.9;">
+            💡 AI INSIGHT OF THE DAY
+          </div>
+          <div id="ai-quote" style="color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; min-height: 50px; text-align: left;">
+            <span id="quote-text"></span><span id="cursor" style="animation: blink 1s infinite;">|</span>
+          </div>
+          <div style="color: rgba(255,255,255,0.7); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 15px; text-align: right;">
+            🤖 Powered by Google Gemini 2.5 • Updated: {current_time}
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  (function() {{
+    const quote = "{ai_quote.replace('"', '\\"').replace("'", "\\'")}";
+    const quoteEl = document.getElementById('quote-text');
+    const cursor = document.getElementById('cursor');
+    let i = 0;
+    
+    function typeWriter() {{
+      if (i < quote.length) {{
+        quoteEl.textContent += quote.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }} else {{
+        cursor.style.display = 'none';
+      }}
+    }}
+    
+    setTimeout(typeWriter, 500);
+  }})();
+</script>
+
+<style>
+  @keyframes blink {{
+    0%, 50% {{ opacity: 1; }}
+    51%, 100% {{ opacity: 0; }}
+  }}
+</style>
 
 <!-- Animated Skill Bars -->
 <br/>
