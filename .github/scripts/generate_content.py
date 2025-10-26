@@ -158,7 +158,7 @@ def update_readme(svg_content): # Changed to accept svg_content directly
     end_marker = "<!-- GENERATED_SVG_END -->"
 
     # Create the new embedded SVG markdown (just the SVG content itself)
-    new_svg_block = f"{start_marker}\n{svg_content}\n{end_marker}"
+    new_svg_block = f"{start_marker}\n\n{svg_content}\n\n{end_marker}"
 
     # Find and replace the old SVG block
     if start_marker in readme_content and end_marker in readme_content:
