@@ -26,59 +26,24 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
   </tr>
 </table>
 
-<!-- AI-Generated Insight Card with Streaming Animation -->
+<!-- AI-Generated Insight with Typing Animation -->
 <br/>
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3); max-width: 650px; margin: 15px auto;">
-          <div style="color: #fff; font-family: 'Courier New', monospace; font-size: 14px; margin-bottom: 15px; opacity: 0.9;">
-            💡 AI INSIGHT OF THE DAY
-          </div>
-          <div id="ai-quote" style="color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; min-height: 50px; text-align: left;">
-            <span id="quote-text"></span><span id="cursor" style="animation: blink 1s infinite;">|</span>
-          </div>
-          <div style="color: rgba(255,255,255,0.7); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 15px; text-align: right;">
-            🤖 Powered by Google Gemini 2.5 • Updated: 12:22 UTC
-          </div>
-        </div>
-      </td>
-    </tr>
-  </table>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=120&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>
 </div>
 
-<script>
-  (function() {
-    const quote = "OpenAI\'s Sora generates realistic, complex video scenes from text prompts. This represents a significant leap in text-to-video capabilities.";
-    const quoteEl = document.getElementById('quote-text');
-    const cursor = document.getElementById('cursor');
-    let i = 0;
-    
-    function typeWriter() {
-      if (i < quote.length) {
-        quoteEl.textContent += quote.charAt(i);
-        i++;
-        setTimeout(typeWriter, 50);
-      } else {
-        cursor.style.display = 'none';
-      }
-    }
-    
-    setTimeout(typeWriter, 500);
-  })();
-</script>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Generative%20AI%20now%20produces%20realistic%20video%20and%203D%20models%20from%20text.%20Multimodal%20breakthroughs%20are%20rapidly%20transforming%20creative%20fields." alt="AI Quote" />
+</p>
 
-<style>
-  @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-  }
-</style>
+<p align="center">
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:29 UTC</sub>
+</p>
+
+<br/>
 
 <!-- Animated Skill Bars -->
-<br/>
 
 ### 🚀 Core Technologies
 
@@ -169,7 +134,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 12:22 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 12:29 UTC</sub>
 </p>
 
 </div>
