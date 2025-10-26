@@ -34,10 +34,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 </div>
 
 <p align="center">
+<<<<<<< HEAD
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=275&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
+=======
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=0&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=650&height=425&lines=The%20latest%20advancements%20in%20Generative%20AI%20are%20heavily%20focused%3Bon%20real-time%20multimodal%20interaction.%20Recently%2C%20models%20like%3BOpenAI%27s%20GPT-4o%20demonstrated%20seamless%20processing%20of%20voice%2C%3Btext%2C%20and%20vision%20inputs%20and%20outputs.%20This%20allows%20for%3Bnatural%2C%20human-like%20conversations%2C%20including%20interpreting%3Bemotional%20cues%20and%20visual%20information%20instantly.%20Such%3Bcapabilities%20mark%20a%20significant%20leap%20towards%20more%20intuitive%3Band%20accessible%20AI%20companions.%20It%20opens%20new%20frontiers%20for%3Bapplications%20ranging%20from%20educational%20tools%20to%20sophisticated%3Bvirtual%20assistants%2C%20pushing%20the%20boundaries%20of%20human-computer%3Binteraction." alt="AI Quote" />
+>>>>>>> 3b6fecb0a9029e250fc4dda897930216f85bb097
 </p>
 <p align="center">
+<<<<<<< HEAD
   <i>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</i>
+=======
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:55 UTC</sub>
+>>>>>>> 3b6fecb0a9029e250fc4dda897930216f85bb097
 </p>
 
 <br/>
