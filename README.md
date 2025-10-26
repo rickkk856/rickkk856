@@ -30,7 +30,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=50&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="650px"/>
+  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=45" width="650px"/>
 </div>
 
 <p align="center">
