@@ -104,7 +104,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('<br/>')
     html_parts.append('')
     html_parts.append('<div align="center">')
-    html_parts.append('  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>')
+    html_parts.append('  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=50&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="650px"/>')
     html_parts.append('</div>')
     html_parts.append('')
     html_parts.append('<p align="center">')
