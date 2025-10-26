@@ -22,8 +22,10 @@ def get_ai_quote():
         "Content-Type": "application/json",
         "x-goog-api-key": GOOGLE_API_KEY
     }
-    
-    prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-2 sentences, maximum 20 words, no conversational filler."
+
+    current_day = datetime.now().strftime("%A")   
+
+    prompt = f"Hi, Today is {current_day}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences, no conversational filler."
     
     data = {
         "contents": [{
@@ -106,7 +108,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('</div>')
     html_parts.append('')
     html_parts.append('<p align="center">')
-    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1500&color=A78BFA&center=true&vCenter=true&multiline=true&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote" />')
+    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=0&color=A78BFA&center=true&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote" />')
     html_parts.append('</p>')
     html_parts.append('')
     html_parts.append('<p align="center">')
