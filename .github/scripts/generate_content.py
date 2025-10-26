@@ -1,8 +1,8 @@
+#.github/scripts/generate_content.py
 import os
 import requests
 from datetime import datetime
 import json
-import textwrap
 
 # --- Configuration ---
 GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
@@ -12,45 +12,22 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
 
-# --- SVG Constants ---
-SVG_WIDTH = 500
-SVG_HEIGHT_PER_LINE = 30 # Approx height per line of text
-SVG_MAX_BUBBLE_WIDTH = 450
-SVG_PADDING_X = 20
-SVG_PADDING_Y = 15
-FONT_SIZE = 16
-TEXT_COLOR = "#FFFFFF"
-BUBBLE_COLOR = "#333333"
-BUBBLE_RADIUS = 10
-LINE_HEIGHT_FACTOR = 1.4 # Factor for multi-line text
-ANIMATION_DURATION = "0.6s"
-ANIMATION_DELAY_INCREMENT = "0.7s" # Delay between bubbles
-
 def get_ai_quote():
     """Fetches a short quote about Generative AI from Google AI Studio."""
     if not GOOGLE_API_KEY:
         print("Error: GOOGLE_API_KEY environment variable not set.")
         return "AI is constantly evolving, bringing new possibilities."
 
-    headers = {
-        "Content-Type": "application/json"
-    }
+    headers = {"Content-Type": "application/json"}
     prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-3 sentences, maximum 25 words, no conversational filler like 'Did you know that:'."
-    data = {
-        "contents": [
-            {"parts": [{"text": prompt}]}
-        ]
-    }
-    params = {
-        "key": GOOGLE_API_KEY
-    }
+    data = {"contents": [{"parts": [{"text": prompt}]}]}
+    params = {"key": GOOGLE_API_KEY}
 
     try:
         response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, params=params, timeout=10)
-        response.raise_for_status() # Raise an exception for HTTP errors
+        response.raise_for_status()
         response_data = response.json()
         
-        # Extracting the text, handling potential variations in response structure
         if 'candidates' in response_data and response_data['candidates']:
             first_candidate = response_data['candidates'][0]
             if 'content' in first_candidate and 'parts' in first_candidate['content']:
@@ -65,227 +42,189 @@ def get_ai_quote():
         print(f"Error calling Google AI Studio API: {e}")
         return "AI advancements are accelerating innovation globally."
     except Exception as e:
-        print(f"An unexpected error occurred during AI quote retrieval: {e}")
+        print(f"An unexpected error occurred: {e}")
         return "AI is a fascinating field with continuous breakthroughs."
 
-def wrap_text(text, max_width, font_size):
-    """Wraps text to fit within a given SVG width, estimating character count."""
-    # This is an approximation. For a fixed-width font, char_width = font_size * 0.6 (approx).
-    # For variable width fonts, it's more complex, but this gives a reasonable estimate.
-    chars_per_line = int(max_width / (font_size * 0.6)) 
-    wrapped_lines = textwrap.wrap(text, width=chars_per_line)
-    return wrapped_lines
-
-def generate_chat_html(ai_quote):
-    """Generates GitHub-compatible HTML chat interface with advanced typing animation."""
+def generate_profile_html(ai_quote):
+    """Generates beautiful, animated HTML for GitHub profile."""
     
     current_day = datetime.now().strftime("%A")
+    current_time = datetime.now().strftime("%H:%M UTC")
 
-    messages = [
-        f"👋 Hi, I'm {RICARDO_NAME}!",
-        f"📍 I'm located at {RICARDO_LOCATION}",
-        f"💡 {ai_quote}",
-        f"🙏 Thanks for stopping by and have a nice {current_day}!",
-    ]
+    html_content = f'''<div align="center">
 
-    html_content = f'''
-<div class="profile-container">
-  <style>
-    .profile-container {{
-      max-width: 600px;
-      width: 100%;
-      padding: 30px 20px;
-      background: #18191d;
-      border-radius: 12px;
-      margin: 20px auto;
-    }}
+<!-- Profile Header with Gradient Animation -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ricardo%20Rodrigues&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32"/>
+
+<!-- Animated Typing Effect -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineer+%7C+Data+Scientist;MSc+Architectural+Design+%2B+AI;5%2B+Years+Training+AI+Models" alt="Typing SVG" />
+</p>
+
+<!-- Dynamic Status Cards with Modern Design -->
+<table align="center">
+  <tr>
+    <td align="center" style="padding: 0;">
+      <img src="https://img.shields.io/badge/🌍_Location-{RICARDO_LOCATION.replace(' ', '%20').replace(',', '%2C')}-667eea?style=for-the-badge&labelColor=1a1b27" alt="Location"/>
+    </td>
+    <td align="center" style="padding: 0;">
+      <img src="https://img.shields.io/badge/📅_Today-{current_day}-764ba2?style=for-the-badge&labelColor=1a1b27" alt="Day"/>
+    </td>
+  </tr>
+</table>
+
+<!-- AI-Generated Insight Card with Glassmorphism Effect -->
+<br/>
+
+```yaml
+┌─────────────────────────────────────────────────────────────────┐
+│  💡 AI INSIGHT OF THE DAY                                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  {ai_quote[:80]}{'...' if len(ai_quote) > 80 else ''}
+│                                                                 │
+│  🤖 Powered by Google Gemini • Updated: {current_time}          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+<!-- Animated Skill Bars -->
+<br/>
+
+### 🚀 Core Technologies
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,aws,gcp,react,typescript,docker&theme=dark" />
+</p>
+
+<!-- GitHub Stats with Custom Theme -->
+<br/>
+
+<table align="center">
+  <tr>
+    <td>
+      <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rickkk856&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=667eea&text_color=c9d1d9" />
+    </td>
+    <td>
+      <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rickkk856&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9" />
+    </td>
+  </tr>
+</table>
+
+<!-- Activity Graph -->
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=rickkk856&custom_title=Contribution%20Graph&bg_color=0d1117&color=a78bfa&line=667eea&point=c9d1d9&area_color=667eea&title_color=fff&area=true&hide_border=true" width="100%"/>
+
+<!-- Tech Stack Grid -->
+<br/>
+
+### 🛠️ Tech Stack
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/AI%20%26%20ML-FF6B6B?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+      <br/><sub><b>TensorFlow • PyTorch<br/>Scikit-learn • OpenCV</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/GenAI%20%26%20LLM-4ECDC4?style=for-the-badge&logo=openai&logoColor=white"/>
+      <br/><sub><b>LangChain • Vertex AI<br/>Amazon Bedrock • n8n</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/Cloud%20%26%20DevOps-95E1D3?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+      <br/><sub><b>AWS • GCP • Lambda<br/>GitHub Actions • Docker</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://img.shields.io/badge/Data%20Science-F38181?style=for-the-badge&logo=pandas&logoColor=white"/>
+      <br/><sub><b>Pandas • NumPy<br/>Power BI • SQL</b></sub>
+    </td>
+  </tr>
+</table>
+
+<!-- Connect Section with Animated Badges -->
+<br/>
+
+### 🤝 Let's Connect
+
+<p align="center">
+  <a href="https://linkedin.com/in/rcrarq">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5"/>
+  </a>
+  <a href="https://www.behance.net/ricardorodrigu17">
+    <img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white&labelColor=1769FF"/>
+  </a>
+  <a href="https://www.youtube.com/@ricardocesarrodrigues837">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=FF0000"/>
+  </a>
+  <a href="https://www.researchgate.net/profile/Ricardo-Rodrigues-26">
+    <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white&labelColor=00CCBB"/>
+  </a>
+  <a href="https://scholar.google.com.br/citations?user=mVCXbNIAAAAJ">
+    <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white&labelColor=4285F4"/>
+  </a>
+</p>
+
+<!-- Profile Views Counter -->
+<br/>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=rickkk856&color=blueviolet&style=for-the-badge&label=Profile+Views" />
+</p>
+
+<!-- Animated Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer"/>
+
+---
+
+<p align="center">
+  <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
+  <br/>
+  <sub>Last updated: {datetime.now().strftime("%B %d, %Y at %H:%M UTC")}</sub>
+</p>
+
+</div>'''
     
-    .message-button {{
-      background: linear-gradient(to right, #5a48f2, #a078f2);
-      border-radius: 28px;
-      padding: 15px 25px;
-      margin: 18px 0;
-      display: flex;
-      align-items: center;
-      opacity: 0;
-      transform: translateY(10px);
-      font-size: 1.1em;
-      font-weight: 500;
-      color: #ffffff;
-      box-shadow: 0 4px 15px rgba(90, 72, 242, 0.3);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    }}
-    
-    .message-button.show {{
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.4s ease-out;
-    }}
-    
-    .emoji {{
-      margin-right: 10px;
-      font-size: 1.2em;
-    }}
-    
-    .typing-indicator {{
-      height: 58px;
-      display: flex;
-      align-items: center;
-      padding-left: 25px;
-      opacity: 0;
-      font-size: 1.1em;
-      color: #8b949e;
-    }}
-    
-    .typing-indicator.show {{
-      opacity: 1;
-    }}
-    
-    .cursor {{
-      animation: blink 1s infinite;
-      margin-left: 2px;
-    }}
-    
-    @keyframes blink {{
-      0%, 50% {{ opacity: 1; }}
-      51%, 100% {{ opacity: 0; }}
-    }}
-    
-    @media (max-width: 768px) {{
-      .profile-container {{
-        padding: 20px 15px;
-        max-width: 100%;
-      }}
-      
-      .message-button {{
-        padding: 12px 20px;
-        font-size: 1em;
-      }}
-    }}
-  </style>
-  
-  <div class="typing-indicator" id="typing-0">|</div>
-  <div class="message-button" id="msg-0">
-    <span class="emoji">👋</span>
-    <span class="text" aria-live="polite"></span>
-    <span class="cursor">|</span>
-  </div>
-
-  <div class="typing-indicator" id="typing-1">|</div>
-  <div class="message-button" id="msg-1">
-    <span class="emoji">📍</span>
-    <span class="text" aria-live="polite"></span>
-    <span class="cursor">|</span>
-  </div>
-
-  <div class="typing-indicator" id="typing-2">|</div>
-  <div class="message-button" id="msg-2">
-    <span class="emoji">💡</span>
-    <span class="text" aria-live="polite"></span>
-    <span class="cursor">|</span>
-  </div>
-
-  <div class="typing-indicator" id="typing-3">|</div>
-  <div class="message-button" id="msg-3">
-    <span class="emoji">🙏</span>
-    <span class="text" aria-live="polite"></span>
-    <span class="cursor">|</span>
-  </div>
-
-  <script>
-    const messages = {messages};
-    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-    async function typeText(element, text) {{
-      const textSpan = element.querySelector('.text');
-      const cursor = element.querySelector('.cursor');
-      
-      for (let i = 0; i <= text.length; i++) {{
-        textSpan.textContent = text.slice(0, i);
-        await sleep(70);
-      }}
-      
-      cursor.style.display = 'none';
-    }}
-
-    async function animateMessage(index) {{
-      const typingIndicator = document.getElementById(`typing-${{index}}`);
-      const messageButton = document.getElementById(`msg-${{index}}`);
-      
-      typingIndicator.classList.add('show');
-      await sleep(800);
-      
-      typingIndicator.classList.remove('show');
-      messageButton.classList.add('show');
-      await sleep(400);
-      
-      await typeText(messageButton, messages[index]);
-      await sleep(1200);
-    }}
-
-    async function startAnimation() {{
-      for (let i = 0; i < messages.length; i++) {{
-        await animateMessage(i);
-      }}
-    }}
-
-    if (document.readyState === 'loading') {{
-      document.addEventListener('DOMContentLoaded', startAnimation);
-    }} else {{
-      startAnimation();
-    }}
-  </script>
-</div>
-'''
     return html_content
 
-def update_readme(html_content): # Changed to accept html_content directly
-    """Updates the README.md file with the new embedded HTML."""
+def update_readme(html_content):
+    """Updates the README.md file with the new content."""
     readme_path = "README.md"
     
-    # Ensure a readme.md exists, create if not
+    # Create README if it doesn't exist
     if not os.path.exists(readme_path):
         with open(readme_path, 'w') as f:
-            f.write("# rickkk856's Profile\n\n")
+            f.write("# Ricardo's Profile\n\n")
             f.write("<!-- GENERATED_CONTENT_START -->\n")
-            f.write("<!-- GENERATED_CONTENT_END -->\n\n")
-            f.write("A dynamic space showcasing my work and current thoughts!\n")
+            f.write("<!-- GENERATED_CONTENT_END -->\n")
 
     with open(readme_path, 'r') as f:
         readme_content = f.read()
 
-    # Define markers for the content block
+    # Define markers
     start_marker = "<!-- GENERATED_CONTENT_START -->"
     end_marker = "<!-- GENERATED_CONTENT_END -->"
 
-    # Create the new embedded HTML markdown
+    # Create new content block
     new_content_block = f"{start_marker}\n\n{html_content}\n\n{end_marker}"
 
-    # Find and replace the old content block
+    # Replace content
     if start_marker in readme_content and end_marker in readme_content:
         pre_content = readme_content.split(start_marker)[0]
         post_content = readme_content.split(end_marker)[1]
         updated_readme_content = f"{pre_content}{new_content_block}{post_content}"
     else:
-        # If markers are not found, append/insert at a sensible place
-        print("Warning: Content markers not found in readme.md. Appending content to the end.")
+        print("Warning: Markers not found. Appending content.")
         updated_readme_content = f"{readme_content}\n\n{new_content_block}"
 
     with open(readme_path, 'w') as f:
         f.write(updated_readme_content)
-    print("README.md updated successfully with embedded HTML.")
+    print("README.md updated successfully!")
 
 if __name__ == "__main__":
-    print("Starting content generation...")
+    print("🚀 Starting profile generation...")
     ai_quote = get_ai_quote()
-    print(f"Fetched AI Quote: {ai_quote}")
+    print(f"✅ AI Quote: {ai_quote}")
 
-    html_content = generate_chat_html(ai_quote)
-    # We no longer need to save it as a separate file, just update readme
-    # svg_filename = "rickkk856.svg"
-    # with open(svg_filename, 'w') as f:
-    #     f.write(svg_content)
-    # print(f"{svg_filename} generated successfully.")
-
-    update_readme(html_content) # Pass the HTML content directly
-    print("Content generation complete.")
+    html_content = generate_profile_html(ai_quote)
+    update_readme(html_content)
+    print("✨ Profile generation complete!")
