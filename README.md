@@ -30,15 +30,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=12,14,18&height=50&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="650px"/>
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=Recent%20generative%20AI%20advancements%20highlight%20a%20significant%3Bshift%20towards%20multimodality.%20Models%20like%20GPT-4o%20now%3Bseamlessly%20process%20and%20generate%20text%2C%20audio%2C%20images%2C%20and%3Bvideo.%20This%20integration%20allows%20for%20more%20natural%20and%3Bintuitive%20human-AI%20interactions.%20The%20emerging%20concept%20of%20%22AI%3Bagents%22%20leverages%20these%20capabilities%2C%20enabling%20AI%20to%20plan%2C%3Bexecute%2C%20and%20iterate%20on%20complex%20tasks%20independently.%20Such%3Bagents%20could%20soon%20revolutionize%20workflow%20automation%20and%3Bpersonal%20assistance%2C%20moving%20beyond%20simple%20prompt-response%3Bsystems." alt="AI Quote" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=750&pause=0&color=FFFFFF&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=260&lines=OpenAI%20recently%20unveiled%20GPT-4o%2C%20a%20significant%20advancement%3Bin%20generative%20AI.%20This%20new%20flagship%20model%20integrates%20text%2C%3Baudio%2C%20and%20vision%20capabilities%20into%20a%20single%20neural%20network.%3BIt%20processes%20and%20generates%20content%20across%20these%20modalities%3Balmost%20simultaneously%2C%20offering%20impressive%20real-time%3Bresponsiveness.%20Demonstrations%20highlighted%20its%20ability%20to%3Bunderstand%20emotions%2C%20translate%20live%2C%20and%20engage%20in%20more%3Bnatural%20conversations.%20This%20leap%20towards%20truly%20multimodal%3Binteraction%20signals%20new%20possibilities%20for%20human-computer%3Binterfaces%20and%20accessible%20AI%20applications." alt="AI Quote" />
 </p>
 
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 13:56 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 13:59 UTC</sub>
 </p>
 
 <br/>
@@ -112,7 +112,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i>
   <br/>
-  <sub>Last updated: October 26, 2025 at 13:56 UTC</sub>
+  <sub>Last updated: October 26, 2025 at 13:59 UTC</sub>
 </p>
 
 </div>
