@@ -57,6 +57,9 @@ def generate_profile_html(ai_quote):
     
     current_day = datetime.now().strftime("%A")
     current_time = datetime.now().strftime("%H:%M UTC")
+    
+    # Escape quotes in AI quote for JavaScript
+    escaped_quote = ai_quote.replace('"', '\\"').replace("'", "\\'")
 
     html_content = f'''<div align="center">
 
