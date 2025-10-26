@@ -2,63 +2,30 @@
 
 Welcome to my GitHub profile. This space is dynamically updated!
 
-<!-- GENERATED_SVG_START -->
+<!-- GENERATED_CONTENT_START -->
 
-<svg width="500" viewBox="0 0 500 359.6" height="359.6" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .bubble-bg { fill: #333333; rx: 10px; ry: 10px; }
-    .bubble-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 16px; fill: #FFFFFF; }
-  </style>
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          👋 Hi, I'm Ricardo!
+        </div>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          📍 I'm located at São Paulo, SP, Brazil
+        </div>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          💡 AI advancements are accelerating innovation globally.
+        </div>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          🙏 Thanks for stopping by and have a nice Sunday!
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
 
-  <rect x="20" y="15" width="450" height="60" class="bubble-bg">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.0s" fill="freeze"/>
-  </rect>
-
-  <text x="40" y="46.0" class="bubble-text">
-    <tspan> Hi, I'm Ricardo. </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.0s" fill="freeze"/>
-  </text>
-
-  <rect x="20" y="90" width="450" height="60" class="bubble-bg">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.7s" fill="freeze"/>
-  </rect>
-
-  <text x="40" y="121.0" class="bubble-text">
-    <tspan> I'm located at São Paulo, SP, Brazil. </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="0.7s" fill="freeze"/>
-  </text>
-
-  <rect x="20" y="165" width="450" height="74.8" class="bubble-bg">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
-  </rect>
-
-  <text x="40" y="196.0" class="bubble-text">
-    <tspan> Did you know that: AI advancements are </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
-  </text>
-
-  <text x="40" y="218.4" class="bubble-text">
-    <tspan> accelerating innovation globally. </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="1.4s" fill="freeze"/>
-  </text>
-
-  <rect x="20" y="254.8" width="450" height="74.8" class="bubble-bg">
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
-  </rect>
-
-  <text x="40" y="285.8" class="bubble-text">
-    <tspan> Thanks for stopping by and have a nice </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
-  </text>
-
-  <text x="40" y="308.2" class="bubble-text">
-    <tspan> Sunday! </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
-  </text>
-
-</svg>
-
-<!-- GENERATED_SVG_END -->
+<!-- GENERATED_CONTENT_END -->
 
 ## About Me
 I'm a MSc in Architectural Design Process with AI, and I've been training AI models for almost 5 years.

@@ -76,115 +76,87 @@ def wrap_text(text, max_width, font_size):
     wrapped_lines = textwrap.wrap(text, width=chars_per_line)
     return wrapped_lines
 
-def generate_svg_chat(ai_quote):
-    """Generates the animated chat-bubble-like SVG."""
+def generate_chat_html(ai_quote):
+    """Generates GitHub-compatible HTML chat interface."""
     
     current_day = datetime.now().strftime("%A")
 
     messages = [
-        f"Hi, I'm {RICARDO_NAME}.",
-        f"I'm located at {RICARDO_LOCATION}.",
-        f"Did you know that: {ai_quote}",
-        f"Thanks for stopping by and have a nice {current_day}!",
+        f"👋 Hi, I'm {RICARDO_NAME}!",
+        f"📍 I'm located at {RICARDO_LOCATION}",
+        f"💡 {ai_quote}",
+        f"🙏 Thanks for stopping by and have a nice {current_day}!",
     ]
 
-    svg_content = f'''
-<svg width="{SVG_WIDTH}" viewBox="0 0 {SVG_WIDTH} 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .bubble-bg {{ fill: {BUBBLE_COLOR}; rx: {BUBBLE_RADIUS}px; ry: {BUBBLE_RADIUS}px; }}
-    .bubble-text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: {FONT_SIZE}px; fill: {TEXT_COLOR}; }}
-  </style>
+    html_content = '''
+<div align="center">
+  <table>
+    <tr>
+      <td>
 '''
-    current_y = SVG_PADDING_Y
-    total_height = 0
-    animation_begin_time = 0.0
-
-    for i, message in enumerate(messages):
-        wrapped_lines = wrap_text(message, SVG_MAX_BUBBLE_WIDTH - (SVG_PADDING_X * 2), FONT_SIZE)
-        
-        # Calculate bubble height based on wrapped lines
-        bubble_height = (len(wrapped_lines) * FONT_SIZE * LINE_HEIGHT_FACTOR) + (SVG_PADDING_Y * 2)
-        
-        # Ensure minimum height for single line messages
-        if len(wrapped_lines) == 1:
-            bubble_height = max(bubble_height, SVG_HEIGHT_PER_LINE + (SVG_PADDING_Y * 2))
-
-        # We'll make all bubbles the same max width for simplicity and alignment
-        bubble_width = SVG_MAX_BUBBLE_WIDTH
-        
-        svg_content += f'''
-  <rect x="{SVG_PADDING_X}" y="{current_y}" width="{bubble_width}" height="{bubble_height}" class="bubble-bg">
-    <animate attributeName="opacity" from="0" to="1" dur="{ANIMATION_DURATION}" begin="{animation_begin_time}s" fill="freeze"/>
-  </rect>
+    
+    for message in messages:
+        html_content += f'''
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; margin: 8px 0; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 400px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;">
+          {message}
+        </div>
 '''
-        text_y = current_y + SVG_PADDING_Y + FONT_SIZE # Start text just below bubble top padding
-        for line_idx, line in enumerate(wrapped_lines):
-            svg_content += f'''
-  <text x="{SVG_PADDING_X * 2}" y="{text_y + (line_idx * FONT_SIZE * LINE_HEIGHT_FACTOR)}" class="bubble-text">
-    <tspan> {line.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')} </tspan>
-    <animate attributeName="opacity" from="0" to="1" dur="{ANIMATION_DURATION}" begin="{animation_begin_time}s" fill="freeze"/>
-  </text>
+    
+    html_content += '''
+      </td>
+    </tr>
+  </table>
+</div>
 '''
-        current_y += bubble_height + SVG_PADDING_Y # Space between bubbles
-        total_height = current_y
-        animation_begin_time += float(ANIMATION_DELAY_INCREMENT.replace('s','')) # Increment delay for next bubble
+    return html_content
 
-    # Adjust overall SVG height based on total content
-    final_height = total_height + SVG_PADDING_Y # Add final padding
-    svg_content = svg_content.replace('viewBox="0 0 500 1"', f'viewBox="0 0 {SVG_WIDTH} {final_height}" height="{final_height}"')
-
-    svg_content += '''
-</svg>
-'''
-    return svg_content
-
-def update_readme(svg_content): # Changed to accept svg_content directly
-    """Updates the README.md file with the new embedded SVG."""
+def update_readme(html_content): # Changed to accept html_content directly
+    """Updates the README.md file with the new embedded HTML."""
     readme_path = "README.md"
     
     # Ensure a readme.md exists, create if not
     if not os.path.exists(readme_path):
         with open(readme_path, 'w') as f:
             f.write("# rickkk856's Profile\n\n")
-            f.write("<!-- GENERATED_SVG_START -->\n")
-            f.write("<!-- GENERATED_SVG_END -->\n\n")
+            f.write("<!-- GENERATED_CONTENT_START -->\n")
+            f.write("<!-- GENERATED_CONTENT_END -->\n\n")
             f.write("A dynamic space showcasing my work and current thoughts!\n")
 
     with open(readme_path, 'r') as f:
         readme_content = f.read()
 
-    # Define markers for the SVG block
-    start_marker = "<!-- GENERATED_SVG_START -->"
-    end_marker = "<!-- GENERATED_SVG_END -->"
+    # Define markers for the content block
+    start_marker = "<!-- GENERATED_CONTENT_START -->"
+    end_marker = "<!-- GENERATED_CONTENT_END -->"
 
-    # Create the new embedded SVG markdown (just the SVG content itself)
-    new_svg_block = f"{start_marker}\n\n{svg_content}\n\n{end_marker}"
+    # Create the new embedded HTML markdown
+    new_content_block = f"{start_marker}\n\n{html_content}\n\n{end_marker}"
 
-    # Find and replace the old SVG block
+    # Find and replace the old content block
     if start_marker in readme_content and end_marker in readme_content:
-        pre_svg = readme_content.split(start_marker)[0]
-        post_svg = readme_content.split(end_marker)[1]
-        updated_readme_content = f"{pre_svg}{new_svg_block}{post_svg}"
+        pre_content = readme_content.split(start_marker)[0]
+        post_content = readme_content.split(end_marker)[1]
+        updated_readme_content = f"{pre_content}{new_content_block}{post_content}"
     else:
         # If markers are not found, append/insert at a sensible place
-        print("Warning: SVG markers not found in readme.md. Appending SVG to the end.")
-        updated_readme_content = f"{readme_content}\n\n{new_svg_block}"
+        print("Warning: Content markers not found in readme.md. Appending content to the end.")
+        updated_readme_content = f"{readme_content}\n\n{new_content_block}"
 
     with open(readme_path, 'w') as f:
         f.write(updated_readme_content)
-    print("README.md updated successfully with embedded SVG.")
+    print("README.md updated successfully with embedded HTML.")
 
 if __name__ == "__main__":
     print("Starting content generation...")
     ai_quote = get_ai_quote()
     print(f"Fetched AI Quote: {ai_quote}")
 
-    svg_content = generate_svg_chat(ai_quote)
+    html_content = generate_chat_html(ai_quote)
     # We no longer need to save it as a separate file, just update readme
     # svg_filename = "rickkk856.svg"
     # with open(svg_filename, 'w') as f:
     #     f.write(svg_content)
     # print(f"{svg_filename} generated successfully.")
 
-    update_readme(svg_content) # Pass the SVG content directly
+    update_readme(html_content) # Pass the HTML content directly
     print("Content generation complete.")
