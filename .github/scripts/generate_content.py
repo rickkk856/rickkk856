@@ -2,6 +2,7 @@ import os
 import requests
 from datetime import datetime
 from urllib.parse import quote as url_quote
+import textwrap
 
 # --- Configuration ---
 GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
@@ -62,8 +63,15 @@ def generate_profile_html(ai_quote):
     # Pre-process strings
     location_encoded = RICARDO_LOCATION.replace(' ', '%20').replace(',', '%2C')
     
-    # URL encode the quote for the typing SVG service
-    quote_encoded = url_quote(ai_quote)
+    # Wrap quote into multiple lines (max 60 chars per line)
+    wrapped_lines = textwrap.wrap(ai_quote, width=60)
+    
+    # Join lines with semicolon for the typing SVG service and URL encode
+    quote_multiline = ';'.join(wrapped_lines)
+    quote_encoded = url_quote(quote_multiline)
+    
+    # Calculate height based on number of lines (30px per line + padding)
+    quote_height = max(100, len(wrapped_lines) * 35 + 40)
     
     # Build HTML using string concatenation
     html_parts = []
@@ -98,7 +106,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('</div>')
     html_parts.append('')
     html_parts.append('<p align="center">')
-    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&multiline=true&width=700&height=100&lines={quote_encoded}" alt="AI Quote" />')
+    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1500&color=A78BFA&center=true&vCenter=true&multiline=true&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote" />')
     html_parts.append('</p>')
     html_parts.append('')
     html_parts.append('<p align="center">')
