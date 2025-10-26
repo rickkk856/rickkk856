@@ -4,6 +4,7 @@ Welcome to my GitHub profile. This space is dynamically updated!
 
 <!-- GENERATED_SVG_START -->
 
+
 <svg width="500" viewBox="0 0 500 359.6" height="359.6" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bubble-bg { fill: #333333; rx: 10px; ry: 10px; }
@@ -57,6 +58,7 @@ Welcome to my GitHub profile. This space is dynamically updated!
   </text>
 
 </svg>
+
 
 <!-- GENERATED_SVG_END -->
 
