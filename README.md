@@ -52,7 +52,7 @@ Welcome to my GitHub profile. This space is dynamically updated!
   </text>
 
   <text x="40" y="308.2" class="bubble-text">
-    <tspan> Saturday! </tspan>
+    <tspan> Sunday! </tspan>
     <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="2.0999999999999996s" fill="freeze"/>
   </text>
 
