@@ -1,7 +1,7 @@
 import os
 import requests
 from datetime import datetime
-import json
+from urllib.parse import quote as url_quote
 
 # --- Configuration ---
 GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
@@ -22,7 +22,7 @@ def get_ai_quote():
         "x-goog-api-key": GOOGLE_API_KEY
     }
     
-    prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-3 sentences, maximum 25 words, no conversational filler."
+    prompt = "Generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 1-2 sentences, maximum 20 words, no conversational filler."
     
     data = {
         "contents": [{
@@ -59,11 +59,13 @@ def generate_profile_html(ai_quote):
     current_time = datetime.now().strftime("%H:%M UTC")
     last_updated = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
     
-    # Pre-process all strings that need escaping or special formatting
+    # Pre-process strings
     location_encoded = RICARDO_LOCATION.replace(' ', '%20').replace(',', '%2C')
-    quote_for_js = ai_quote.replace('"', r'\"').replace("'", r"\'").replace('\n', ' ')
     
-    # Build HTML using string concatenation to avoid f-string issues
+    # URL encode the quote for the typing SVG service
+    quote_encoded = url_quote(ai_quote)
+    
+    # Build HTML using string concatenation
     html_parts = []
     
     html_parts.append('<div align="center">')
@@ -88,59 +90,24 @@ def generate_profile_html(ai_quote):
     html_parts.append('  </tr>')
     html_parts.append('</table>')
     html_parts.append('')
-    html_parts.append('<!-- AI-Generated Insight Card with Streaming Animation -->')
+    html_parts.append('<!-- AI-Generated Insight with Typing Animation -->')
     html_parts.append('<br/>')
     html_parts.append('')
     html_parts.append('<div align="center">')
-    html_parts.append('  <table>')
-    html_parts.append('    <tr>')
-    html_parts.append('      <td>')
-    html_parts.append('        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3); max-width: 650px; margin: 15px auto;">')
-    html_parts.append('          <div style="color: #fff; font-family: \'Courier New\', monospace; font-size: 14px; margin-bottom: 15px; opacity: 0.9;">')
-    html_parts.append('            💡 AI INSIGHT OF THE DAY')
-    html_parts.append('          </div>')
-    html_parts.append('          <div id="ai-quote" style="color: #fff; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; min-height: 50px; text-align: left;">')
-    html_parts.append('            <span id="quote-text"></span><span id="cursor" style="animation: blink 1s infinite;">|</span>')
-    html_parts.append('          </div>')
-    html_parts.append(f'          <div style="color: rgba(255,255,255,0.7); font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 15px; text-align: right;">')
-    html_parts.append(f'            🤖 Powered by Google Gemini 2.5 • Updated: {current_time}')
-    html_parts.append('          </div>')
-    html_parts.append('        </div>')
-    html_parts.append('      </td>')
-    html_parts.append('    </tr>')
-    html_parts.append('  </table>')
+    html_parts.append('  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,14,18&height=120&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=fff&fontAlignY=30" width="100%"/>')
     html_parts.append('</div>')
     html_parts.append('')
-    html_parts.append('<script>')
-    html_parts.append('  (function() {')
-    html_parts.append(f'    const quote = "{quote_for_js}";')
-    html_parts.append('    const quoteEl = document.getElementById(\'quote-text\');')
-    html_parts.append('    const cursor = document.getElementById(\'cursor\');')
-    html_parts.append('    let i = 0;')
-    html_parts.append('    ')
-    html_parts.append('    function typeWriter() {')
-    html_parts.append('      if (i < quote.length) {')
-    html_parts.append('        quoteEl.textContent += quote.charAt(i);')
-    html_parts.append('        i++;')
-    html_parts.append('        setTimeout(typeWriter, 50);')
-    html_parts.append('      } else {')
-    html_parts.append('        cursor.style.display = \'none\';')
-    html_parts.append('      }')
-    html_parts.append('    }')
-    html_parts.append('    ')
-    html_parts.append('    setTimeout(typeWriter, 500);')
-    html_parts.append('  })();')
-    html_parts.append('</script>')
+    html_parts.append('<p align="center">')
+    html_parts.append(f'  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=4000&pause=2000&color=A78BFA&center=true&vCenter=true&multiline=true&width=700&height=100&lines={quote_encoded}" alt="AI Quote" />')
+    html_parts.append('</p>')
     html_parts.append('')
-    html_parts.append('<style>')
-    html_parts.append('  @keyframes blink {')
-    html_parts.append('    0%, 50% { opacity: 1; }')
-    html_parts.append('    51%, 100% { opacity: 0; }')
-    html_parts.append('  }')
-    html_parts.append('</style>')
+    html_parts.append('<p align="center">')
+    html_parts.append(f'  <sub>🤖 Powered by Google Gemini 2.5 • Updated: {current_time}</sub>')
+    html_parts.append('</p>')
+    html_parts.append('')
+    html_parts.append('<br/>')
     html_parts.append('')
     html_parts.append('<!-- Animated Skill Bars -->')
-    html_parts.append('<br/>')
     html_parts.append('')
     html_parts.append('### 🚀 Core Technologies')
     html_parts.append('')
