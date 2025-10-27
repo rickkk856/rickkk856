@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
   schedule:
-    - cron: '0 0 * * *' # Runs every Midnight UTC
+    - cron: '0 15 * * *' # Runs every day at 15:00 UTC = 12:00 BRT
 
 jobs:
   update-readme:

@@ -41,7 +41,7 @@ def get_ai_quote():
     }
 
     try:
-        response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=15)
+        response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=120)
         response.raise_for_status()
         response_data = response.json()
         
