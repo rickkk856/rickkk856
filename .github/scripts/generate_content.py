@@ -137,6 +137,7 @@ def generate_profile_html(ai_quote):
 
     # Core Technologies
     html_parts.append('')
+    html_parts.append('')
     html_parts.append('### 🚀 Core Technologies')
     html_parts.append('')
     html_parts.append('<p align="center">')
