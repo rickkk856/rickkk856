@@ -137,6 +137,7 @@ def generate_profile_html(ai_quote):
 
     # Core Technologies
     html_parts.append('### 🚀 Core Technologies')
+    html_parts.append('')
     html_parts.append('<p align="center">')
     html_parts.append('  <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />')
     html_parts.append('</p>')
