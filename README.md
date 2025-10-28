@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Monday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Tuesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20push%20creative%20boundaries." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20October%2028%2C%202025%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%20across%20various%20sectors.%20This%20month%20has%20seen%20major%3Bleaps%20in%20generative%20models%2C%20with%20OpenAI%20releasing%20Sora%202%2C%20a%3Bvideo-audio%20model%20producing%20realistic%2060-second%20clips%20with%3Bintegrated%20sound%2C%20and%20Google%20introducing%20Veo%203.1%20for%3Benhanced%20narrative%20control.%20Adobe%20also%20unveiled%20new%20AI%3Binnovations%20and%20models%20across%20its%20Creative%20Cloud%3Bapplications%20today%2C%20providing%20creative%20professionals%20with%3Badvanced%20tools%20for%20greater%20precision.%20Furthermore%2C%3Bgenerative%20AI%20is%20significantly%20impacting%20drug%20discovery%2C%3Bwith%20models%20assisting%20in%20accelerating%20new%20treatments%20to%20the%3Bclinical%20trial%20phase.%20The%20technology%20is%20also%20transforming%3Badvertising%20by%20enabling%20consumers%20to%20become%20active%3Bcollaborators%20in%20personalizing%20campaign%20content." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20push%20creative%20boundaries." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20October%2028%2C%202025%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%20across%20various%20sectors.%20This%20month%20has%20seen%20major%3Bleaps%20in%20generative%20models%2C%20with%20OpenAI%20releasing%20Sora%202%2C%20a%3Bvideo-audio%20model%20producing%20realistic%2060-second%20clips%20with%3Bintegrated%20sound%2C%20and%20Google%20introducing%20Veo%203.1%20for%3Benhanced%20narrative%20control.%20Adobe%20also%20unveiled%20new%20AI%3Binnovations%20and%20models%20across%20its%20Creative%20Cloud%3Bapplications%20today%2C%20providing%20creative%20professionals%20with%3Badvanced%20tools%20for%20greater%20precision.%20Furthermore%2C%3Bgenerative%20AI%20is%20significantly%20impacting%20drug%20discovery%2C%3Bwith%20models%20assisting%20in%20accelerating%20new%20treatments%20to%20the%3Bclinical%20trial%20phase.%20The%20technology%20is%20also%20transforming%3Badvertising%20by%20enabling%20consumers%20to%20become%20active%3Bcollaborators%20in%20personalizing%20campaign%20content." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20push%20creative%20boundaries." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20October%2028%2C%202025%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%20across%20various%20sectors.%20This%20month%20has%20seen%20major%3Bleaps%20in%20generative%20models%2C%20with%20OpenAI%20releasing%20Sora%202%2C%20a%3Bvideo-audio%20model%20producing%20realistic%2060-second%20clips%20with%3Bintegrated%20sound%2C%20and%20Google%20introducing%20Veo%203.1%20for%3Benhanced%20narrative%20control.%20Adobe%20also%20unveiled%20new%20AI%3Binnovations%20and%20models%20across%20its%20Creative%20Cloud%3Bapplications%20today%2C%20providing%20creative%20professionals%20with%3Badvanced%20tools%20for%20greater%20precision.%20Furthermore%2C%3Bgenerative%20AI%20is%20significantly%20impacting%20drug%20discovery%2C%3Bwith%20models%20assisting%20in%20accelerating%20new%20treatments%20to%20the%3Bclinical%20trial%20phase.%20The%20technology%20is%20also%20transforming%3Badvertising%20by%20enabling%20consumers%20to%20become%20active%3Bcollaborators%20in%20personalizing%20campaign%20content." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 15:25 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 15:27 UTC</sub>
 </p>
 <br/>
 
