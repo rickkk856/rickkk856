@@ -3,18 +3,20 @@ import requests
 from datetime import datetime
 from urllib.parse import quote as url_quote
 import textwrap
+import time
 
 # --- Configuration ---
 GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
-#GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+MAX_RETRIES = 3
+RETRY_DELAY = 3  # seconds
 
 # --- Static Profile Info ---
 RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
 
 def get_ai_quote():
-    """Fetches a short quote about Generative AI from Google AI Studio."""
+    """Fetches a short quote about Generative AI from Google AI Studio with retry logic."""
     if not GOOGLE_API_KEY:
         print("Error: GOOGLE_API_KEY environment variable not set.")
         return "AI is constantly evolving, bringing new possibilities."
@@ -27,43 +29,119 @@ def get_ai_quote():
     now = datetime.now()
     formatted_date = now.strftime("%d of %B %Y")  
 
-    # Your prompt is already good for encouraging a search, especially "recent update or fact"
     prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
-    
+
     data = {
-        "tools": [{"googleSearch": {}}],  # CORRECTED: This is the correct way to enable Google Search tool
+        "tools": [{"googleSearch": {}}],
         "contents": [
             {
                 "role": "user",
                 "parts": [{"text": prompt}]
             }
-        ]
+        ],
+        "generationConfig": {
+            "temperature": 0.7,
+            "maxOutputTokens": 2048,  # Increased to account for thinking tokens
+            "topP": 0.95,
+            "topK": 40
+        }
     }
 
-    try:
-        response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=120)
-        response.raise_for_status()
-        response_data = response.json()
-        
-        if 'candidates' in response_data and response_data['candidates']:
+    for attempt in range(MAX_RETRIES):
+        try:
+            print(f"Attempt {attempt + 1}/{MAX_RETRIES}: Calling Google AI Studio API...")
+            response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=120)
+            response.raise_for_status()
+            response_data = response.json()
+            
+            # Debug: Print full response
+            print(f"Debug: API Response received (attempt {attempt + 1})")
+            
+            # Check if response has candidates
+            if 'candidates' not in response_data or not response_data['candidates']:
+                print(f"Warning: No candidates in response (attempt {attempt + 1})")
+                if attempt < MAX_RETRIES - 1:
+                    time.sleep(RETRY_DELAY)
+                    continue
+                return "Generative AI continues to push creative boundaries."
+            
             first_candidate = response_data['candidates'][0]
-            if 'content' in first_candidate and 'parts' in first_candidate['content']:
-                for part in first_candidate['content']['parts']:
-                    if 'text' in part:
-                        return part['text'].strip()
-        
-        print(f"Warning: Could not extract AI quote from response: {response_data}")
-        return "Generative AI continues to push creative boundaries."
+            
+            # Check finish reason for issues
+            finish_reason = first_candidate.get('finishReason', 'UNKNOWN')
+            print(f"Finish reason: {finish_reason}")
+            
+            if finish_reason != 'STOP':
+                print(f"Warning: Unusual finish reason '{finish_reason}' (attempt {attempt + 1})")
+                if finish_reason in ['SAFETY', 'RECITATION', 'OTHER']:
+                    print(f"Response blocked due to: {finish_reason}")
+                    if attempt < MAX_RETRIES - 1:
+                        time.sleep(RETRY_DELAY)
+                        continue
+            
+            # Check for content and parts
+            if 'content' not in first_candidate:
+                print(f"Warning: No 'content' in candidate (attempt {attempt + 1})")
+                if attempt < MAX_RETRIES - 1:
+                    time.sleep(RETRY_DELAY)
+                    continue
+                return "AI advancements are accelerating innovation globally."
+            
+            content = first_candidate['content']
+            
+            if 'parts' not in content or not content['parts']:
+                print(f"Warning: No 'parts' in content (attempt {attempt + 1})")
+                print(f"Content keys: {content.keys()}")
+                
+                # Check usage metadata for clues
+                if 'usageMetadata' in response_data:
+                    usage = response_data['usageMetadata']
+                    print(f"Token usage - Prompt: {usage.get('promptTokenCount')}, "
+                          f"Candidates: {usage.get('candidatesTokenCount')}, "
+                          f"Thoughts: {usage.get('thoughtsTokenCount', 0)}")
+                
+                if attempt < MAX_RETRIES - 1:
+                    print(f"Retrying in {RETRY_DELAY} seconds...")
+                    time.sleep(RETRY_DELAY)
+                    continue
+                return "AI is a fascinating field with continuous breakthroughs."
+            
+            # Extract text from parts
+            for part in content['parts']:
+                if 'text' in part and part['text'].strip():
+                    extracted_text = part['text'].strip()
+                    print(f"✅ Successfully extracted AI quote ({len(extracted_text)} chars)")
+                    return extracted_text
+            
+            print(f"Warning: No text found in parts (attempt {attempt + 1})")
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
 
-    except requests.exceptions.RequestException as e:
-        print(f"Error calling Google AI Studio API: {e}")
-        # Add response text for debugging server-side errors
-        if e.response is not None:
-            print(f"Response text: {e.response.text}")
-        return "AI advancements are accelerating innovation globally."
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
-        return "AI is a fascinating field with continuous breakthroughs."
+        except requests.exceptions.Timeout:
+            print(f"Error: Request timeout (attempt {attempt + 1}/{MAX_RETRIES})")
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
+                
+        except requests.exceptions.RequestException as e:
+            print(f"Error calling Google AI Studio API (attempt {attempt + 1}/{MAX_RETRIES}): {e}")
+            if e.response is not None:
+                print(f"Response status: {e.response.status_code}")
+                print(f"Response text: {e.response.text[:500]}")  # First 500 chars
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
+                
+        except Exception as e:
+            print(f"Unexpected error (attempt {attempt + 1}/{MAX_RETRIES}): {e}")
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_DELAY)
+                continue
+    
+    # All retries exhausted
+    print("All retry attempts exhausted. Using fallback quote.")
+    return "Generative AI continues to transform industries with breakthrough innovations."
 
 def generate_profile_html(ai_quote):
     """Generates beautiful, animated HTML for GitHub profile with a blue theme."""
@@ -82,11 +160,11 @@ def generate_profile_html(ai_quote):
     
     html_parts.append('<div align="center">')
 
-    # Profile Header (optional: keep gradient; gradients usually look fine in both themes)
+    # Profile Header
     html_parts.append('<!-- Profile Header with Blue Gradient Animation -->')
     html_parts.append('<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,10,18,24&height=180&section=header&text=Ricardo%20Rodrigues&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=32"/>')
 
-    # Animated Typing Effect (theme-responsive)
+    # Animated Typing Effect
     html_parts.append('<!-- Animated Typing Effect -->')
     html_parts.append('<p align="center">')
     html_parts.append('  <picture>')
@@ -99,7 +177,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('  </picture>')
     html_parts.append('</p>')
 
-    # Dynamic Status Cards (shields.io supports theme colors with `labelColor=auto`)
+    # Dynamic Status Cards
     html_parts.append('<!-- Dynamic Status Cards -->')
     html_parts.append('<table align="center">')
     html_parts.append('  <tr>')
@@ -112,13 +190,13 @@ def generate_profile_html(ai_quote):
     html_parts.append('  </tr>')
     html_parts.append('</table>')
 
-    # AI Insight Section (header image, leave gradient; looks fine on both themes)
+    # AI Insight Section
     html_parts.append('<br/>')
     html_parts.append('<div align="center">')
     html_parts.append('  <img src="https://capsule-render.vercel.app/api?type=speech&color=gradient&customColorList=10,14,20&height=80&section=header&text=💡%20AI%20INSIGHT%20OF%20THE%20DAY&fontSize=20&fontColor=ffffff&fontAlignY=45" width="650px"/>')
     html_parts.append('</div>')
 
-    # AI Quote (theme-responsive)
+    # AI Quote
     html_parts.append('<p align="center">')
     html_parts.append('  <picture>')
     html_parts.append('    <!-- Dark Mode -->')
@@ -168,7 +246,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('')
     html_parts.append('<br/>')
 
-    # Lets Connect Section
+    # Let's Connect Section
     html_parts.append('')
     html_parts.append('### 🤝 Let\'s Connect')
     html_parts.append('')
@@ -190,7 +268,6 @@ def generate_profile_html(ai_quote):
     html_parts.append('---')
     html_parts.append('<p align="center">')
     html_parts.append('  <i>✨ This profile is dynamically updated using GitHub Actions & Google AI Studio ✨</i><br/>')
-    #html_parts.append(f'  <sub>Last updated: {last_updated}</sub>')
     html_parts.append('</p>')
     html_parts.append('</div>')
     

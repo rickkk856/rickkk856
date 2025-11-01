@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
   schedule:
-    - cron: '0 15 * * *' # Runs every day at 15:00 UTC = 12:00 BRT
+    - cron: '0 11 * * *' # Runs every day at 11:00 UTC = 08:00 BRT
 
 jobs:
   update-readme:
@@ -39,11 +39,11 @@ jobs:
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "✨ feat: Update profile with fresh AI insight"
+          commit_message: "🤖 chore: Automated README update"
           file_pattern: 'README.md'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-          commit_author: 'Ricardo <62864640+rickkk856@users.noreply.github.com>'
+          commit_author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
           
       - name: Verify update
         run: |
