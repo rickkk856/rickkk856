@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Saturday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20November%2015%2C%202025%2C%20generative%20AI%20continues%20its%20rapid%3Bintegration%20into%20daily%20life%20and%20the%20workforce.%20Recent%3Breports%20indicate%20that%2055%25%20of%20Americans%20aged%2018-64%20now%3Butilize%20generative%20AI%2C%20a%20significant%20increase%20from%2045%25%20just%3Ba%20year%20prior.%20This%20adoption%20rate%20surpasses%20that%20of%20early%3Bpersonal%20computers%20and%20the%20internet%20at%20similar%20stages.%20A%20PwC%3Bsurvey%20released%20on%20November%2012%2C%202025%2C%20highlights%20that%20daily%3Bgenerative%20AI%20users%20report%20enhanced%20productivity%2C%20job%3Bsecurity%2C%20and%20even%20higher%20pay.%20Furthermore%2C%20the%20share%20of%3Bwork%20hours%20involving%20generative%20AI%20climbed%20to%205.7%25%20by%20August%3B2025%2C%20suggesting%20a%20notable%20boost%20in%20overall%20labor%3Bproductivity.%20This%20rapid%20evolution%20underscores%20generative%3BAI%27s%20transition%20into%20a%20fundamental%20utility%20across%20various%3Bsectors." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20November%2015%2C%202025%2C%20generative%20AI%20continues%20its%20rapid%3Bintegration%20into%20daily%20life%20and%20the%20workforce.%20Recent%3Breports%20indicate%20that%2055%25%20of%20Americans%20aged%2018-64%20now%3Butilize%20generative%20AI%2C%20a%20significant%20increase%20from%2045%25%20just%3Ba%20year%20prior.%20This%20adoption%20rate%20surpasses%20that%20of%20early%3Bpersonal%20computers%20and%20the%20internet%20at%20similar%20stages.%20A%20PwC%3Bsurvey%20released%20on%20November%2012%2C%202025%2C%20highlights%20that%20daily%3Bgenerative%20AI%20users%20report%20enhanced%20productivity%2C%20job%3Bsecurity%2C%20and%20even%20higher%20pay.%20Furthermore%2C%20the%20share%20of%3Bwork%20hours%20involving%20generative%20AI%20climbed%20to%205.7%25%20by%20August%3B2025%2C%20suggesting%20a%20notable%20boost%20in%20overall%20labor%3Bproductivity.%20This%20rapid%20evolution%20underscores%20generative%3BAI%27s%20transition%20into%20a%20fundamental%20utility%20across%20various%3Bsectors." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20November%2015%2C%202025%2C%20generative%20AI%20continues%20its%20rapid%3Bintegration%20into%20daily%20life%20and%20the%20workforce.%20Recent%3Breports%20indicate%20that%2055%25%20of%20Americans%20aged%2018-64%20now%3Butilize%20generative%20AI%2C%20a%20significant%20increase%20from%2045%25%20just%3Ba%20year%20prior.%20This%20adoption%20rate%20surpasses%20that%20of%20early%3Bpersonal%20computers%20and%20the%20internet%20at%20similar%20stages.%20A%20PwC%3Bsurvey%20released%20on%20November%2012%2C%202025%2C%20highlights%20that%20daily%3Bgenerative%20AI%20users%20report%20enhanced%20productivity%2C%20job%3Bsecurity%2C%20and%20even%20higher%20pay.%20Furthermore%2C%20the%20share%20of%3Bwork%20hours%20involving%20generative%20AI%20climbed%20to%205.7%25%20by%20August%3B2025%2C%20suggesting%20a%20notable%20boost%20in%20overall%20labor%3Bproductivity.%20This%20rapid%20evolution%20underscores%20generative%3BAI%27s%20transition%20into%20a%20fundamental%20utility%20across%20various%3Bsectors." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:11 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:09 UTC</sub>
 </p>
 <br/>
 
