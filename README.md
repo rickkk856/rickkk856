@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Tuesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Wednesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,11 +36,11 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20November%2019%2C%202025%2C%20new%20research%20from%20the%20Computer%20%26%3BCommunications%20Industry%20Association%20%28CCIA%29%20indicates%20that%3Bgenerative%20AI%20is%20the%20fastest-adopted%20general-purpose%3Btechnology%20in%20history.%20Approximately%20three%20in%20five%20U.S.%3Badults%20have%20utilized%20GenAI%20less%20than%20three%20years%20after%20its%3Brelease.%20This%20rapid%20adoption%20is%20notably%20impacting%20the%3Bworkplace%2C%20with%20two%20in%20five%20U.S.%20workers%20now%20using%3Bgenerative%20AI.%20These%20workers%20are%20reporting%20an%20average%2015%25%3Bimprovement%20in%20productivity.%20This%20underscores%20generative%3BAI%27s%20swift%20integration%20into%20both%20daily%20life%20and%20professional%3Bworkflows." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20November%2019%2C%202025%2C%20new%20research%20from%20the%20Computer%20%26%3BCommunications%20Industry%20Association%20%28CCIA%29%20indicates%20that%3Bgenerative%20AI%20is%20the%20fastest-adopted%20general-purpose%3Btechnology%20in%20history.%20Approximately%20three%20in%20five%20U.S.%3Badults%20have%20utilized%20GenAI%20less%20than%20three%20years%20after%20its%3Brelease.%20This%20rapid%20adoption%20is%20notably%20impacting%20the%3Bworkplace%2C%20with%20two%20in%20five%20U.S.%20workers%20now%20using%3Bgenerative%20AI.%20These%20workers%20are%20reporting%20an%20average%2015%25%3Bimprovement%20in%20productivity.%20This%20underscores%20generative%3BAI%27s%20swift%20integration%20into%20both%20daily%20life%20and%20professional%3Bworkflows." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20November%2019%2C%202025%2C%20new%20research%20from%20the%20Computer%20%26%3BCommunications%20Industry%20Association%20%28CCIA%29%20indicates%20that%3Bgenerative%20AI%20is%20the%20fastest-adopted%20general-purpose%3Btechnology%20in%20history.%20Approximately%20three%20in%20five%20U.S.%3Badults%20have%20utilized%20GenAI%20less%20than%20three%20years%20after%20its%3Brelease.%20This%20rapid%20adoption%20is%20notably%20impacting%20the%3Bworkplace%2C%20with%20two%20in%20five%20U.S.%20workers%20now%20using%3Bgenerative%20AI.%20These%20workers%20are%20reporting%20an%20average%2015%25%3Bimprovement%20in%20productivity.%20This%20underscores%20generative%3BAI%27s%20swift%20integration%20into%20both%20daily%20life%20and%20professional%3Bworkflows." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
