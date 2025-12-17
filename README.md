@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Tuesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Wednesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,11 +36,11 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=Plan%3A%201.%20Start%20with%20the%20current%20date.%202.%20Mention%20the%20intense%3Bcompetition%20among%20leading%20generative%20AI%20models.%203.%20Highlight%3Bthe%20expansion%20of%20generative%20AI%20into%20new%20applications%20or%20the%3Bmove%20towards%20AGI.%204.%20Keep%20it%20to%204-6%20sentences." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=Plan%3A%201.%20Start%20with%20the%20current%20date.%202.%20Mention%20the%20intense%3Bcompetition%20among%20leading%20generative%20AI%20models.%203.%20Highlight%3Bthe%20expansion%20of%20generative%20AI%20into%20new%20applications%20or%20the%3Bmove%20towards%20AGI.%204.%20Keep%20it%20to%204-6%20sentences." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=Plan%3A%201.%20Start%20with%20the%20current%20date.%202.%20Mention%20the%20intense%3Bcompetition%20among%20leading%20generative%20AI%20models.%203.%20Highlight%3Bthe%20expansion%20of%20generative%20AI%20into%20new%20applications%20or%20the%3Bmove%20towards%20AGI.%204.%20Keep%20it%20to%204-6%20sentences." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
