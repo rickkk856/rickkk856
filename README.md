@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Wednesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%209%2C%202026%2C%20a%20significant%20and%20recent%20development%20in%3BGenerative%20AI%20involves%20heightened%20security%20concerns%20for%3Benterprise%20applications.%20Gartner%20predicts%20that%20by%202028%2C%2025%25%3Bof%20all%20enterprise%20generative%20AI%20%28GenAI%29%20applications%20will%3Bexperience%20at%20least%20five%20minor%20security%20incidents%20annually%2C%3Ba%20notable%20increase%20from%209%25%20in%202025.%20This%20rise%20is%20attributed%3Bto%20the%20emergence%20of%20new%20attack%20vectors%20and%20immature%20security%3Bpractices%20as%20organizations%20rapidly%20adopt%20and%20integrate%3Bagentic%20AI%20applications.%20A%20persistent%20concern%2C%20highlighted%3Bby%20a%20Center%20for%20Internet%20Security%20%28CIS%29%20report%2C%20is%20prompt%3Binjection%20as%20GenAI%20becomes%20routinely%20used%20in%20government%3Boperations.%20This%20underscores%20the%20critical%20need%20for%20rigorous%3Bsecurity%20review%20processes%20and%20defined%20guardrails%20to%20mitigate%3Brisks%20in%20this%20evolving%20landscape." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%209%2C%202026%2C%20a%20significant%20and%20recent%20development%20in%3BGenerative%20AI%20involves%20heightened%20security%20concerns%20for%3Benterprise%20applications.%20Gartner%20predicts%20that%20by%202028%2C%2025%25%3Bof%20all%20enterprise%20generative%20AI%20%28GenAI%29%20applications%20will%3Bexperience%20at%20least%20five%20minor%20security%20incidents%20annually%2C%3Ba%20notable%20increase%20from%209%25%20in%202025.%20This%20rise%20is%20attributed%3Bto%20the%20emergence%20of%20new%20attack%20vectors%20and%20immature%20security%3Bpractices%20as%20organizations%20rapidly%20adopt%20and%20integrate%3Bagentic%20AI%20applications.%20A%20persistent%20concern%2C%20highlighted%3Bby%20a%20Center%20for%20Internet%20Security%20%28CIS%29%20report%2C%20is%20prompt%3Binjection%20as%20GenAI%20becomes%20routinely%20used%20in%20government%3Boperations.%20This%20underscores%20the%20critical%20need%20for%20rigorous%3Bsecurity%20review%20processes%20and%20defined%20guardrails%20to%20mitigate%3Brisks%20in%20this%20evolving%20landscape." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=AI%20is%20a%20fascinating%20field%20with%20continuous%20breakthroughs." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%209%2C%202026%2C%20a%20significant%20and%20recent%20development%20in%3BGenerative%20AI%20involves%20heightened%20security%20concerns%20for%3Benterprise%20applications.%20Gartner%20predicts%20that%20by%202028%2C%2025%25%3Bof%20all%20enterprise%20generative%20AI%20%28GenAI%29%20applications%20will%3Bexperience%20at%20least%20five%20minor%20security%20incidents%20annually%2C%3Ba%20notable%20increase%20from%209%25%20in%202025.%20This%20rise%20is%20attributed%3Bto%20the%20emergence%20of%20new%20attack%20vectors%20and%20immature%20security%3Bpractices%20as%20organizations%20rapidly%20adopt%20and%20integrate%3Bagentic%20AI%20applications.%20A%20persistent%20concern%2C%20highlighted%3Bby%20a%20Center%20for%20Internet%20Security%20%28CIS%29%20report%2C%20is%20prompt%3Binjection%20as%20GenAI%20becomes%20routinely%20used%20in%20government%3Boperations.%20This%20underscores%20the%20critical%20need%20for%20rigorous%3Bsecurity%20review%20processes%20and%20defined%20guardrails%20to%20mitigate%3Brisks%20in%20this%20evolving%20landscape." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:45 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:46 UTC</sub>
 </p>
 <br/>
 
