@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Sunday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Monday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20April%2019%2C%202026%2C%20the%20field%20of%20Generative%20AI%20is%20rapidly%3Badvancing%20beyond%20simple%20content%20creation%20to%20sophisticated%3B%22Agentic%20AI%22%20systems.%20These%20systems%20are%20designed%20to%20not%20only%3Bgenerate%20text%20or%20images%20but%20also%20to%20reason%2C%20plan%2C%20and%3Bautonomously%20execute%20complex%20workflows.%20This%20shift%20marks%20a%3Bsignificant%20transition%20from%20mere%20chatbots%20to%20AI%20that%20can%3B%22do%22%20and%20orchestrate%20tasks%2C%20becoming%20an%20essential%20operating%3Bsystem%20for%20modern%20businesses.%20April%202026%20has%20seen%3Bunprecedented%20investment%20and%20adoption%2C%20with%20organizations%3Bwidely%20integrating%20generative%20AI%20into%20core%20business%3Bfunctions%20and%20existing%20productivity%20software." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20April%2019%2C%202026%2C%20the%20field%20of%20Generative%20AI%20is%20rapidly%3Badvancing%20beyond%20simple%20content%20creation%20to%20sophisticated%3B%22Agentic%20AI%22%20systems.%20These%20systems%20are%20designed%20to%20not%20only%3Bgenerate%20text%20or%20images%20but%20also%20to%20reason%2C%20plan%2C%20and%3Bautonomously%20execute%20complex%20workflows.%20This%20shift%20marks%20a%3Bsignificant%20transition%20from%20mere%20chatbots%20to%20AI%20that%20can%3B%22do%22%20and%20orchestrate%20tasks%2C%20becoming%20an%20essential%20operating%3Bsystem%20for%20modern%20businesses.%20April%202026%20has%20seen%3Bunprecedented%20investment%20and%20adoption%2C%20with%20organizations%3Bwidely%20integrating%20generative%20AI%20into%20core%20business%3Bfunctions%20and%20existing%20productivity%20software." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=285&lines=As%20of%20April%2019%2C%202026%2C%20the%20field%20of%20Generative%20AI%20is%20rapidly%3Badvancing%20beyond%20simple%20content%20creation%20to%20sophisticated%3B%22Agentic%20AI%22%20systems.%20These%20systems%20are%20designed%20to%20not%20only%3Bgenerate%20text%20or%20images%20but%20also%20to%20reason%2C%20plan%2C%20and%3Bautonomously%20execute%20complex%20workflows.%20This%20shift%20marks%20a%3Bsignificant%20transition%20from%20mere%20chatbots%20to%20AI%20that%20can%3B%22do%22%20and%20orchestrate%20tasks%2C%20becoming%20an%20essential%20operating%3Bsystem%20for%20modern%20businesses.%20April%202026%20has%20seen%3Bunprecedented%20investment%20and%20adoption%2C%20with%20organizations%3Bwidely%20integrating%20generative%20AI%20into%20core%20business%3Bfunctions%20and%20existing%20productivity%20software." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:28 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:59 UTC</sub>
 </p>
 <br/>
 
