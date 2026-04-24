@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%2023%2C%202026%2C%20generative%20AI%20continues%20to%20drive%3Bsignificant%20advancements%2C%20particularly%20in%20scientific%3Bresearch.%20Researchers%20at%20McMaster%20University%20have%20developed%3Ba%20new%20generative%20AI%20model%2C%20SyntheMol-RL%2C%20capable%20of%3Bdrastically%20speeding%20up%20drug%20discovery%2C%20already%20designing%20a%3Bnovel%20antibiotic%20in%20early%20tests.%20This%20breakthrough%3Bhighlights%20AI%27s%20potential%20to%20revolutionize%20the%20search%20for%3Bnew%20antimicrobial%20medicines.%20Concurrently%2C%20April%202026%20has%3Bseen%20a%20rapid%20shift%20towards%20%22Agentic%20AI%2C%22%20where%20models%20move%3Bbeyond%20simple%20responses%20to%20autonomously%20plan%20and%20execute%3Bcomplex%2C%20multi-step%20tasks%20across%20various%20applications.%20This%3Bevolution%20signifies%20generative%20AI%27s%20transition%20from%20a%3Bnovelty%20to%20an%20embedded%20utility%2C%20powering%20new%20levels%20of%3Benterprise%20productivity%20and%20innovation." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%2023%2C%202026%2C%20generative%20AI%20continues%20to%20drive%3Bsignificant%20advancements%2C%20particularly%20in%20scientific%3Bresearch.%20Researchers%20at%20McMaster%20University%20have%20developed%3Ba%20new%20generative%20AI%20model%2C%20SyntheMol-RL%2C%20capable%20of%3Bdrastically%20speeding%20up%20drug%20discovery%2C%20already%20designing%20a%3Bnovel%20antibiotic%20in%20early%20tests.%20This%20breakthrough%3Bhighlights%20AI%27s%20potential%20to%20revolutionize%20the%20search%20for%3Bnew%20antimicrobial%20medicines.%20Concurrently%2C%20April%202026%20has%3Bseen%20a%20rapid%20shift%20towards%20%22Agentic%20AI%2C%22%20where%20models%20move%3Bbeyond%20simple%20responses%20to%20autonomously%20plan%20and%20execute%3Bcomplex%2C%20multi-step%20tasks%20across%20various%20applications.%20This%3Bevolution%20signifies%20generative%20AI%27s%20transition%20from%20a%3Bnovelty%20to%20an%20embedded%20utility%2C%20powering%20new%20levels%20of%3Benterprise%20productivity%20and%20innovation." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=360&lines=As%20of%20April%2023%2C%202026%2C%20generative%20AI%20continues%20to%20drive%3Bsignificant%20advancements%2C%20particularly%20in%20scientific%3Bresearch.%20Researchers%20at%20McMaster%20University%20have%20developed%3Ba%20new%20generative%20AI%20model%2C%20SyntheMol-RL%2C%20capable%20of%3Bdrastically%20speeding%20up%20drug%20discovery%2C%20already%20designing%20a%3Bnovel%20antibiotic%20in%20early%20tests.%20This%20breakthrough%3Bhighlights%20AI%27s%20potential%20to%20revolutionize%20the%20search%20for%3Bnew%20antimicrobial%20medicines.%20Concurrently%2C%20April%202026%20has%3Bseen%20a%20rapid%20shift%20towards%20%22Agentic%20AI%2C%22%20where%20models%20move%3Bbeyond%20simple%20responses%20to%20autonomously%20plan%20and%20execute%3Bcomplex%2C%20multi-step%20tasks%20across%20various%20applications.%20This%3Bevolution%20signifies%20generative%20AI%27s%20transition%20from%20a%3Bnovelty%20to%20an%20embedded%20utility%2C%20powering%20new%20levels%20of%3Benterprise%20productivity%20and%20innovation." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:54 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 11:52 UTC</sub>
 </p>
 <br/>
 
