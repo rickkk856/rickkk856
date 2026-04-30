@@ -25,7 +25,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Wednesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=310&lines=As%20of%20April%2030%2C%202026%2C%20Generative%20AI%20is%20rapidly%20transitioning%3Bbeyond%20simple%20text%20or%20image%20generation%20to%20advanced%20%22Agentic%3BAI%22%20systems.%20These%20new%20models%20are%20designed%20to%20operate%3Bautonomously%2C%20understanding%20complex%20goals%2C%20planning%2C%20and%3Bexecuting%20multi-step%20workflows%20without%20constant%20human%3Bprompting.%20This%20shift%20is%20being%20accompanied%20by%20unprecedented%3Badoption%2C%20with%20the%20Stanford%202026%20AI%20Index%20reporting%20that%3Bgenerative%20AI%20reached%2053%25%20population%20adoption%20within%20three%3Byears%2C%20a%20faster%20rate%20than%20both%20the%20personal%20computer%20and%20the%3Binternet.%20This%20highlights%20a%20significant%20move%20from%3Bexperimental%20use%20to%20deep%20integration%20across%20various%3Bindustries%20and%20daily%20operations." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=310&lines=As%20of%20April%2030%2C%202026%2C%20Generative%20AI%20is%20rapidly%20transitioning%3Bbeyond%20simple%20text%20or%20image%20generation%20to%20advanced%20%22Agentic%3BAI%22%20systems.%20These%20new%20models%20are%20designed%20to%20operate%3Bautonomously%2C%20understanding%20complex%20goals%2C%20planning%2C%20and%3Bexecuting%20multi-step%20workflows%20without%20constant%20human%3Bprompting.%20This%20shift%20is%20being%20accompanied%20by%20unprecedented%3Badoption%2C%20with%20the%20Stanford%202026%20AI%20Index%20reporting%20that%3Bgenerative%20AI%20reached%2053%25%20population%20adoption%20within%20three%3Byears%2C%20a%20faster%20rate%20than%20both%20the%20personal%20computer%20and%20the%3Binternet.%20This%20highlights%20a%20significant%20move%20from%3Bexperimental%20use%20to%20deep%20integration%20across%20various%3Bindustries%20and%20daily%20operations." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=310&lines=As%20of%20April%2030%2C%202026%2C%20Generative%20AI%20is%20rapidly%20transitioning%3Bbeyond%20simple%20text%20or%20image%20generation%20to%20advanced%20%22Agentic%3BAI%22%20systems.%20These%20new%20models%20are%20designed%20to%20operate%3Bautonomously%2C%20understanding%20complex%20goals%2C%20planning%2C%20and%3Bexecuting%20multi-step%20workflows%20without%20constant%20human%3Bprompting.%20This%20shift%20is%20being%20accompanied%20by%20unprecedented%3Badoption%2C%20with%20the%20Stanford%202026%20AI%20Index%20reporting%20that%3Bgenerative%20AI%20reached%2053%25%20population%20adoption%20within%20three%3Byears%2C%20a%20faster%20rate%20than%20both%20the%20personal%20computer%20and%20the%3Binternet.%20This%20highlights%20a%20significant%20move%20from%3Bexperimental%20use%20to%20deep%20integration%20across%20various%3Bindustries%20and%20daily%20operations." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:11 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 12:09 UTC</sub>
 </p>
 <br/>
 
