@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=In%20June%202026%2C%20real%20estate%20agents%20in%20hyper-competitive%3Bmarkets%20like%20Barcelona%20are%20increasingly%20using%20generative%20AI%3Bto%20%22pimp%20up%22%20property%20listings.%20Agents%20are%20legally%20utilizing%3BAI%20software%20to%20digitally%20stage%20empty%20flats%2C%20render%20fully%3Brenovated%20mock-ups%20of%20dilapidated%20apartments%2C%20and%20even%20erase%3Bvirtual" media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=In%20June%202026%2C%20real%20estate%20agents%20in%20hyper-competitive%3Bmarkets%20like%20Barcelona%20are%20increasingly%20using%20generative%20AI%3Bto%20%22pimp%20up%22%20property%20listings.%20Agents%20are%20legally%20utilizing%3BAI%20software%20to%20digitally%20stage%20empty%20flats%2C%20render%20fully%3Brenovated%20mock-ups%20of%20dilapidated%20apartments%2C%20and%20even%20erase%3Bvirtual" alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by OpenRouter (google/gemini-3.5-flash-20260519) • Updated: 13:33 UTC</sub>
+  <sub>🤖 Powered by OpenRouter (google/gemini-3.5-flash-20260519) • Updated: 13:44 UTC</sub>
 </p>
 <br/>
 
