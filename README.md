@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20June%202026%2C%20generative%20AI%20has%20evolved%20from%20a%20conceptual%3Bdrafting%20assistant%20into%20a%20regulatory%20and%20design%20powerhouse%3Bfor%20the%20architecture%20and%20real%20estate%20industries.%20Real%20estate%3Bdevelopers%20are%20now%20widely" alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by System Fallback (No Active Model) • Updated: 13:30 UTC</sub>
+  <sub>🤖 Powered by OpenRouter (google/gemini-3.5-flash-20260519) • Updated: 13:33 UTC</sub>
 </p>
 <br/>
 
