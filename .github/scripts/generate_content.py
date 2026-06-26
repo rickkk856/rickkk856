@@ -1,3 +1,4 @@
+# .github\scripts\generate_content.py
 import os
 import requests
 from datetime import datetime
@@ -6,8 +7,9 @@ import textwrap
 import time
 
 # --- Configuration ---
-GOOGLE_AI_STUDIO_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+GOOGLE_AI_STUDIO_API_URL = os.getenv("GOOGLE_AI_STUDIO_API_URL", 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent')
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+MODEL_FRIENDLY_NAME = os.getenv("MODEL_FRIENDLY_NAME", 'Google Gemini 3.5 Flash')
 MAX_RETRIES = 3
 RETRY_DELAY = 3  # seconds
 
@@ -29,8 +31,9 @@ def get_ai_quote():
     now = datetime.now()
     formatted_date = now.strftime("%d of %B %Y")  
 
-    prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
+    prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI and Real State and/or Architecture Industry. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
 
+    # Payload atualizado de acordo com as diretrizes do Gemini 3.5 Flash
     data = {
         "tools": [{"googleSearch": {}}],
         "contents": [
@@ -40,10 +43,10 @@ def get_ai_quote():
             }
         ],
         "generationConfig": {
-            "temperature": 0.7,
-            "maxOutputTokens": 2048,  # Increased to account for thinking tokens
-            "topP": 0.95,
-            "topK": 40
+            "maxOutputTokens": 2048,  # Mantemos alto para acomodar os tokens de pensamento (thinking)
+            "thinkingConfig": {
+                "thinkingLevel": "minimal"  # Nível mínimo de raciocínio para manter a chamada rápida e barata
+            }
         }
     }
 
@@ -209,7 +212,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('</p>')
 
     html_parts.append('<p align="center">')
-    html_parts.append(f'  <sub>🤖 Powered by Google Gemini 2.5 • Updated: {current_time}</sub>')
+    html_parts.append(f'  <sub>🤖 Powered by {MODEL_FRIENDLY_NAME} • Updated: {current_time}</sub>')
     html_parts.append('</p>')
     html_parts.append('<br/>')
 
@@ -219,7 +222,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('### 🚀 Core Technologies')
     html_parts.append('')
     html_parts.append('<p align="center">')
-    html_parts.append('  <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />')
+    html_parts.append('  <img src="https://skills.syvixor.com/api/icons?perline=6&i=python,anaconda,docker,jupyter,pypi,uvicorn,amazonwebservices,googlecloud,azure,github,githubactions,git,tensorflow,pytorch,opencv,fastapi,swagger,openapi,postgresql,grafana,prometheus,tempo,javascript,typescript,reactjs,vite,vuejs,html,css,figma,adobephotoshop,autocad,wordpress,microsoftpowerautomate,microsoftvisio,powerbi,claudeai,googlegemini,chatgpt,deepseek,ollama,pydantic" />')
     html_parts.append('</p>')
     html_parts.append('')
     html_parts.append('### 🛠️ Tech Stack')
@@ -231,7 +234,7 @@ def generate_profile_html(ai_quote):
     html_parts.append('    </td>')
     html_parts.append('    <td align="center" width="25%">')
     html_parts.append('      <img src="https://img.shields.io/badge/GenAI%20%26%20LLM-0288D1?style=for-the-badge&logo=openai&logoColor=white"/>')
-    html_parts.append('      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents</b></sub>')
+    html_parts.append('      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents • Agno</b></sub>')
     html_parts.append('    </td>')
     html_parts.append('    <td align="center" width="25%">')
     html_parts.append('      <img src="https://img.shields.io/badge/Cloud%20%26%20DevOps-00ACC1?style=for-the-badge&logo=amazonaws&logoColor=white"/>')
