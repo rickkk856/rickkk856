@@ -8,37 +8,115 @@ import time
 
 # --- Configuration ---
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-MAX_RETRIES = 3
 RETRY_DELAY = 3  # seconds
 
 # --- Static Profile Info ---
 RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
 
-def get_api_url(model_id):
-    """Generates the API URL for a given model ID, respecting custom proxy settings if present."""
+def get_google_api_url(model_id):
+    """Generates the Google AI Studio API URL for a given model ID."""
     base_url = "https://generativelanguage.googleapis.com/v1beta"
     custom_url = os.getenv("GOOGLE_AI_STUDIO_API_URL")
     
     if custom_url:
-        # Se você configurou uma URL customizada (ex: Cloudflare ou proxy próprio),
-        # substituímos dinamicamente o modelo para manter a estrutura do proxy.
-        for model in ["gemini-3.5-flash", "gemini-2.5-flash"]:
+        for model in ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3.1-pro-preview"]:
             if model in custom_url:
                 return custom_url.replace(model, model_id)
     return f"{base_url}/models/{model_id}:generateContent"
 
-def get_ai_quote():
-    """Fetches a short quote about Generative AI with fallback models to handle quota issues."""
-    if not GOOGLE_API_KEY:
-        print("Error: GOOGLE_API_KEY environment variable not set.")
-        return "AI is constantly evolving, bringing new possibilities.", "Default Fallback"
-
+def get_quote_google_ai_studio(prompt, model_id, model_name):
+    """Makes a direct call to Google AI Studio."""
     headers = {
         "Content-Type": "application/json",
         "x-goog-api-key": GOOGLE_API_KEY
     }
+    api_url = get_google_api_url(model_id)
 
+    data = {
+        "tools": [{"googleSearch": {}}],
+        "contents": [
+            {
+                "role": "user",
+                "parts": [{"text": prompt}]
+            }
+        ],
+        "generationConfig": {
+            "maxOutputTokens": 2048,
+            "thinkingConfig": {
+                "thinkingLevel": "minimal"
+            }
+        }
+    }
+
+    print(f"Calling Google AI Studio for {model_name}...")
+    response = requests.post(api_url, headers=headers, json=data, timeout=120)
+    
+    if response.status_code == 429:
+        raise requests.exceptions.RequestException("Quota exceeded (429)")
+        
+    response.raise_for_status()
+    response_data = response.json()
+    
+    if 'candidates' not in response_data or not response_data['candidates']:
+        raise ValueError("No candidates returned")
+        
+    first_candidate = response_data['candidates'][0]
+    finish_reason = first_candidate.get('finishReason', 'UNKNOWN')
+    
+    if finish_reason != 'STOP' and finish_reason in ['SAFETY', 'RECITATION', 'OTHER']:
+        raise ValueError(f"Blocked due to: {finish_reason}")
+    
+    if 'content' not in first_candidate or 'parts' not in first_candidate['content']:
+        raise ValueError("Malformed response")
+        
+    for part in first_candidate['content']['parts']:
+        if 'text' in part and part['text'].strip():
+            return part['text'].strip(), model_name
+            
+    raise ValueError("No text found in parts")
+
+def get_quote_openrouter(prompt, model_id):
+    """Makes a call to the OpenRouter API."""
+    open_router_key = os.getenv("OPEN_ROUTER_API_KEY")
+    url = "https://openrouter.ai/api/v1/chat/completions"
+    
+    headers = {
+        "Authorization": f"Bearer {open_router_key}",
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://github.com/rickkk856",
+        "X-Title": "GitHub Readme Updater"
+    }
+    
+    data = {
+        "model": model_id,
+        "messages": [
+            {"role": "user", "content": prompt}
+        ],
+        "max_tokens": 1000
+    }
+    
+    print(f"Calling OpenRouter for model {model_id}...")
+    response = requests.post(url, headers=headers, json=data, timeout=60)
+    
+    if response.status_code == 429:
+        raise requests.exceptions.RequestException("OpenRouter rate-limited (429)")
+        
+    response.raise_for_status()
+    res_json = response.json()
+    
+    if 'choices' in res_json and len(res_json['choices']) > 0:
+        choice = res_json['choices'][0]
+        text = choice.get('message', {}).get('content', '').strip()
+        if text:
+            resolved_model = res_json.get('model', model_id)
+            friendly_name = f"OpenRouter ({resolved_model})"
+            return text, friendly_name
+            
+    raise ValueError("Invalid response structure from OpenRouter")
+
+def get_ai_quote():
+    """Fetches a short quote about Generative AI with multi-platform fallback."""
     now = datetime.now()
     formatted_date = now.strftime("%d of %B %Y")  
     prompt = (
@@ -47,74 +125,46 @@ def get_ai_quote():
         f"Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
     )
 
-    # Lista de modelos prioritários ativos e não obsoletos
-    models_fallback = [
-        {"id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
-        {"id": "gemini-3.1-flash-lite", "name": "Google Gemini 3.1 Flash-Lite"},
-        {"id": "gemini-3.1-pro-preview", "name": "Google Gemini 3.1 Pro Preview"}
+    # Fila de prioridade atualizada sem referências ao Gemini 2.5
+    strategies = [
+        # 1. Direct Google AI Studio
+        {"type": "google_ai_studio", "model_id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
+        {"type": "google_ai_studio", "model_id": "gemini-3.1-flash-lite", "name": "Google Gemini 3.1 Flash-Lite"},
+        {"type": "google_ai_studio", "model_id": "gemini-3.1-pro-preview", "name": "Google Gemini 3.1 Pro Preview"},
+        
+        # 2. OpenRouter (Gemini 3.5 / 3.1)
+        {"type": "openrouter", "model_id": "google/gemini-3.5-flash", "name": "OpenRouter (Gemini 3.5 Flash)"},
+        {"type": "openrouter", "model_id": "google/gemini-3.1-flash-lite", "name": "OpenRouter (Gemini 3.1 Flash-Lite)"},
+        {"type": "openrouter", "model_id": "google/gemini-3.1-pro-preview", "name": "OpenRouter (Gemini 3.1 Pro Preview)"},
+        
+        # 3. OpenRouter Free Router (Fallback dinâmico geral para qualquer modelo gratuito)
+        {"type": "openrouter", "model_id": "openrouter/free", "name": "OpenRouter Free Model Router"}
     ]
 
-    for model_info in models_fallback:
-        model_id = model_info["id"]
-        model_name = model_info["name"]
-        api_url = get_api_url(model_id)
-
-        data = {
-            "tools": [{"googleSearch": {}}],
-            "contents": [
-                {
-                    "role": "user",
-                    "parts": [{"text": prompt}]
-                }
-            ],
-            "generationConfig": {
-                "maxOutputTokens": 2048,
-                "thinkingConfig": {
-                    "thinkingLevel": "minimal"
-                }
-            }
-        }
-
-        print(f"Attempting to generate quote using {model_name} ({model_id})...")
+    for strategy in strategies:
         try:
-            response = requests.post(api_url, headers=headers, json=data, timeout=120)
-            
-            # Se recebermos 429, forçamos a subida de exceção para pular para o próximo modelo
-            if response.status_code == 429:
-                print(f"⚠️ Model {model_id} is rate-limited / out of quota (429).")
-                raise requests.exceptions.RequestException("Quota exceeded (429)")
+            if strategy["type"] == "google_ai_studio":
+                if not GOOGLE_API_KEY:
+                    print(f"Skipping strategy {strategy['name']} (GOOGLE_API_KEY not set)")
+                    continue
+                quote, name = get_quote_google_ai_studio(prompt, strategy["model_id"], strategy["name"])
+                return quote, name
                 
-            response.raise_for_status()
-            response_data = response.json()
-            
-            # Validação do retorno
-            if 'candidates' not in response_data or not response_data['candidates']:
-                raise ValueError("No candidates returned")
-                
-            first_candidate = response_data['candidates'][0]
-            finish_reason = first_candidate.get('finishReason', 'UNKNOWN')
-            
-            if finish_reason != 'STOP' and finish_reason in ['SAFETY', 'RECITATION', 'OTHER']:
-                raise ValueError(f"Response blocked due to: {finish_reason}")
-            
-            if 'content' not in first_candidate or 'parts' not in first_candidate['content']:
-                raise ValueError("Malformed response structure")
-                
-            for part in first_candidate['content']['parts']:
-                if 'text' in part and part['text'].strip():
-                    extracted_text = part['text'].strip()
-                    print(f"✅ Successfully generated quote using {model_name}!")
-                    return extracted_text, model_name
-                    
-            raise ValueError("No valid text found in parts")
+            elif strategy["type"] == "openrouter":
+                open_router_key = os.getenv("OPEN_ROUTER_API_KEY")
+                if not open_router_key:
+                    print(f"Skipping strategy {strategy['name']} (OPEN_ROUTER_API_KEY not set)")
+                    continue
+                quote, name = get_quote_openrouter(prompt, strategy["model_id"])
+                return quote, name
 
         except Exception as e:
-            print(f"❌ Failed with model {model_id}: {e}")
-            print(f"Waiting {RETRY_DELAY} seconds before trying next fallback model...")
+            print(f"❌ Strategy {strategy['name']} failed: {e}")
+            print(f"Waiting {RETRY_DELAY} seconds before trying next fallback...")
             time.sleep(RETRY_DELAY)
 
-    # Se todos os modelos falharem
-    print("All fallback models exhausted. Using default fallback quote.")
+    # Caso tudo falhe
+    print("All fallback options exhausted. Using system default quote.")
     return (
         "Generative AI continues to transform industries with breakthrough innovations.",
         "System Fallback (No Active Model)"
@@ -186,7 +236,6 @@ def generate_profile_html(ai_quote, model_name):
     html_parts.append('</p>')
 
     html_parts.append('<p align="center">')
-    # O rodapé agora reflete dinamicamente o modelo que gerou o texto
     html_parts.append(f'  <sub>🤖 Powered by {model_name} • Updated: {current_time}</sub>')
     html_parts.append('</p>')
     html_parts.append('<br/>')
