@@ -10,6 +10,17 @@ import time
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 RETRY_DELAY = 3  # seconds
 
+# --- System Prompt ---
+# Este prompt define a personalidade e o foco do assistente para ambas as APIs
+SYSTEM_PROMPT = (
+    "You are an expert tech journalist and copywriter specializing in artificial intelligence, "
+    "computational architectural design, and modern real estate technologies. "
+    "Your objective is to provide interesting, highly factual, and concise updates or breakthroughs "
+    "about Generative AI applied to the real estate and architecture sectors. "
+    "Do not include any greeting, introduction, conversational filler, or self-reference. "
+    "Focus purely on delivering high-impact, verified information."
+)
+
 # --- Static Profile Info ---
 RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
@@ -18,19 +29,24 @@ def get_google_api_url(model_id):
     """Generates the standard Google AI Studio API URL for a given model ID."""
     return f"https://generativelanguage.googleapis.com/v1beta/models/{model_id}:generateContent"
 
-def get_quote_google_ai_studio(prompt, model_id, model_name):
-    """Makes a direct call to Google AI Studio with Google Search Grounding enabled."""
+def get_quote_google_ai_studio(prompt, system_prompt, model_id, model_name):
+    """Makes a direct call to Google AI Studio with Google Search Grounding and System Prompt enabled."""
     headers = {
         "Content-Type": "application/json",
         "x-goog-api-key": GOOGLE_API_KEY
     }
     api_url = get_google_api_url(model_id)
 
-    # Payload corrigido com a chave REST "google_search" em snake_case
+    # Payload contendo a chave "systemInstruction" para o Google AI Studio
     data = {
+        "systemInstruction": {
+            "parts": [
+                {"text": system_prompt}
+            ]
+        },
         "tools": [
             {
-                "google_search": {}  # <-- Ativa a pesquisa nativa do Google (Grounding)
+                "google_search": {}  # Ativa o Grounding nativo
             }
         ],
         "contents": [
@@ -74,8 +90,8 @@ def get_quote_google_ai_studio(prompt, model_id, model_name):
             
     raise ValueError("No text found in parts")
 
-def get_quote_openrouter(prompt, model_id):
-    """Makes a call to the OpenRouter API with Web Search Tool enabled."""
+def get_quote_openrouter(prompt, system_prompt, model_id):
+    """Makes a call to the OpenRouter API with Web Search Tool and System Prompt enabled."""
     open_router_key = os.getenv("OPEN_ROUTER_API_KEY")
     url = "https://openrouter.ai/api/v1/chat/completions"
     
@@ -86,18 +102,19 @@ def get_quote_openrouter(prompt, model_id):
         "X-Title": "GitHub Readme Updater"
     }
     
-    # Payload configurado com a ferramenta de busca unificada do OpenRouter
+    # Payload configurado com a mensagem de sistema na lista de "messages" para o OpenRouter
     data = {
         "model": model_id,
         "messages": [
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt}
         ],
         "tools": [
             {
-                "type": "openrouter:web_search"  # <-- Dá ao modelo acesso à internet
+                "type": "openrouter:web_search"  # Ativa a pesquisa na web no OpenRouter
             }
         ],
-        "max_tokens": 1000
+        "max_tokens": 2048
     }
     
     print(f"Calling OpenRouter for model {model_id}...")
@@ -151,7 +168,7 @@ def get_ai_quote():
                 if not GOOGLE_API_KEY:
                     print(f"Skipping strategy {strategy['name']} (GOOGLE_API_KEY not set)")
                     continue
-                quote, name = get_quote_google_ai_studio(prompt, strategy["model_id"], strategy["name"])
+                quote, name = get_quote_google_ai_studio(prompt, SYSTEM_PROMPT, strategy["model_id"], strategy["name"])
                 return quote, name
                 
             elif strategy["type"] == "openrouter":
@@ -159,7 +176,7 @@ def get_ai_quote():
                 if not open_router_key:
                     print(f"Skipping strategy {strategy['name']} (OPEN_ROUTER_API_KEY not set)")
                     continue
-                quote, name = get_quote_openrouter(prompt, strategy["model_id"])
+                quote, name = get_quote_openrouter(prompt, SYSTEM_PROMPT, strategy["model_id"])
                 return quote, name
 
         except Exception as e:
@@ -203,7 +220,7 @@ def generate_profile_html(ai_quote, model_name):
     html_parts.append('    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" media="(prefers-color-scheme: dark)"/>')
     html_parts.append('    <!-- Light Mode -->')
     html_parts.append('    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=000000&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" media="(prefers-color-scheme: light)"/>')
-    html_parts.append('    <!-- Fallback -->')
+    # Fallback
     html_parts.append('    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" alt="Typing SVG"/>')
     html_parts.append('  </picture>')
     html_parts.append('</p>')
@@ -233,8 +250,8 @@ def generate_profile_html(ai_quote, model_name):
     html_parts.append('    <!-- Dark Mode -->')
     html_parts.append(f'    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: dark)"/>')
     html_parts.append('    <!-- Light Mode -->')
-    html_parts.append('    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>')
-    html_parts.append('    <!-- Fallback -->')
+    html_parts.append(f'    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>')
+    # Fallback
     html_parts.append(f'    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote"/>')
     html_parts.append('  </picture>')
     html_parts.append('</p>')
@@ -262,6 +279,7 @@ def generate_profile_html(ai_quote, model_name):
     html_parts.append('    </td>')
     html_parts.append('    <td align="center" width="25%">')
     html_parts.append('      <img src="https://img.shields.io/badge/GenAI%20%26%20LLM-0288D1?style=for-the-badge&logo=openai&logoColor=white"/>')
+    # Atualizado com n8n, Agno, etc.
     html_parts.append('      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents • Agno</b></sub>')
     html_parts.append('    </td>')
     html_parts.append('    <td align="center" width="25%">')
