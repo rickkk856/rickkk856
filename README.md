@@ -36,15 +36,15 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=410&lines=As%20of%20June%2026%2C%202026%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%2C%20moving%20beyond%20basic%20content%20creation%20to%20more%3Bcomplex%2C%20autonomous%20applications.%20Stanford%20researchers%3Brecently%20unveiled%20%22BurgerAI%2C%22%20a%20generative%20AI%20tool%20capable%3Bof%20designing%20novel%20burger%20recipes%20optimized%20for%20taste%2C%3Bhealth%2C%20and%20sustainability%2C%20showcasing%20AI%27s%20shift%20from%3Bpredictive%20to%20inventive%20capabilities.%20Meanwhile%2C%20Google%3Blaunched%20Gemini%202.5%20Pro%20with%20Deep%20Think%2C%20touted%20as%20their%3Bmost%20capable%20model%20yet%2C%20featuring%20a%202%20million%20token%20context%3Bwindow%20and%20native%20multimodal%20understanding.%20In%20other%3Bdevelopments%20this%20month%2C%20ChatGPT%20upgraded%20its%20GPT-5.5%3BInstant%2C%20enhancing%20conversational%20quality%20and%20context%3Bretention%20for%20complex%20tasks.%20However%2C%20concerns%20about%20bias%3Bpersist%2C%20with%20UN%20News%20reporting%20that%20discriminatory%3Balgorithms%20in%20generative%20AI%20continue%20to%20reinforce%20societal%3Binequalities." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=410&lines=As%20of%20June%2026%2C%202026%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%2C%20moving%20beyond%20basic%20content%20creation%20to%20more%3Bcomplex%2C%20autonomous%20applications.%20Stanford%20researchers%3Brecently%20unveiled%20%22BurgerAI%2C%22%20a%20generative%20AI%20tool%20capable%3Bof%20designing%20novel%20burger%20recipes%20optimized%20for%20taste%2C%3Bhealth%2C%20and%20sustainability%2C%20showcasing%20AI%27s%20shift%20from%3Bpredictive%20to%20inventive%20capabilities.%20Meanwhile%2C%20Google%3Blaunched%20Gemini%202.5%20Pro%20with%20Deep%20Think%2C%20touted%20as%20their%3Bmost%20capable%20model%20yet%2C%20featuring%20a%202%20million%20token%20context%3Bwindow%20and%20native%20multimodal%20understanding.%20In%20other%3Bdevelopments%20this%20month%2C%20ChatGPT%20upgraded%20its%20GPT-5.5%3BInstant%2C%20enhancing%20conversational%20quality%20and%20context%3Bretention%20for%20complex%20tasks.%20However%2C%20concerns%20about%20bias%3Bpersist%2C%20with%20UN%20News%20reporting%20that%20discriminatory%3Balgorithms%20in%20generative%20AI%20continue%20to%20reinforce%20societal%3Binequalities." media="(prefers-color-scheme: light)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." media="(prefers-color-scheme: light)"/>
     <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=410&lines=As%20of%20June%2026%2C%202026%2C%20Generative%20AI%20continues%20to%20advance%3Brapidly%2C%20moving%20beyond%20basic%20content%20creation%20to%20more%3Bcomplex%2C%20autonomous%20applications.%20Stanford%20researchers%3Brecently%20unveiled%20%22BurgerAI%2C%22%20a%20generative%20AI%20tool%20capable%3Bof%20designing%20novel%20burger%20recipes%20optimized%20for%20taste%2C%3Bhealth%2C%20and%20sustainability%2C%20showcasing%20AI%27s%20shift%20from%3Bpredictive%20to%20inventive%20capabilities.%20Meanwhile%2C%20Google%3Blaunched%20Gemini%202.5%20Pro%20with%20Deep%20Think%2C%20touted%20as%20their%3Bmost%20capable%20model%20yet%2C%20featuring%20a%202%20million%20token%20context%3Bwindow%20and%20native%20multimodal%20understanding.%20In%20other%3Bdevelopments%20this%20month%2C%20ChatGPT%20upgraded%20its%20GPT-5.5%3BInstant%2C%20enhancing%20conversational%20quality%20and%20context%3Bretention%20for%20complex%20tasks.%20However%2C%20concerns%20about%20bias%3Bpersist%2C%20with%20UN%20News%20reporting%20that%20discriminatory%3Balgorithms%20in%20generative%20AI%20continue%20to%20reinforce%20societal%3Binequalities." alt="AI Quote"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=100&lines=Generative%20AI%20continues%20to%20transform%20industries%20with%3Bbreakthrough%20innovations." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 • Updated: 13:03 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 3.5 Flash • Updated: 13:06 UTC</sub>
 </p>
 <br/>
 
@@ -52,7 +52,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 ### 🚀 Core Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,anaconda,tensorflow,pytorch,opencv,aws,gcp,react,typescript,nodejs,docker,github,fastapi,html,selenium,figma,sketchup,autocad&theme=dark&perline=6" />
+  <img src="https://skills.syvixor.com/api/icons?perline=6&i=python,anaconda,docker,jupyter,pypi,uvicorn,amazonwebservices,googlecloud,azure,github,githubactions,git,tensorflow,pytorch,opencv,fastapi,swagger,openapi,postgresql,grafana,prometheus,tempo,javascript,typescript,reactjs,vite,vuejs,html,css,figma,adobephotoshop,autocad,wordpress,microsoftpowerautomate,microsoftvisio,powerbi,claudeai,googlegemini,chatgpt,deepseek,ollama,pydantic" />
 </p>
 
 ### 🛠️ Tech Stack
@@ -64,7 +64,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
     </td>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/GenAI%20%26%20LLM-0288D1?style=for-the-badge&logo=openai&logoColor=white"/>
-      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents</b></sub>
+      <br/><sub><b>LangChain • Google ADK</b><br/><b>Amazon Bedrock • n8n</b><br/><b>Strands-Agents • Agno</b></sub>
     </td>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/Cloud%20%26%20DevOps-00ACC1?style=for-the-badge&logo=amazonaws&logoColor=white"/>
