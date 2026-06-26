@@ -19,15 +19,20 @@ def get_google_api_url(model_id):
     return f"https://generativelanguage.googleapis.com/v1beta/models/{model_id}:generateContent"
 
 def get_quote_google_ai_studio(prompt, model_id, model_name):
-    """Makes a direct call to Google AI Studio."""
+    """Makes a direct call to Google AI Studio with Google Search Grounding enabled."""
     headers = {
         "Content-Type": "application/json",
         "x-goog-api-key": GOOGLE_API_KEY
     }
     api_url = get_google_api_url(model_id)
 
+    # Payload corrigido com a chave REST "google_search" em snake_case
     data = {
-        "tools": [{"googleSearch": {}}],
+        "tools": [
+            {
+                "google_search": {}  # <-- Ativa a pesquisa nativa do Google (Grounding)
+            }
+        ],
         "contents": [
             {
                 "role": "user",
@@ -70,7 +75,7 @@ def get_quote_google_ai_studio(prompt, model_id, model_name):
     raise ValueError("No text found in parts")
 
 def get_quote_openrouter(prompt, model_id):
-    """Makes a call to the OpenRouter API."""
+    """Makes a call to the OpenRouter API with Web Search Tool enabled."""
     open_router_key = os.getenv("OPEN_ROUTER_API_KEY")
     url = "https://openrouter.ai/api/v1/chat/completions"
     
@@ -81,10 +86,16 @@ def get_quote_openrouter(prompt, model_id):
         "X-Title": "GitHub Readme Updater"
     }
     
+    # Payload configurado com a ferramenta de busca unificada do OpenRouter
     data = {
         "model": model_id,
         "messages": [
             {"role": "user", "content": prompt}
+        ],
+        "tools": [
+            {
+                "type": "openrouter:web_search"  # <-- Dá ao modelo acesso à internet
+            }
         ],
         "max_tokens": 1000
     }
@@ -115,22 +126,22 @@ def get_ai_quote():
     prompt = (
         f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent "
         f"update or fact about Generative AI and Real Estate and/or Architecture Industry. "
-        f"Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
+        f"Always search on web before bringing the information and mention today's date/month or year, no conversational filler."
     )
 
     # Fila de prioridade de modelos 3.5 e 3.1
     strategies = [
-        # 1. Direct Google AI Studio
+        # 1. Direct Google AI Studio (Nativo)
         {"type": "google_ai_studio", "model_id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
         {"type": "google_ai_studio", "model_id": "gemini-3.1-flash-lite", "name": "Google Gemini 3.1 Flash-Lite"},
         {"type": "google_ai_studio", "model_id": "gemini-3.1-pro-preview", "name": "Google Gemini 3.1 Pro Preview"},
         
-        # 2. OpenRouter (Gemini 3.5 / 3.1)
+        # 2. OpenRouter (Com a ferramenta de pesquisa do OpenRouter)
         {"type": "openrouter", "model_id": "google/gemini-3.5-flash", "name": "OpenRouter (Gemini 3.5 Flash)"},
         {"type": "openrouter", "model_id": "google/gemini-3.1-flash-lite", "name": "OpenRouter (Gemini 3.1 Flash-Lite)"},
         {"type": "openrouter", "model_id": "google/gemini-3.1-pro-preview", "name": "OpenRouter (Gemini 3.1 Pro Preview)"},
         
-        # 3. OpenRouter Free Router (Fallback dinâmico para qualquer modelo gratuito)
+        # 3. OpenRouter Free Router (Qualquer modelo gratuito com pesquisa ativa)
         {"type": "openrouter", "model_id": "openrouter/free", "name": "OpenRouter Free Model Router"}
     ]
 
@@ -222,7 +233,7 @@ def generate_profile_html(ai_quote, model_name):
     html_parts.append('    <!-- Dark Mode -->')
     html_parts.append(f'    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: dark)"/>')
     html_parts.append('    <!-- Light Mode -->')
-    html_parts.append(f'    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>')
+    html_parts.append('    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>')
     html_parts.append('    <!-- Fallback -->')
     html_parts.append(f'    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" alt="AI Quote"/>')
     html_parts.append('  </picture>')
