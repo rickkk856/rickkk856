@@ -7,9 +7,7 @@ import textwrap
 import time
 
 # --- Configuration ---
-GOOGLE_AI_STUDIO_API_URL = os.getenv("GOOGLE_AI_STUDIO_API_URL", 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent')
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-MODEL_FRIENDLY_NAME = os.getenv("MODEL_FRIENDLY_NAME", 'Google Gemini 3.5 Flash')
 MAX_RETRIES = 3
 RETRY_DELAY = 3  # seconds
 
@@ -17,11 +15,24 @@ RETRY_DELAY = 3  # seconds
 RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
 
+def get_api_url(model_id):
+    """Generates the API URL for a given model ID, respecting custom proxy settings if present."""
+    base_url = "https://generativelanguage.googleapis.com/v1beta"
+    custom_url = os.getenv("GOOGLE_AI_STUDIO_API_URL")
+    
+    if custom_url:
+        # Se você configurou uma URL customizada (ex: Cloudflare ou proxy próprio),
+        # substituímos dinamicamente o modelo para manter a estrutura do proxy.
+        for model in ["gemini-3.5-flash", "gemini-2.5-flash"]:
+            if model in custom_url:
+                return custom_url.replace(model, model_id)
+    return f"{base_url}/models/{model_id}:generateContent"
+
 def get_ai_quote():
-    """Fetches a short quote about Generative AI from Google AI Studio with retry logic."""
+    """Fetches a short quote about Generative AI with fallback models to handle quota issues."""
     if not GOOGLE_API_KEY:
         print("Error: GOOGLE_API_KEY environment variable not set.")
-        return "AI is constantly evolving, bringing new possibilities."
+        return "AI is constantly evolving, bringing new possibilities.", "Default Fallback"
 
     headers = {
         "Content-Type": "application/json",
@@ -30,123 +41,86 @@ def get_ai_quote():
 
     now = datetime.now()
     formatted_date = now.strftime("%d of %B %Y")  
+    prompt = (
+        f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent "
+        f"update or fact about Generative AI and Real Estate and/or Architecture Industry. "
+        f"Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
+    )
 
-    prompt = f"Hi, Today is {formatted_date}. Please generate a very short, interesting, and recent update or fact about Generative AI and Real State and/or Architecture Industry. Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
+    # Lista de modelos prioritários ativos e não obsoletos
+    models_fallback = [
+        {"id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
+        {"id": "gemini-3.1-flash-lite", "name": "Google Gemini 3.1 Flash-Lite"},
+        {"id": "gemini-3.1-pro-preview", "name": "Google Gemini 3.1 Pro Preview"}
+    ]
 
-    # Payload atualizado de acordo com as diretrizes do Gemini 3.5 Flash
-    data = {
-        "tools": [{"googleSearch": {}}],
-        "contents": [
-            {
-                "role": "user",
-                "parts": [{"text": prompt}]
-            }
-        ],
-        "generationConfig": {
-            "maxOutputTokens": 2048,  # Mantemos alto para acomodar os tokens de pensamento (thinking)
-            "thinkingConfig": {
-                "thinkingLevel": "minimal"  # Nível mínimo de raciocínio para manter a chamada rápida e barata
+    for model_info in models_fallback:
+        model_id = model_info["id"]
+        model_name = model_info["name"]
+        api_url = get_api_url(model_id)
+
+        data = {
+            "tools": [{"googleSearch": {}}],
+            "contents": [
+                {
+                    "role": "user",
+                    "parts": [{"text": prompt}]
+                }
+            ],
+            "generationConfig": {
+                "maxOutputTokens": 2048,
+                "thinkingConfig": {
+                    "thinkingLevel": "minimal"
+                }
             }
         }
-    }
 
-    for attempt in range(MAX_RETRIES):
+        print(f"Attempting to generate quote using {model_name} ({model_id})...")
         try:
-            print(f"Attempt {attempt + 1}/{MAX_RETRIES}: Calling Google AI Studio API...")
-            response = requests.post(GOOGLE_AI_STUDIO_API_URL, headers=headers, json=data, timeout=120)
+            response = requests.post(api_url, headers=headers, json=data, timeout=120)
+            
+            # Se recebermos 429, forçamos a subida de exceção para pular para o próximo modelo
+            if response.status_code == 429:
+                print(f"⚠️ Model {model_id} is rate-limited / out of quota (429).")
+                raise requests.exceptions.RequestException("Quota exceeded (429)")
+                
             response.raise_for_status()
             response_data = response.json()
             
-            # Debug: Print full response
-            print(f"Debug: API Response received (attempt {attempt + 1})")
-            
-            # Check if response has candidates
+            # Validação do retorno
             if 'candidates' not in response_data or not response_data['candidates']:
-                print(f"Warning: No candidates in response (attempt {attempt + 1})")
-                if attempt < MAX_RETRIES - 1:
-                    time.sleep(RETRY_DELAY)
-                    continue
-                return "Generative AI continues to push creative boundaries."
-            
+                raise ValueError("No candidates returned")
+                
             first_candidate = response_data['candidates'][0]
-            
-            # Check finish reason for issues
             finish_reason = first_candidate.get('finishReason', 'UNKNOWN')
-            print(f"Finish reason: {finish_reason}")
             
-            if finish_reason != 'STOP':
-                print(f"Warning: Unusual finish reason '{finish_reason}' (attempt {attempt + 1})")
-                if finish_reason in ['SAFETY', 'RECITATION', 'OTHER']:
-                    print(f"Response blocked due to: {finish_reason}")
-                    if attempt < MAX_RETRIES - 1:
-                        time.sleep(RETRY_DELAY)
-                        continue
+            if finish_reason != 'STOP' and finish_reason in ['SAFETY', 'RECITATION', 'OTHER']:
+                raise ValueError(f"Response blocked due to: {finish_reason}")
             
-            # Check for content and parts
-            if 'content' not in first_candidate:
-                print(f"Warning: No 'content' in candidate (attempt {attempt + 1})")
-                if attempt < MAX_RETRIES - 1:
-                    time.sleep(RETRY_DELAY)
-                    continue
-                return "AI advancements are accelerating innovation globally."
-            
-            content = first_candidate['content']
-            
-            if 'parts' not in content or not content['parts']:
-                print(f"Warning: No 'parts' in content (attempt {attempt + 1})")
-                print(f"Content keys: {content.keys()}")
+            if 'content' not in first_candidate or 'parts' not in first_candidate['content']:
+                raise ValueError("Malformed response structure")
                 
-                # Check usage metadata for clues
-                if 'usageMetadata' in response_data:
-                    usage = response_data['usageMetadata']
-                    print(f"Token usage - Prompt: {usage.get('promptTokenCount')}, "
-                          f"Candidates: {usage.get('candidatesTokenCount')}, "
-                          f"Thoughts: {usage.get('thoughtsTokenCount', 0)}")
-                
-                if attempt < MAX_RETRIES - 1:
-                    print(f"Retrying in {RETRY_DELAY} seconds...")
-                    time.sleep(RETRY_DELAY)
-                    continue
-                return "AI is a fascinating field with continuous breakthroughs."
-            
-            # Extract text from parts
-            for part in content['parts']:
+            for part in first_candidate['content']['parts']:
                 if 'text' in part and part['text'].strip():
                     extracted_text = part['text'].strip()
-                    print(f"✅ Successfully extracted AI quote ({len(extracted_text)} chars)")
-                    return extracted_text
-            
-            print(f"Warning: No text found in parts (attempt {attempt + 1})")
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(RETRY_DELAY)
-                continue
+                    print(f"✅ Successfully generated quote using {model_name}!")
+                    return extracted_text, model_name
+                    
+            raise ValueError("No valid text found in parts")
 
-        except requests.exceptions.Timeout:
-            print(f"Error: Request timeout (attempt {attempt + 1}/{MAX_RETRIES})")
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(RETRY_DELAY)
-                continue
-                
-        except requests.exceptions.RequestException as e:
-            print(f"Error calling Google AI Studio API (attempt {attempt + 1}/{MAX_RETRIES}): {e}")
-            if e.response is not None:
-                print(f"Response status: {e.response.status_code}")
-                print(f"Response text: {e.response.text[:500]}")  # First 500 chars
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(RETRY_DELAY)
-                continue
-                
         except Exception as e:
-            print(f"Unexpected error (attempt {attempt + 1}/{MAX_RETRIES}): {e}")
-            if attempt < MAX_RETRIES - 1:
-                time.sleep(RETRY_DELAY)
-                continue
-    
-    # All retries exhausted
-    print("All retry attempts exhausted. Using fallback quote.")
-    return "Generative AI continues to transform industries with breakthrough innovations."
+            print(f"❌ Failed with model {model_id}: {e}")
+            print(f"Waiting {RETRY_DELAY} seconds before trying next fallback model...")
+            time.sleep(RETRY_DELAY)
 
-def generate_profile_html(ai_quote):
+    # Se todos os modelos falharem
+    print("All fallback models exhausted. Using default fallback quote.")
+    return (
+        "Generative AI continues to transform industries with breakthrough innovations.",
+        "System Fallback (No Active Model)"
+    )
+
+def generate_profile_html(ai_quote, model_name):
     """Generates beautiful, animated HTML for GitHub profile with a blue theme."""
     
     current_day = datetime.now().strftime("%A")
@@ -212,7 +186,8 @@ def generate_profile_html(ai_quote):
     html_parts.append('</p>')
 
     html_parts.append('<p align="center">')
-    html_parts.append(f'  <sub>🤖 Powered by {MODEL_FRIENDLY_NAME} • Updated: {current_time}</sub>')
+    # O rodapé agora reflete dinamicamente o modelo que gerou o texto
+    html_parts.append(f'  <sub>🤖 Powered by {model_name} • Updated: {current_time}</sub>')
     html_parts.append('</p>')
     html_parts.append('<br/>')
 
@@ -308,9 +283,10 @@ def update_readme(html_content):
 
 if __name__ == "__main__":
     print("🚀 Starting profile generation...")
-    ai_quote = get_ai_quote()
+    ai_quote, used_model = get_ai_quote()
     print(f"✅ AI Quote: {ai_quote}")
+    print(f"🤖 Used Model: {used_model}")
 
-    html_content = generate_profile_html(ai_quote)
+    html_content = generate_profile_html(ai_quote, used_model)
     update_readme(html_content)
     print("✨ Profile generation complete!")
