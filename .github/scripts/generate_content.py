@@ -15,15 +15,8 @@ RICARDO_NAME = "Ricardo"
 RICARDO_LOCATION = "São Paulo, SP, Brazil"
 
 def get_google_api_url(model_id):
-    """Generates the Google AI Studio API URL for a given model ID."""
-    base_url = "https://generativelanguage.googleapis.com/v1beta"
-    custom_url = os.getenv("GOOGLE_AI_STUDIO_API_URL")
-    
-    if custom_url:
-        for model in ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3.1-pro-preview"]:
-            if model in custom_url:
-                return custom_url.replace(model, model_id)
-    return f"{base_url}/models/{model_id}:generateContent"
+    """Generates the standard Google AI Studio API URL for a given model ID."""
+    return f"https://generativelanguage.googleapis.com/v1beta/models/{model_id}:generateContent"
 
 def get_quote_google_ai_studio(prompt, model_id, model_name):
     """Makes a direct call to Google AI Studio."""
@@ -125,7 +118,7 @@ def get_ai_quote():
         f"Keep it to 4-6 sentences and mention today's date/month or year, no conversational filler."
     )
 
-    # Fila de prioridade atualizada sem referências ao Gemini 2.5
+    # Fila de prioridade de modelos 3.5 e 3.1
     strategies = [
         # 1. Direct Google AI Studio
         {"type": "google_ai_studio", "model_id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
@@ -137,7 +130,7 @@ def get_ai_quote():
         {"type": "openrouter", "model_id": "google/gemini-3.1-flash-lite", "name": "OpenRouter (Gemini 3.1 Flash-Lite)"},
         {"type": "openrouter", "model_id": "google/gemini-3.1-pro-preview", "name": "OpenRouter (Gemini 3.1 Pro Preview)"},
         
-        # 3. OpenRouter Free Router (Fallback dinâmico geral para qualquer modelo gratuito)
+        # 3. OpenRouter Free Router (Fallback dinâmico para qualquer modelo gratuito)
         {"type": "openrouter", "model_id": "openrouter/free", "name": "OpenRouter Free Model Router"}
     ]
 
