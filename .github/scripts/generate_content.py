@@ -149,11 +149,15 @@ def get_ai_quote():
     # Fila de prioridade de modelos 3.5 e 3.1
     strategies = [
         # 1. Direct Google AI Studio (Nativo)
+        {"type": "google_ai_studio", "model_id": "gemini-2.5-flash", "name": "Google Gemini 2.5 Flash"},
+        {"type": "google_ai_studio", "model_id": "gemini-2.5-flash-lite", "name": "Google Gemini 2.5 Flash-Lite"},
         {"type": "google_ai_studio", "model_id": "gemini-3.5-flash", "name": "Google Gemini 3.5 Flash"},
         {"type": "google_ai_studio", "model_id": "gemini-3.1-flash-lite", "name": "Google Gemini 3.1 Flash-Lite"},
         {"type": "google_ai_studio", "model_id": "gemini-3.1-pro-preview", "name": "Google Gemini 3.1 Pro Preview"},
         
         # 2. OpenRouter (Com a ferramenta de pesquisa do OpenRouter)
+        {"type": "openrouter", "model_id": "google/gemini-2.5-flash", "name": "OpenRouter (Gemini 2.5 Flash)"},
+        {"type": "openrouter", "model_id": "google/gemini-2.5-flash-lite", "name": "OpenRouter (Gemini 2.5 Flash-Lite)"},
         {"type": "openrouter", "model_id": "google/gemini-3.5-flash", "name": "OpenRouter (Gemini 3.5 Flash)"},
         {"type": "openrouter", "model_id": "google/gemini-3.1-flash-lite", "name": "OpenRouter (Gemini 3.1 Flash-Lite)"},
         {"type": "openrouter", "model_id": "google/gemini-3.1-pro-preview", "name": "OpenRouter (Gemini 3.1 Pro Preview)"},
