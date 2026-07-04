@@ -14,7 +14,6 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
     <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
     <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=000000&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" media="(prefers-color-scheme: light)"/>
-    <!-- Fallback -->
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&lines=AI+Engineering+%7C+Data+Science;MSc+Architectural+Design+with+AI;5%2B+Years+Working+With+AI+Models" alt="Typing SVG"/>
   </picture>
 </p>
@@ -25,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Saturday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -36,15 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=In%20June%202026%2C%20real%20estate%20agents%20in%20hyper-competitive%3Bmarkets%20like%20Barcelona%20are%20increasingly%20using%20generative%20AI%3Bto%20%22pimp%20up%22%20property%20listings.%20Agents%20are%20legally%20utilizing%3BAI%20software%20to%20digitally%20stage%20empty%20flats%2C%20render%20fully%3Brenovated%20mock-ups%20of%20dilapidated%20apartments%2C%20and%20even%20erase%3Bvirtual" media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=July%E2%80%AF4%2C%E2%80%AF2026%20%E2%80%93%20Dubai%20launched%20an%20AI%E2%80%91driven%20Digital%20Twin%20that%3Bnow%20maps%20195%2C000%20buildings%20and%20280%2C000%20infrastructure%3Bassets%2C%20enabling%20real%E2%80%91time%20urban%E2%80%91scenario%20simulations%20for%3Bcity%20planning." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height={quote_height}&lines={quote_encoded}" media="(prefers-color-scheme: light)"/>
-    <!-- Fallback -->
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=In%20June%202026%2C%20real%20estate%20agents%20in%20hyper-competitive%3Bmarkets%20like%20Barcelona%20are%20increasingly%20using%20generative%20AI%3Bto%20%22pimp%20up%22%20property%20listings.%20Agents%20are%20legally%20utilizing%3BAI%20software%20to%20digitally%20stage%20empty%20flats%2C%20render%20fully%3Brenovated%20mock-ups%20of%20dilapidated%20apartments%2C%20and%20even%20erase%3Bvirtual" alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=July%E2%80%AF4%2C%E2%80%AF2026%20%E2%80%93%20Dubai%20launched%20an%20AI%E2%80%91driven%20Digital%20Twin%20that%3Bnow%20maps%20195%2C000%20buildings%20and%20280%2C000%20infrastructure%3Bassets%2C%20enabling%20real%E2%80%91time%20urban%E2%80%91scenario%20simulations%20for%3Bcity%20planning." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=July%E2%80%AF4%2C%E2%80%AF2026%20%E2%80%93%20Dubai%20launched%20an%20AI%E2%80%91driven%20Digital%20Twin%20that%3Bnow%20maps%20195%2C000%20buildings%20and%20280%2C000%20infrastructure%3Bassets%2C%20enabling%20real%E2%80%91time%20urban%E2%80%91scenario%20simulations%20for%3Bcity%20planning." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by OpenRouter (google/gemini-3.5-flash-20260519) • Updated: 13:44 UTC</sub>
+  <sub>🤖 Powered by OpenRouter (poolside/laguna-xs.2-20260421:free) • Updated: 12:01 UTC</sub>
 </p>
 <br/>
 
