@@ -29,6 +29,19 @@ def get_google_api_url(model_id):
     """Generates the standard Google AI Studio API URL for a given model ID."""
     return f"https://generativelanguage.googleapis.com/v1beta/models/{model_id}:generateContent"
 
+def build_generation_config(model_id):
+    config = {"maxOutputTokens": 2048}
+    if model_id.startswith("gemini-3"):
+        # Gemini 3.x usa thinkingLevel (low/medium/high, "minimal" só é
+        # documentado para os modelos Flash/Flash-Lite da série 3, não para Pro)
+        config["thinkingConfig"] = {"thinkingLevel": "medium"}
+    else:
+        # Gemini 2.5.x usa thinkingBudget (inteiro)
+        # 0 = desliga pensamento (flash/flash-lite aceitam 0)
+        # -1 = pensamento ilimitado (não recomendado para Gemini 2.5 Flash/Flash-Lite)
+        config["thinkingConfig"] = {"thinkingBudget": -1}
+    return config
+
 def get_quote_google_ai_studio(prompt, system_prompt, model_id, model_name):
     """Makes a direct call to Google AI Studio with Google Search Grounding and System Prompt enabled."""
     headers = {
@@ -39,28 +52,10 @@ def get_quote_google_ai_studio(prompt, system_prompt, model_id, model_name):
 
     # Payload contendo a chave "systemInstruction" para o Google AI Studio
     data = {
-        "systemInstruction": {
-            "parts": [
-                {"text": system_prompt}
-            ]
-        },
-        "tools": [
-            {
-                "google_search": {}  # Ativa o Grounding nativo
-            }
-        ],
-        "contents": [
-            {
-                "role": "user",
-                "parts": [{"text": prompt}]
-            }
-        ],
-        "generationConfig": {
-            "maxOutputTokens": 2048,
-            "thinkingConfig": {
-                "thinkingLevel": "minimal"
-            }
-        }
+        "systemInstruction": {"parts": [{"text": system_prompt}]},
+        "tools": [{"google_search": {}}],
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": build_generation_config(model_id)
     }
 
     print(f"Calling Google AI Studio for {model_name}...")
