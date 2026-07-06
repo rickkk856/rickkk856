@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Sunday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Monday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20July%202026%2C%20generative%20AI%20in%20architectural%20rendering%3Ballows%20architects%20to%20transform%20a%20hand-drawn%20concept%20sketch%3Binto%20a%20photorealistic%20exterior%20render%20within%2010%20seconds%2C%3Bdramatically%20accelerating%20the%20schematic%20design%20phase%20and%3Benabling%20rapid%20design%20iteration." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20July%202026%2C%20the%20global%20generative%20AI%20in%20real%20estate%3Bmarket%2C%20valued%20at%20approximately%20%24544.29%20million%20this%20year%2C%3Bis%20projected%20to%20surge%20to%20nearly%20%241.43%20billion%20by%202035%2C%3Bdemonstrating%20an%20anticipated%20Compound%20Annual%20Growth%20Rate%3B%28CAGR%29%20of%2011.33%25.%20This%20growth%20is%20driven%20by%20applications%3Bspanning%20virtual%20staging%2C%20property%20valuation%2C%20urban%20planning%3Bsimulations%2C%20and%20enhanced%20client%20experiences%20through%20AI%3Bassistants." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20July%202026%2C%20generative%20AI%20in%20architectural%20rendering%3Ballows%20architects%20to%20transform%20a%20hand-drawn%20concept%20sketch%3Binto%20a%20photorealistic%20exterior%20render%20within%2010%20seconds%2C%3Bdramatically%20accelerating%20the%20schematic%20design%20phase%20and%3Benabling%20rapid%20design%20iteration." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20July%202026%2C%20generative%20AI%20in%20architectural%20rendering%3Ballows%20architects%20to%20transform%20a%20hand-drawn%20concept%20sketch%3Binto%20a%20photorealistic%20exterior%20render%20within%2010%20seconds%2C%3Bdramatically%20accelerating%20the%20schematic%20design%20phase%20and%3Benabling%20rapid%20design%20iteration." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20July%202026%2C%20the%20global%20generative%20AI%20in%20real%20estate%3Bmarket%2C%20valued%20at%20approximately%20%24544.29%20million%20this%20year%2C%3Bis%20projected%20to%20surge%20to%20nearly%20%241.43%20billion%20by%202035%2C%3Bdemonstrating%20an%20anticipated%20Compound%20Annual%20Growth%20Rate%3B%28CAGR%29%20of%2011.33%25.%20This%20growth%20is%20driven%20by%20applications%3Bspanning%20virtual%20staging%2C%20property%20valuation%2C%20urban%20planning%3Bsimulations%2C%20and%20enhanced%20client%20experiences%20through%20AI%3Bassistants." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20July%202026%2C%20the%20global%20generative%20AI%20in%20real%20estate%3Bmarket%2C%20valued%20at%20approximately%20%24544.29%20million%20this%20year%2C%3Bis%20projected%20to%20surge%20to%20nearly%20%241.43%20billion%20by%202035%2C%3Bdemonstrating%20an%20anticipated%20Compound%20Annual%20Growth%20Rate%3B%28CAGR%29%20of%2011.33%25.%20This%20growth%20is%20driven%20by%20applications%3Bspanning%20virtual%20staging%2C%20property%20valuation%2C%20urban%20planning%3Bsimulations%2C%20and%20enhanced%20client%20experiences%20through%20AI%3Bassistants." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 12:09 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 14:18 UTC</sub>
 </p>
 <br/>
 
