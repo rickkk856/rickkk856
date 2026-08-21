@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,10 +35,10 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%202026%2C%20a%20JLL%20Global%20Real%20Estate%20Technology%3BSurvey%20revealed%20that%2092%25%20of%20commercial%20real%20estate%20teams%20are%3Bpiloting%20or%20plan%20to%20pilot%20AI%2C%20yet%20only%205%25%20have%20achieved%20most%3Bof%20their%20program%20goals%2C%20indicating%20a%20significant%20gap%20between%3Bexploration%20and%20successful%20implementation." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%202026%2C%20a%20JLL%20Global%20Real%20Estate%20Technology%3BSurvey%20revealed%20that%2092%25%20of%20commercial%20real%20estate%20teams%20are%3Bpiloting%20or%20plan%20to%20pilot%20AI%2C%20yet%20only%205%25%20have%20achieved%20most%3Bof%20their%20program%20goals%2C%20indicating%20a%20significant%20gap%20between%3Bexploration%20and%20successful%20implementation." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%202026%2C%20a%20JLL%20Global%20Real%20Estate%20Technology%3BSurvey%20revealed%20that%2092%25%20of%20commercial%20real%20estate%20teams%20are%3Bpiloting%20or%20plan%20to%20pilot%20AI%2C%20yet%20only%205%25%20have%20achieved%20most%3Bof%20their%20program%20goals%2C%20indicating%20a%20significant%20gap%20between%3Bexploration%20and%20successful%20implementation." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
