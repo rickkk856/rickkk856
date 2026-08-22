@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Saturday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20August%202026%2C%20a%20new%20report%20from%20the%20Royal%20Institution%3Bof%20Chartered%20Surveyors%20%28RICS%29%20reveals%20that%20AI%20adoption%20has%3Bsignificantly%20accelerated%20across%20property%20and%20construction%2C%3Bwith%20over%20two-thirds%20of%20construction%20professionals%20and%20more%3Bthan%20three-quarters%20of%20commercial%20property%20professionals%20now%3Butilizing%20AI%20in%20some%20form.%20The%20industry%27s%20primary%20challenge%3Bhas%20shifted%20from%20pilot%20studies%20to%20successfully%20embedding%20AI%3Binto%20routine%20professional%20practice." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2020%2C%202026%2C%20urban%20planners%20are%20increasingly%3Bleveraging%20Generative%20AI%20for%20critical%20applications%20such%20as%3Bflood%20prevention%20and%20mitigation%2C%20generating%20detailed%3Brenderings%20of%20future%20neighborhoods%2C%20and%20enhancing%20public%3Bcommunications." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20August%202026%2C%20a%20new%20report%20from%20the%20Royal%20Institution%3Bof%20Chartered%20Surveyors%20%28RICS%29%20reveals%20that%20AI%20adoption%20has%3Bsignificantly%20accelerated%20across%20property%20and%20construction%2C%3Bwith%20over%20two-thirds%20of%20construction%20professionals%20and%20more%3Bthan%20three-quarters%20of%20commercial%20property%20professionals%20now%3Butilizing%20AI%20in%20some%20form.%20The%20industry%27s%20primary%20challenge%3Bhas%20shifted%20from%20pilot%20studies%20to%20successfully%20embedding%20AI%3Binto%20routine%20professional%20practice." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20August%202026%2C%20a%20new%20report%20from%20the%20Royal%20Institution%3Bof%20Chartered%20Surveyors%20%28RICS%29%20reveals%20that%20AI%20adoption%20has%3Bsignificantly%20accelerated%20across%20property%20and%20construction%2C%3Bwith%20over%20two-thirds%20of%20construction%20professionals%20and%20more%3Bthan%20three-quarters%20of%20commercial%20property%20professionals%20now%3Butilizing%20AI%20in%20some%20form.%20The%20industry%27s%20primary%20challenge%3Bhas%20shifted%20from%20pilot%20studies%20to%20successfully%20embedding%20AI%3Binto%20routine%20professional%20practice." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 11:17 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 11:12 UTC</sub>
 </p>
 <br/>
 
