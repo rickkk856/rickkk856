@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Wednesday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20August%202026%2C%2061.3%25%20of%20buyer-side%20real%20estate%20searches%3Bare%20now%20initiating%20in%20AI%20interfaces%2C%20yet%20only%208.4%25%20of%20agents%3Bare%20being%20cited%20in%20generative%20AI%20responses%20for%20location-%3Bbased%20questions.%20This%20highlights%20the%20critical%20new%20importance%3Bof%20Generative%20Engine%20Optimization%20%28GEO%29%20and%20Answer%20Engine%3BOptimization%20%28AEO%29%20for%20real%20estate%20professionals%20seeking%3Bvisibility." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20August%202026%2C%2061.3%25%20of%20buyer-side%20real%20estate%20searches%3Bare%20now%20initiating%20in%20AI%20interfaces%2C%20yet%20only%208.4%25%20of%20agents%3Bare%20being%20cited%20in%20generative%20AI%20responses%20for%20location-%3Bbased%20questions.%20This%20highlights%20the%20critical%20new%20importance%3Bof%20Generative%20Engine%20Optimization%20%28GEO%29%20and%20Answer%20Engine%3BOptimization%20%28AEO%29%20for%20real%20estate%20professionals%20seeking%3Bvisibility." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20August%202026%2C%2061.3%25%20of%20buyer-side%20real%20estate%20searches%3Bare%20now%20initiating%20in%20AI%20interfaces%2C%20yet%20only%208.4%25%20of%20agents%3Bare%20being%20cited%20in%20generative%20AI%20responses%20for%20location-%3Bbased%20questions.%20This%20highlights%20the%20critical%20new%20importance%3Bof%20Generative%20Engine%20Optimization%20%28GEO%29%20and%20Answer%20Engine%3BOptimization%20%28AEO%29%20for%20real%20estate%20professionals%20seeking%3Bvisibility." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 11:19 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 20:51 UTC</sub>
 </p>
 <br/>
 
