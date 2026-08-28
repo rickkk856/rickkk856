@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architecture%20studios%3Bare%20actively%20embracing%20Generative%20AI%20for%20tasks%20ranging%20from%3Binitial%20design%20conception%20and%20project%20analysis%20to%20report%3Bgeneration.%20Some%20firms%20report%20an%2080%25%20reduction%20in%20Photoshop%3Busage%20due%20to%20AI-generated%20visuals." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=110&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architectural%20firms%3Bsuch%20as%20SOM%20and%20Foster%20%2B%20Partners%20are%20actively%20embracing%20and%3Bencouraging%20the%20use%20of%20AI%20for%20tasks%20ranging%20from%20design%3Bconception%20to%20comprehensive%20project%20analysis%20and%20reporting." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architecture%20studios%3Bare%20actively%20embracing%20Generative%20AI%20for%20tasks%20ranging%20from%3Binitial%20design%20conception%20and%20project%20analysis%20to%20report%3Bgeneration.%20Some%20firms%20report%20an%2080%25%20reduction%20in%20Photoshop%3Busage%20due%20to%20AI-generated%20visuals." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=135&lines=As%20of%20August%2025%2C%202026%2C%20leading%20global%20architecture%20studios%3Bare%20actively%20embracing%20Generative%20AI%20for%20tasks%20ranging%20from%3Binitial%20design%20conception%20and%20project%20analysis%20to%20report%3Bgeneration.%20Some%20firms%20report%20an%2080%25%20reduction%20in%20Photoshop%3Busage%20due%20to%20AI-generated%20visuals." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 20:51 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 21:17 UTC</sub>
 </p>
 <br/>
 
