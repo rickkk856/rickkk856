@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%202026%2C%20a%20recent%20survey%20reveals%20that%2064%25%20of%3Barchitects%20are%20actively%20experimenting%20with%20Generative%20AI%3Btools%20in%20their%20daily%20workflows%2C%20with%20one%20in%20five%20firms%3Bglobally%20now%20fully%20integrating%20AI%20into%20their%20processes%20for%3Btasks%20like%20concept%20generation%2C%20image%20enhancement%2C%20and%20rapid%3Biteration.%20This%20highlights%202026%20as%20a%20critical%20inflection%3Bpoint%20for%20widespread%20AI%20adoption%20in%20architectural%20design." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20October%201%2C%202026%2C%20MIT%20researchers%20have%20introduced%3B%22InstructMesh%2C%22%20a%20new%20generative%20AI%20tool%20that%20enables%20users%3Bto%20repair%20and%20refine%20AI-generated%203D%20models%20using%20natural%3Blanguage.%20This%20development%20addresses%20a%20key%20limitation%20where%3BAI%20models%20often%20understand%20how%20an%20object%20looks%20but%20not%20how%3Bit%20functionally%20works%2C%20making%20the%20creation%20of%20practical%2C%3B3D-printable%20items%20much%20more%20accessible%20for%20architects%20and%3Bdesigners." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%202026%2C%20a%20recent%20survey%20reveals%20that%2064%25%20of%3Barchitects%20are%20actively%20experimenting%20with%20Generative%20AI%3Btools%20in%20their%20daily%20workflows%2C%20with%20one%20in%20five%20firms%3Bglobally%20now%20fully%20integrating%20AI%20into%20their%20processes%20for%3Btasks%20like%20concept%20generation%2C%20image%20enhancement%2C%20and%20rapid%3Biteration.%20This%20highlights%202026%20as%20a%20critical%20inflection%3Bpoint%20for%20widespread%20AI%20adoption%20in%20architectural%20design." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%202026%2C%20a%20recent%20survey%20reveals%20that%2064%25%20of%3Barchitects%20are%20actively%20experimenting%20with%20Generative%20AI%3Btools%20in%20their%20daily%20workflows%2C%20with%20one%20in%20five%20firms%3Bglobally%20now%20fully%20integrating%20AI%20into%20their%20processes%20for%3Btasks%20like%20concept%20generation%2C%20image%20enhancement%2C%20and%20rapid%3Biteration.%20This%20highlights%202026%20as%20a%20critical%20inflection%3Bpoint%20for%20widespread%20AI%20adoption%20in%20architectural%20design." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20October%201%2C%202026%2C%20MIT%20researchers%20have%20introduced%3B%22InstructMesh%2C%22%20a%20new%20generative%20AI%20tool%20that%20enables%20users%3Bto%20repair%20and%20refine%20AI-generated%203D%20models%20using%20natural%3Blanguage.%20This%20development%20addresses%20a%20key%20limitation%20where%3BAI%20models%20often%20understand%20how%20an%20object%20looks%20but%20not%20how%3Bit%20functionally%20works%2C%20making%20the%20creation%20of%20practical%2C%3B3D-printable%20items%20much%20more%20accessible%20for%20architects%20and%3Bdesigners." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=210&lines=As%20of%20October%201%2C%202026%2C%20MIT%20researchers%20have%20introduced%3B%22InstructMesh%2C%22%20a%20new%20generative%20AI%20tool%20that%20enables%20users%3Bto%20repair%20and%20refine%20AI-generated%203D%20models%20using%20natural%3Blanguage.%20This%20development%20addresses%20a%20key%20limitation%20where%3BAI%20models%20often%20understand%20how%20an%20object%20looks%20but%20not%20how%3Bit%20functionally%20works%2C%20making%20the%20creation%20of%20practical%2C%3B3D-printable%20items%20much%20more%20accessible%20for%20architects%20and%3Bdesigners." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 17:11 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 16:25 UTC</sub>
 </p>
 <br/>
 
