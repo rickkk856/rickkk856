@@ -24,7 +24,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
       <img src="https://img.shields.io/badge/🌍_Location-São%20Paulo%2C%20SP%2C%20Brazil-2196F3?style=for-the-badge&labelColor=auto" alt="Location"/>
     </td>
     <td align="center" style="padding: 0;">
-      <img src="https://img.shields.io/badge/📅_Today-Thursday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
+      <img src="https://img.shields.io/badge/📅_Today-Friday-00BFFF?style=for-the-badge&labelColor=auto" alt="Day"/>
     </td>
   </tr>
 </table>
@@ -35,14 +35,14 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <p align="center">
   <picture>
     <!-- Dark Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%2029%2C%202026%2C%20Matrix%20Design%20has%20showcased%20the%3Bintegration%20of%20generative%20AI%20tools%2C%20including%20their%20Lovspark%3BAI%20application%2C%20into%20spatial%20design%20workflows.%20Collaborating%3Bwith%20the%20Bartlett%20School%20of%20Architecture%2C%20the%20initiative%3Baims%20to%20balance%20digital%20exploration%20with%20human%20judgment%20and%3Bmaterial%20realities%2C%20as%20demonstrated%20at%20their%20%22Hand%2C%20Code%2C%3BMatter%3A%20A%20New%20Flow%20for%20Spatial%20Design%22%20exhibition." media="(prefers-color-scheme: dark)"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=As%20of%20October%2029%2C%202026%2C%20generative%20AI%20in%20architectural%3Bdesign%20is%20evolving%20beyond%20generating%20mere%20concept%20images%2C%3Bactively%20integrating%20into%20core%20architectural%20workflows.%20This%3Bshift%20prompts%20the%20industry%20to%20focus%20on%20connecting%20digital%3Bexploration%20with%20professional%20judgment%2C%20material%20realities%2C%3Band%20long-term%20environmental%20and%20human%20needs." media="(prefers-color-scheme: dark)"/>
     <!-- Light Mode -->
-    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%2029%2C%202026%2C%20Matrix%20Design%20has%20showcased%20the%3Bintegration%20of%20generative%20AI%20tools%2C%20including%20their%20Lovspark%3BAI%20application%2C%20into%20spatial%20design%20workflows.%20Collaborating%3Bwith%20the%20Bartlett%20School%20of%20Architecture%2C%20the%20initiative%3Baims%20to%20balance%20digital%20exploration%20with%20human%20judgment%20and%3Bmaterial%20realities%2C%20as%20demonstrated%20at%20their%20%22Hand%2C%20Code%2C%3BMatter%3A%20A%20New%20Flow%20for%20Spatial%20Design%22%20exhibition." media="(prefers-color-scheme: light)"/>
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=185&lines=As%20of%20October%2029%2C%202026%2C%20Matrix%20Design%20has%20showcased%20the%3Bintegration%20of%20generative%20AI%20tools%2C%20including%20their%20Lovspark%3BAI%20application%2C%20into%20spatial%20design%20workflows.%20Collaborating%3Bwith%20the%20Bartlett%20School%20of%20Architecture%2C%20the%20initiative%3Baims%20to%20balance%20digital%20exploration%20with%20human%20judgment%20and%3Bmaterial%20realities%2C%20as%20demonstrated%20at%20their%20%22Hand%2C%20Code%2C%3BMatter%3A%20A%20New%20Flow%20for%20Spatial%20Design%22%20exhibition." alt="AI Quote"/>
+    <source srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=000000&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=As%20of%20October%2029%2C%202026%2C%20generative%20AI%20in%20architectural%3Bdesign%20is%20evolving%20beyond%20generating%20mere%20concept%20images%2C%3Bactively%20integrating%20into%20core%20architectural%20workflows.%20This%3Bshift%20prompts%20the%20industry%20to%20focus%20on%20connecting%20digital%3Bexploration%20with%20professional%20judgment%2C%20material%20realities%2C%3Band%20long-term%20environmental%20and%20human%20needs." media="(prefers-color-scheme: light)"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1250&pause=0&color=9BE2FE&center=false&vCenter=true&multiline=true&repeat=false&width=650&height=160&lines=As%20of%20October%2029%2C%202026%2C%20generative%20AI%20in%20architectural%3Bdesign%20is%20evolving%20beyond%20generating%20mere%20concept%20images%2C%3Bactively%20integrating%20into%20core%20architectural%20workflows.%20This%3Bshift%20prompts%20the%20industry%20to%20focus%20on%20connecting%20digital%3Bexploration%20with%20professional%20judgment%2C%20material%20realities%2C%3Band%20long-term%20environmental%20and%20human%20needs." alt="AI Quote"/>
   </picture>
 </p>
 <p align="center">
-  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 17:12 UTC</sub>
+  <sub>🤖 Powered by Google Gemini 2.5 Flash • Updated: 16:52 UTC</sub>
 </p>
 <br/>
 
