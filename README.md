@@ -5,27 +5,20 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261031" alt="Generative floor plan — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261031" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-<<<<<<< HEAD
     <sub><b>INSIGHT OF THE DAY</b> · GENERATIVE AI</sub><br/><br/>
     <b>Generative AI keeps reshaping architecture and real estate</b><br/>
     From automated valuation to generative design, AI is moving from pilots to production.<br/><br/>
     <sub>via Static fallback · last good run 2026-10-31</sub>
-=======
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>AI Architecture Startup Dream Technologies Launches with $17 Million in Funding</b><br/>
-    Dream Technologies Inc., an AI architecture startup, has officially launched with $17 million in seed funding led by Andreessen Horowitz. The company aims to accelerate building design processes by using AI models to generate hundreds of design variations in minutes, significantly reducing project timelines and costs.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhs2B_Ql3guOD2cpMM_32IeGb97zCEfBgyzbX0tdY6tpmt9wJQFcDqtjPWTnF3QhTdAJAuvRDvFq9YF9loYlbwIuSDq5Of4ZPJWvIylCcKSc1QdUf3CNoKoOzpIkP0Gnm8jZS5Sro61f-c3mIFuqsoSd3ArTor_cBvrqClTdJuMphU9-IRtO2MYKCzDoNz57DvdL917Ao40Lk=">SiliconANGLE</a> · 2026-10-30 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
->>>>>>> 52247c8f3fb05063f99777471502f71b40aeedd6
   </td></tr>
 </table>
 <br/>
 <img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261031" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
-### 🛠️ Tech Stack
+<h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
   <tr>
     <td align="center" width="25%">
@@ -47,7 +40,7 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
   </tr>
 </table>
 <br/>
-### 🤝 Let's Connect
+<h3 align="center">🤝 Let's Connect</h3>
 <p align="center">
   <a href="https://linkedin.com/in/rcrarq"><img src="https://img.shields.io/badge/LinkedIn-0b0f14?style=for-the-badge&logo=linkedin&logoColor=00BFFF"/></a>
   <a href="https://www.behance.net/ricardorodrigu17"><img src="https://img.shields.io/badge/Behance-0b0f14?style=for-the-badge&logo=behance&logoColor=00BFFF"/></a>

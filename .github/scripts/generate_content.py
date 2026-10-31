@@ -1,14 +1,16 @@
 # .github/scripts/generate_content.py
 #
 # Generates the GitHub profile README:
-#   1. Generative floor-plan banner  -> assets/banner.svg   (new plan every day, seeded by the date)
+#   1. Generative banner (topographic field + data graph) -> assets/banner.svg  (new every day)
 #   2. AI insight of the day         -> README text (curated track, verified source link)
-#   3. Career timeline               -> assets/timeline.svg
+#   3. Animated career timeline      -> assets/timeline.svg
 #
-# IMPORTANT: your workflow must commit the assets folder too, e.g.
-#   git add README.md assets/
+# IMPORTANT:
+#   - the workflow must install:  pip install requests numpy matplotlib
+#   - and commit the assets folder too:  git add README.md assets/
 
 import html
+import io
 import json
 import os
 import random
@@ -42,6 +44,7 @@ LINE = "#8b98a5"
 WALL = "#e6edf3"
 ACCENT = "#00bfff"
 MUTED = "#6e7b88"
+SUBTEXT = "#9aa7b4"
 FONT = "'JetBrains Mono','Fira Code','SF Mono',Consolas,'Courier New',monospace"
 
 # --- Career timeline (edit freely; fill in "when" with years) --------------
@@ -50,7 +53,7 @@ TIMELINE = [
     {"when": "", "title": "Computational Design", "sub": "Parametric and generative workflows"},
     {"when": "", "title": "MSc · Architectural Design with AI", "sub": "Where AI meets architecture"},
     {"when": "", "title": "AI Models in Production", "sub": "5+ years building with AI"},
-    {"when": "", "title": "Senior AI Engineer", "sub": "Fintech, home equity and real estate-backed credit"},
+    {"when": "", "title": "Senior AI Engineer", "sub": "AI for Finance, and Real Estate Industry"},
 ]
 
 # --- Insight tracks (rotate by day of the year) ----------------------------
@@ -76,187 +79,286 @@ SYSTEM_PROMPT = (
 
 
 # ===========================================================================
-# 1. Generative floor-plan banner
+# 1. Generative banner: topographic field + data graph (matplotlib + numpy)
 # ===========================================================================
-def bsp_split(rect, depth, rng, leaves, splits, min_w=110, min_h=80, max_depth=4):
-    """Recursively subdivides a rectangle into rooms (binary space partition)."""
-    x, y, w, h = rect
-    can_v = w >= 2 * min_w
-    can_h = h >= 2 * min_h
-    if depth >= max_depth or not (can_v or can_h) or (depth >= 2 and rng.random() < 0.22):
-        leaves.append(rect)
-        return
-    if can_v and can_h:
-        vertical = (w / h) * rng.uniform(0.8, 1.25) > 1
-    else:
-        vertical = can_v
-    ratio = rng.uniform(0.38, 0.62)
-    if vertical:
-        sx = x + w * ratio
-        splits.append(("v", sx, y, y + h))
-        bsp_split((x, y, sx - x, h), depth + 1, rng, leaves, splits, min_w, min_h, max_depth)
-        bsp_split((sx, y, x + w - sx, h), depth + 1, rng, leaves, splits, min_w, min_h, max_depth)
-    else:
-        sy = y + h * ratio
-        splits.append(("h", sy, x, x + w))
-        bsp_split((x, y, w, sy - y), depth + 1, rng, leaves, splits, min_w, min_h, max_depth)
-        bsp_split((x, sy, w, y + h - sy), depth + 1, rng, leaves, splits, min_w, min_h, max_depth)
+BANNER_CSS = (
+    ".flow{stroke-dasharray:7 11;animation:flow 6s linear infinite}"
+    "@keyframes flow{to{stroke-dashoffset:-72}}"
+    ".pulse{animation:pulse 3.2s ease-in-out infinite}"
+    "@keyframes pulse{0%,100%{opacity:.2}50%{opacity:1}}"
+    "@media (prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}"
+)
 
-
-def _wall_with_door(orient, pos, a, b, rng):
-    """Returns SVG for one interior wall with a door gap and a swing arc."""
-    dw = 26
-    lo, hi = a + 12, b - 12 - dw
-    d = rng.uniform(lo, hi) if hi > lo else a + (b - a - dw) / 2
-    s = rng.choice([-1, 1])
-    wall = f'stroke="{LINE}" stroke-width="1.6"'
-    door = f'stroke="{ACCENT}" stroke-width="1" fill="none"'
-    if orient == "v":
-        return (
-            f'<line x1="{pos:.1f}" y1="{a:.1f}" x2="{pos:.1f}" y2="{d:.1f}" {wall}/>'
-            f'<line x1="{pos:.1f}" y1="{d + dw:.1f}" x2="{pos:.1f}" y2="{b:.1f}" {wall}/>'
-            f'<line x1="{pos:.1f}" y1="{d:.1f}" x2="{pos + s * dw:.1f}" y2="{d:.1f}" {door}/>'
-            f'<path d="M {pos + s * dw:.1f} {d:.1f} A {dw} {dw} 0 0 {1 if s > 0 else 0} {pos:.1f} {d + dw:.1f}" {door}/>'
-        )
-    return (
-        f'<line x1="{a:.1f}" y1="{pos:.1f}" x2="{d:.1f}" y2="{pos:.1f}" {wall}/>'
-        f'<line x1="{d + dw:.1f}" y1="{pos:.1f}" x2="{b:.1f}" y2="{pos:.1f}" {wall}/>'
-        f'<line x1="{d:.1f}" y1="{pos:.1f}" x2="{d:.1f}" y2="{pos + s * dw:.1f}" {door}/>'
-        f'<path d="M {d:.1f} {pos + s * dw:.1f} A {dw} {dw} 0 0 {0 if s > 0 else 1} {d + dw:.1f} {pos:.1f}" {door}/>'
-    )
+NODE_TAGS = ["AVM", "GEO", "AGENTS", "EXTRACTION", "LLM"]
 
 
 def generate_banner_svg(now):
-    """A procedural floor plan, different every day (seeded by the date)."""
+    """Abstract 'terrain of ideas': isolines of a daily-seeded field with a data graph on top.
+
+    Returns the SVG string, or None if numpy/matplotlib are not installed.
+    """
+    try:
+        import numpy as np
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        import matplotlib.patheffects as pe
+        from matplotlib.colors import LinearSegmentedColormap
+        from matplotlib.patches import FancyBboxPatch, Rectangle
+    except ImportError:
+        print("⚠️ numpy/matplotlib not installed — skipping banner (keeping the previous one).")
+        return None
+
     seed = int(now.strftime("%Y%m%d"))
-    rng = random.Random(seed)
+    rng = np.random.default_rng(seed)
+    W, H = 1200, 340
+    matplotlib.rcParams["svg.hashsalt"] = str(seed)
 
-    W, H = 1200, 290
-    PX, PY, PW, PH = 40, 30, 760, 200
-    METERS_ACROSS = 20.0
-    m_per_px = METERS_ACROSS / PW
+    # --- Smooth random field (FFT low-pass) + a few "hills" for composition
+    gx, gy = 320, 91
+    noise = rng.standard_normal((gy, gx))
+    fx, fy = np.fft.fftfreq(gx)[None, :], np.fft.fftfreq(gy)[:, None]
+    lowpass = np.exp(-(fx ** 2 + fy ** 2) / (2 * 0.03 ** 2))
+    field = np.real(np.fft.ifft2(np.fft.fft2(noise) * lowpass))
+    field = (field - field.min()) / (field.max() - field.min())
+    yy, xx = np.mgrid[0:gy, 0:gx]
+    for _ in range(3):
+        cx, cy = rng.uniform(0.06, 0.68) * gx, rng.uniform(0.2, 0.8) * gy
+        s, a = rng.uniform(14, 28), rng.uniform(0.5, 1.0)
+        field += a * np.exp(-(((xx - cx) ** 2 + (yy - cy) ** 2) / (2 * s * s)))
+    field = (field - field.min()) / (field.max() - field.min())
 
-    leaves, splits = [], []
-    bsp_split((PX, PY, PW, PH), 0, rng, leaves, splits)
+    X = xx * (W / (gx - 1))
+    Y = yy * (H / (gy - 1))
+    levels = np.linspace(0.05, 0.95, 24)
 
-    out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-        f'font-family="{FONT}" role="img" aria-label="Generative floor plan banner">',
-        "<defs>",
-        '<pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse">'
-        f'<path d="M 20 0 L 0 0 0 20" fill="none" stroke="{GRID}" stroke-width="0.5"/></pattern>',
-        '<pattern id="major" width="100" height="100" patternUnits="userSpaceOnUse">'
-        f'<rect width="100" height="100" fill="url(#minor)"/>'
-        f'<path d="M 100 0 L 0 0 0 100" fill="none" stroke="{GRID}" stroke-width="1.2"/></pattern>',
-        '<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
-        f'<line x1="0" y1="0" x2="0" y2="8" stroke="{ACCENT}" stroke-width="1" opacity="0.45"/></pattern>',
-        "</defs>",
-        f'<rect width="{W}" height="{H}" rx="10" fill="{BG}"/>',
-        f'<rect width="{W}" height="{H}" rx="10" fill="url(#major)"/>',
-    ]
+    # Isolines (computed on a throwaway figure, drawn as plain lines so we control the SVG groups)
+    tmp = plt.figure()
+    cs = tmp.add_subplot().contour(X, Y, field, levels=levels)
+    all_segs = [list(s) for s in cs.allsegs]
+    plt.close(tmp)
 
-    # Accent rooms (hatched / tinted)
-    accent_idx = rng.sample(range(len(leaves)), k=min(3, len(leaves)))
-    for n, i in enumerate(accent_idx):
-        x, y, w, h = leaves[i]
-        fill = "url(#hatch)" if n == 0 else ACCENT
-        opacity = "1" if n == 0 else "0.10"
-        out.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" fill="{fill}" opacity="{opacity}"/>')
+    # --- Canvas
+    fig = plt.figure(figsize=(12, 3.4), dpi=100)
+    ax = fig.add_axes([0, 0, 1, 1])
+    ax.set_xlim(0, W)
+    ax.set_ylim(H, 0)
+    ax.axis("off")
+    ax.add_patch(FancyBboxPatch((0, 0), W, H, boxstyle="round,pad=0,rounding_size=14",
+                                fc=BG, ec="none", zorder=0))
+    gxs, gys = np.meshgrid(np.arange(20, W, 30), np.arange(20, H, 30))
+    ax.scatter(gxs.ravel(), gys.ravel(), s=0.8, color="#2a3745", linewidths=0, zorder=1)
 
-    # Interior walls with doors
-    for orient, pos, a, b in splits:
-        out.append(_wall_with_door(orient, pos, a, b, rng))
+    cmap = LinearSegmentedColormap.from_list("blueprint", ["#0f2a3f", "#0a6c9c", ACCENT, "#bfeaff"])
+    for i, segs in enumerate(all_segs):
+        t = (levels[i] - levels[0]) / (levels[-1] - levels[0])
+        major = i % 5 == 0
+        for seg in segs:
+            if len(seg) < 3:
+                continue
+            ax.plot(seg[:, 0], seg[:, 1], color=cmap(t), lw=1.2 if major else 0.55,
+                    alpha=0.95 if major else 0.30 + 0.45 * t, solid_capstyle="round",
+                    gid="flow" if major else None, zorder=2)
 
-    # Outer wall
-    out.append(f'<rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" fill="none" stroke="{WALL}" stroke-width="3.5"/>')
+    # --- Data graph overlay
+    pts = np.column_stack([rng.uniform(40, 800, 34), rng.uniform(34, H - 34, 34)])
+    dist = np.linalg.norm(pts[:, None] - pts[None], axis=2)
+    np.fill_diagonal(dist, np.inf)
+    edges = set()
+    for i in range(len(pts)):
+        for j in np.argsort(dist[i])[:2]:
+            if dist[i, j] < 190:
+                edges.add(tuple(sorted((i, int(j)))))
+    for i, j in edges:
+        ax.plot([pts[i, 0], pts[j, 0]], [pts[i, 1], pts[j, 1]], color=ACCENT, lw=0.7, alpha=0.40, zorder=3)
+    ax.scatter(pts[:, 0], pts[:, 1], s=9, color=WALL, linewidths=0, alpha=0.9, zorder=4)
 
-    # Room labels
-    for idx, (x, y, w, h) in enumerate(leaves, start=1):
-        area = w * h * (m_per_px ** 2)
-        label = f"R{idx:02d}" if w < 84 else f"R{idx:02d} · {area:.1f} m²"
-        out.append(
-            f'<text x="{x + w / 2:.1f}" y="{y + h / 2 + 3:.1f}" font-size="10" fill="{MUTED}" '
-            f'text-anchor="middle">{html.escape(label)}</text>'
-        )
+    # Labeled nodes (topics from your work), spaced apart
+    order = [int(k) for k in rng.permutation(np.where(pts[:, 0] < 730)[0])]
+    chosen = []
+    for k in order:
+        if all(np.linalg.norm(pts[k] - pts[c]) > 150 for c in chosen):
+            chosen.append(k)
+        if len(chosen) == len(NODE_TAGS):
+            break
+    halo = [pe.withStroke(linewidth=3, foreground=BG)]
+    for k, tag in zip(chosen, NODE_TAGS):
+        x, y = pts[k]
+        ax.plot([x], [y], "o", mfc="none", mec=ACCENT, ms=10, mew=1.2, gid="pulse", zorder=5)
+        ax.text(x + 11, y - 9, tag, fontsize=7.5, family="monospace", color=ACCENT,
+                path_effects=halo, zorder=6)
 
-    # Dimension line
-    dy = PY + PH + 24
-    out.append(f'<line x1="{PX}" y1="{dy}" x2="{PX + PW}" y2="{dy}" stroke="{ACCENT}" stroke-width="1"/>')
-    for tx in (PX, PX + PW):
-        out.append(f'<line x1="{tx}" y1="{dy - 6}" x2="{tx}" y2="{dy + 6}" stroke="{ACCENT}" stroke-width="1"/>')
-        out.append(f'<line x1="{tx - 4}" y1="{dy + 4}" x2="{tx + 4}" y2="{dy - 4}" stroke="{ACCENT}" stroke-width="1"/>')
-    out.append(
-        f'<rect x="{PX + PW / 2 - 40}" y="{dy - 8}" width="80" height="16" fill="{BG}"/>'
-        f'<text x="{PX + PW / 2}" y="{dy + 4}" font-size="11" fill="{ACCENT}" text-anchor="middle">'
-        f"{METERS_ACROSS:.2f} m</text>"
-    )
-
-    # Title block
-    bx, by, bw, bh = 830, 30, 330, 220
-    out.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" fill="{BG}" fill-opacity="0.85" stroke="{LINE}" stroke-width="1.2"/>')
-    out.append(f'<text x="{bx + 18}" y="{by + 40}" font-size="21" font-weight="bold" fill="{WALL}" letter-spacing="0.5">{html.escape(NAME)}</text>')
-    out.append(f'<text x="{bx + 18}" y="{by + 62}" font-size="11" fill="{ACCENT}" letter-spacing="0.5">{html.escape(ROLE)}</text>')
-    out.append(f'<line x1="{bx}" y1="{by + 80}" x2="{bx + bw}" y2="{by + 80}" stroke="{LINE}" stroke-width="1"/>')
+    # --- Title block
+    bx, by, bw, bh = 860, 30, 310, 280
+    ax.add_patch(Rectangle((bx, by), bw, bh, fc=BG, ec=LINE, lw=0.9, alpha=0.9, zorder=10))
+    ax.text(bx + 18, by + 42, NAME, fontsize=16, weight="bold", family="monospace", color=WALL, zorder=11)
+    ax.text(bx + 18, by + 66, ROLE, fontsize=7.2, family="monospace", color=ACCENT, zorder=11)
+    ax.plot([bx, bx + bw], [by + 86, by + 86], color=LINE, lw=0.8, zorder=11)
     rows = [
-        ("SHEET", "A-01 / GENERATIVE PLAN"),
-        ("SCALE", "1:100"),
+        ("SHEET", "A-02 / GENERATIVE FIELD"),
+        ("ISOLINES", str(len(levels))),
+        ("NODES", str(len(pts))),
         ("DATE", now.strftime("%Y-%m-%d")),
         ("SEED", str(seed)),
         ("LOCATION", LOCATION),
     ]
-    for i, (k, v) in enumerate(rows):
-        ry = by + 106 + i * 26
-        out.append(f'<text x="{bx + 18}" y="{ry}" font-size="10" fill="{MUTED}">{k}</text>')
-        out.append(f'<text x="{bx + 100}" y="{ry}" font-size="11" fill="{WALL}">{html.escape(v)}</text>')
+    for n, (k, v) in enumerate(rows):
+        ry = by + 118 + n * 31
+        ax.text(bx + 18, ry, k, fontsize=7, family="monospace", color=MUTED, zorder=11)
+        ax.text(bx + 105, ry, v, fontsize=7.8, family="monospace", color=WALL, zorder=11)
 
-    out.append("</svg>")
-    return "\n".join(out)
+    buf = io.StringIO()
+    fig.savefig(buf, format="svg", transparent=True, metadata={"Date": None})
+    plt.close(fig)
+
+    svg = buf.getvalue()
+    svg = svg.replace('<g id="flow">', '<g class="flow">').replace('<g id="pulse">', '<g class="pulse">')
+    svg = re.sub(r"(<svg[^>]*>)", lambda m: m.group(1) + f"<style>{BANNER_CSS}</style>", svg, count=1)
+    return svg
 
 
 # ===========================================================================
-# 2. Career timeline
+# 2. Career timeline (animated, step by step)
 # ===========================================================================
+def _kf(name, frames):
+    """frames: list of (selector, declarations) -> @keyframes string."""
+    return "@keyframes " + name + "{" + "".join(f"{sel}{{{decl}}}" for sel, decl in frames) + "}"
+
+
 def generate_timeline_svg():
-    W, H = 1200, 230
+    W, H = 900, 410
     n = len(TIMELINE)
-    x0, x1 = 120, W - 120
-    line_y = 100
-    step = (x1 - x0) / (n - 1) if n > 1 else 0
+    x_first, x_last = 130, W - 130
+    step = (x_last - x_first) / (n - 1) if n > 1 else 0
+    ly = 210
+    lx0, lx1 = 50, W - 50
+    L = lx1 - lx0
 
-    out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-        f'font-family="{FONT}" role="img" aria-label="Career timeline">',
-        f'<rect width="{W}" height="{H}" rx="10" fill="{BG}"/>',
-        f'<text x="40" y="34" font-size="11" fill="{ACCENT}" letter-spacing="2">FROM SKETCH TO CODE</text>',
-        f'<line x1="60" y1="{line_y}" x2="{W - 60}" y2="{line_y}" stroke="{LINE}" stroke-width="1.5"/>',
+    # Animation clock (seconds): one step every `gap` s, hold, fade, restart
+    D, t0, gap, reveal = 22.0, 0.9, 2.4, 0.7
+    hold_end, fade_end = 19.0, 20.4
+
+    def pct(t):
+        return f"{round(t / D * 100, 3)}%"
+
+    def offset_at(x):  # dashoffset that shows the progress line up to x
+        return round(L - (x - lx0), 1)
+
+    css = [
+        ".step,.node,.prog,.ring{animation-duration:%ss;animation-iteration-count:infinite}" % D,
+        ".ring{opacity:0;transform-box:fill-box;transform-origin:center}",
+        ".node{transform-box:fill-box;transform-origin:center}",
+        ".prog{stroke-dasharray:%s %s}" % (L, L),
+        "@media (prefers-reduced-motion:reduce){.step,.node,.prog,.ring{animation:none!important}}",
     ]
-    # ruler ticks
-    for tx in range(60, W - 59, 24):
-        out.append(f'<line x1="{tx}" y1="{line_y - 4}" x2="{tx}" y2="{line_y + 4}" stroke="{GRID}" stroke-width="1"/>')
+    body = []
+
+    # Progress line keyframes
+    pf = [("0%", f"stroke-dashoffset:{L};opacity:1")]
+    prev_x = lx0
+    for i in range(n):
+        cx = x_first + i * step
+        ts = t0 + i * gap
+        dep = 0.1 if i == 0 else ts - 0.9
+        pf.append((pct(dep), f"stroke-dashoffset:{offset_at(prev_x)}"))
+        pf.append((pct(ts), f"stroke-dashoffset:{offset_at(cx)}"))
+        prev_x = cx
+    pf.append((pct(t0 + (n - 1) * gap + 1.8), "stroke-dashoffset:0"))
+    pf.append((pct(hold_end), "stroke-dashoffset:0;opacity:1"))
+    pf.append((pct(fade_end), "stroke-dashoffset:0;opacity:0"))
+    pf.append((pct(fade_end + 0.05), f"stroke-dashoffset:{L};opacity:0"))
+    pf.append(("100%", f"stroke-dashoffset:{L};opacity:0"))
+    css.append(_kf("prog", pf))
+    css.append(".prog{animation-name:prog;animation-timing-function:linear}")
+
+    body.append(f'<rect width="{W}" height="{H}" rx="12" fill="{BG}"/>')
+    body.append(f'<rect width="{W}" height="{H}" rx="12" fill="url(#grid)"/>')
+    body.append(f'<text x="40" y="40" font-size="13" fill="{ACCENT}" letter-spacing="3">FROM SKETCH TO CODE</text>')
+    body.append(f'<line x1="{lx0}" y1="{ly}" x2="{lx1}" y2="{ly}" stroke="{LINE}" stroke-width="2"/>')
+    for tx in range(lx0, lx1 + 1, 20):
+        body.append(f'<line x1="{tx}" y1="{ly - 4}" x2="{tx}" y2="{ly + 4}" stroke="{GRID}" stroke-width="1"/>')
+    body.append(
+        f'<line class="prog" x1="{lx0}" y1="{ly}" x2="{lx1}" y2="{ly}" stroke="{ACCENT}" stroke-width="3.5" '
+        f'stroke-dashoffset="0"/>'
+    )
 
     for i, item in enumerate(TIMELINE):
-        cx = x0 + i * step
+        cx = x_first + i * step
+        ts = t0 + i * gap
+        above = i % 2 == 0
         last = i == n - 1
-        size = 16 if last else 12
+        dy = -6 if above else 6
+
+        # keyframes: text group (fade + slide), node (pop)
+        css.append(_kf(f"k{i}", [
+            (f"0%,{pct(ts - 0.01)}", f"opacity:0;transform:translateY({dy}px)"),
+            (pct(ts + reveal), "opacity:1;transform:translateY(0)"),
+            (pct(hold_end), "opacity:1;transform:translateY(0)"),
+            (f"{pct(fade_end)},100%", "opacity:0;transform:translateY(0)"),
+        ]))
+        css.append(_kf(f"p{i}", [
+            (f"0%,{pct(ts - 0.01)}", "opacity:0;transform:scale(.2)"),
+            (pct(ts + 0.35), "opacity:1;transform:scale(1.4)"),
+            (pct(ts + 0.7), "opacity:1;transform:scale(1)"),
+            (pct(hold_end), "opacity:1;transform:scale(1)"),
+            (f"{pct(fade_end)},100%", "opacity:0;transform:scale(1)"),
+        ]))
+        css.append(f".s{i}{{animation-name:k{i};animation-timing-function:ease-out}}")
+        css.append(f".n{i}{{animation-name:p{i};animation-timing-function:ease-out}}")
+
+        # node
+        size = 26 if last else 20
         fill = ACCENT if last else BG
-        out.append(
-            f'<rect x="{cx - size / 2:.1f}" y="{line_y - size / 2:.1f}" width="{size}" height="{size}" '
-            f'fill="{fill}" stroke="{ACCENT}" stroke-width="2"/>'
+        body.append(
+            f'<rect class="node n{i}" x="{cx - size / 2:.1f}" y="{ly - size / 2:.1f}" width="{size}" height="{size}" '
+            f'fill="{fill}" stroke="{ACCENT}" stroke-width="2.5"/>'
         )
-        if item.get("when"):
-            out.append(f'<text x="{cx:.1f}" y="{line_y - 24}" font-size="12" fill="{MUTED}" text-anchor="middle">{html.escape(item["when"])}</text>')
 
-        y = line_y + 34
-        for line in textwrap.wrap(item["title"], 22):
-            out.append(f'<text x="{cx:.1f}" y="{y}" font-size="13" font-weight="bold" fill="{WALL}" text-anchor="middle">{html.escape(line)}</text>')
+        # text block
+        t_lines = textwrap.wrap(item["title"], 24)
+        s_lines = textwrap.wrap(item.get("sub", ""), 32)
+        block_h = len(t_lines) * 22 + 8 + len(s_lines) * 17
+        if above:
+            top = ly - 60 - block_h
+            stem = (ly - 14, ly - 46)
+            label_y = ly + 38
+        else:
+            top = ly + 60
+            stem = (ly + 14, ly + 46)
+            label_y = ly - 28
+
+        g = [f'<g class="step s{i}">']
+        g.append(f'<line x1="{cx:.1f}" y1="{stem[0]}" x2="{cx:.1f}" y2="{stem[1]}" stroke="{ACCENT}" stroke-width="1.5" stroke-dasharray="3 3"/>')
+        label = item.get("when") or f"STEP {i + 1:02d}"
+        g.append(f'<text x="{cx:.1f}" y="{label_y}" font-size="12" fill="{ACCENT}" text-anchor="middle" letter-spacing="2">{html.escape(label)}</text>')
+        y = top + 16
+        for line in t_lines:
+            g.append(f'<text x="{cx:.1f}" y="{y}" font-size="17" font-weight="bold" fill="{WALL}" text-anchor="middle">{html.escape(line)}</text>')
+            y += 22
+        y += 2
+        for line in s_lines:
+            g.append(f'<text x="{cx:.1f}" y="{y + 6}" font-size="13" fill="{SUBTEXT}" text-anchor="middle">{html.escape(line)}</text>')
             y += 17
-        y += 3
-        for line in textwrap.wrap(item.get("sub", ""), 28):
-            out.append(f'<text x="{cx:.1f}" y="{y}" font-size="11" fill="{MUTED}" text-anchor="middle">{html.escape(line)}</text>')
-            y += 15
+        if last:
+            g.append(f'<circle class="ring" cx="{cx:.1f}" cy="{ly}" r="16" fill="none" stroke="{ACCENT}" stroke-width="2"/>')
+        g.append("</g>")
+        body.extend(g)
 
-    out.append("</svg>")
-    return "\n".join(out)
+    # pulsing ring on the last (current) node, starts once it has appeared
+    ts_last = t0 + (n - 1) * gap
+    css.append(_kf("ring", [("0%", "opacity:.9;transform:scale(1)"), ("100%", "opacity:0;transform:scale(2.4)")]))
+    css.append(f".ring{{animation:ring 2.2s ease-out infinite;animation-delay:{ts_last + reveal:.1f}s}}")
+
+    head = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
+        f'font-family="{FONT}" role="img" aria-label="Animated career timeline">',
+        "<defs>",
+        '<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">'
+        f'<path d="M 20 0 L 0 0 0 20" fill="none" stroke="{GRID}" stroke-width="0.5"/></pattern>',
+        "</defs>",
+        "<style>" + "".join(css) + "</style>",
+    ]
+    return "\n".join(head + body + ["</svg>"])
 
 
 # ===========================================================================
@@ -522,13 +624,13 @@ def generate_profile_html(insight, now):
 
     parts = [
         '<div align="center">',
-        f'<img width="100%" src="{banner_url}" alt="Generative floor plan — {html.escape(NAME.title())}"/>',
+        f'<img width="100%" src="{banner_url}" alt="Generative topographic banner — {html.escape(NAME.title())}"/>',
         "<br/><br/>",
         render_insight_html(insight),
         "<br/>",
         f'<img width="100%" src="{timeline_url}" alt="Career timeline: from architecture to AI engineering"/>',
         "<br/><br/>",
-        "### 🛠️ Tech Stack",
+        '<h3 align="center">🛠️ Tech Stack</h3>',
         '<table align="center">',
         "  <tr>",
     ]
@@ -540,7 +642,7 @@ def generate_profile_html(insight, now):
             f"      <br/><sub>{sub}</sub>",
             "    </td>",
         ]
-    parts += ["  </tr>", "</table>", "<br/>", "### 🤝 Let's Connect", '<p align="center">']
+    parts += ["  </tr>", "</table>", "<br/>", '<h3 align="center">🤝 Let\'s Connect</h3>', '<p align="center">']
     for label, logo, href in LINKS:
         parts.append(f'  <a href="{href}"><img src="{badge(label, logo)}"/></a>')
     parts += [
@@ -582,8 +684,10 @@ if __name__ == "__main__":
     now = datetime.now(timezone.utc)
     os.makedirs(ASSETS_DIR, exist_ok=True)
 
-    with open(os.path.join(ASSETS_DIR, "banner.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_banner_svg(now))
+    banner_svg = generate_banner_svg(now)
+    if banner_svg:
+        with open(os.path.join(ASSETS_DIR, "banner.svg"), "w", encoding="utf-8") as f:
+            f.write(banner_svg)
     with open(os.path.join(ASSETS_DIR, "timeline.svg"), "w", encoding="utf-8") as f:
         f.write(generate_timeline_svg())
     print("🏛️ Banner and timeline generated")
