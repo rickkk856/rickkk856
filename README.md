@@ -9,10 +9,17 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/><br/>
 <table width="100%">
   <tr><td>
+<<<<<<< HEAD
     <sub><b>INSIGHT OF THE DAY</b> · GENERATIVE AI</sub><br/><br/>
     <b>Generative AI keeps reshaping architecture and real estate</b><br/>
     From automated valuation to generative design, AI is moving from pilots to production.<br/><br/>
     <sub>via Static fallback · last good run 2026-10-31</sub>
+=======
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>Graphisoft Unveils Archicad 2026 with Enhanced AI Capabilities for AEC Workflows</b><br/>
+    Graphisoft has released its 2026 product portfolio, featuring significant AI advancements for architectural, engineering, and construction teams within Archicad. The update includes new AI-assisted workflows, a major enhancement to the AI Assistant, and an updated AI Visualizer with higher-quality image models.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhSd_YC37N1bajwkkVEQqxMBjUhM4GtrDzYAQJDOjYaYgR714W2jdg9d1MD3mymt4yetbzdO5WD3RdVGQSOBGRTA-WmDXZ-rWKpcHBlbNzfo1JD9E4Pe3BCUui4_6eGujlXqcxBn9K2wngoIA82oBf5iwau8da7ynEwP0XU6j6Y6p5oQGYMWp3nqNAYvhE664ffkTL991GNnCI4nH7qpzamvgMtQSKY6V84QOmknvadg==">NEMETSCHEK</a> · 2026-10-07 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
+>>>>>>> 8057cfe8e6067bd8aa957248aed6de8e1d953f19
   </td></tr>
 </table>
 <br/>
