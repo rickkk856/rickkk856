@@ -49,11 +49,14 @@ FONT = "'JetBrains Mono','Fira Code','SF Mono',Consolas,'Courier New',monospace"
 
 # --- Career timeline (edit freely; fill in "when" with years) --------------
 TIMELINE = [
-    {"when": "", "title": "Architecture", "sub": "Space, design and the built environment"},
-    {"when": "", "title": "Computational Design", "sub": "Parametric and generative workflows"},
-    {"when": "", "title": "MSc · Architectural Design with AI", "sub": "Where AI meets architecture"},
-    {"when": "", "title": "AI Models in Production", "sub": "5+ years building with AI"},
-    {"when": "", "title": "Senior AI Engineer", "sub": "AI for Finance, and Real Estate Industry"},
+    {"when": "2011 – 2021", "title": "Architecture Design",
+     "sub": "Architecture & Urbanism: construction techniques and technical projects"},
+    {"when": "2020 – 2022", "title": "MSc in AI Applied to Design Process",
+     "sub": "Generative models for floor plans; published at IJAC, ACADIA, eCAADe, CAADRIA, SIGraDi"},
+    {"when": "2022 – 2026", "title": "BioTech & GeoSpatial Intelligence",
+     "sub": "Computer vision, time-series analysis and GenAI for GeoSpatial Sciences"},
+    {"when": "2026 – today", "title": "GenAI on Finance & Real Estate",
+     "sub": "AI for finance and home-equity solutions"},
 ]
 
 # --- Insight tracks (rotate by day of the year) ----------------------------
@@ -89,7 +92,13 @@ BANNER_CSS = (
     "@media (prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}"
 )
 
-NODE_TAGS = ["AVM", "GEO", "AGENTS", "EXTRACTION", "LLM"]
+NODE_TAGS = [
+    "AGENTS", "LLMs", "RAG", "GEOSPATIAL SCIENCES", "TIME-SERIES ANALYSIS", "AWS", "GCP",
+    "GOOGLE EARTH ENGINE", "FORECASTING", "MACHINE LEARNING", "COMPUTER VISION",
+    "GENERATIVE AI", "REMOTE SENSING", "OBSERVABILITY", "LARGE LANGUAGE MODELS", "PROMPT ENGINEERING",
+    "DATA PIPELINES", "CLOUD COMPUTING"
+]
+MAX_LABELS = 9  # keywords shown per day (shuffled by the daily seed)
 
 
 def generate_banner_svg(now):
@@ -161,7 +170,7 @@ def generate_banner_svg(now):
                     gid="flow" if major else None, zorder=2)
 
     # --- Data graph overlay
-    pts = np.column_stack([rng.uniform(40, 800, 34), rng.uniform(34, H - 34, 34)])
+    pts = np.column_stack([rng.uniform(40, 800, 44), rng.uniform(34, H - 34, 44)])
     dist = np.linalg.norm(pts[:, None] - pts[None], axis=2)
     np.fill_diagonal(dist, np.inf)
     edges = set()
@@ -173,17 +182,23 @@ def generate_banner_svg(now):
         ax.plot([pts[i, 0], pts[j, 0]], [pts[i, 1], pts[j, 1]], color=ACCENT, lw=0.7, alpha=0.40, zorder=3)
     ax.scatter(pts[:, 0], pts[:, 1], s=9, color=WALL, linewidths=0, alpha=0.9, zorder=4)
 
-    # Labeled nodes (topics from your work), spaced apart
-    order = [int(k) for k in rng.permutation(np.where(pts[:, 0] < 730)[0])]
-    chosen = []
-    for k in order:
-        if all(np.linalg.norm(pts[k] - pts[c]) > 150 for c in chosen):
-            chosen.append(k)
-        if len(chosen) == len(NODE_TAGS):
+    # Labeled nodes: résumé keywords, shuffled daily, placed without overlapping
+    tags = [NODE_TAGS[int(i)] for i in rng.permutation(len(NODE_TAGS))]
+    boxes, placed = [], []
+    for k in (int(i) for i in rng.permutation(len(pts))):
+        if len(placed) >= min(MAX_LABELS, len(tags)):
             break
-    halo = [pe.withStroke(linewidth=3, foreground=BG)]
-    for k, tag in zip(chosen, NODE_TAGS):
         x, y = pts[k]
+        tag = tags[len(placed)]
+        box = (x - 8, y - 22, x + 11 + len(tag) * 6.4 + 8, y + 8)
+        if box[2] > 840 or box[1] < 8:
+            continue
+        if any(not (box[2] < o[0] or box[0] > o[2] or box[3] < o[1] or box[1] > o[3]) for o in boxes):
+            continue
+        boxes.append(box)
+        placed.append((x, y, tag))
+    halo = [pe.withStroke(linewidth=3, foreground=BG)]
+    for x, y, tag in placed:
         ax.plot([x], [y], "o", mfc="none", mec=ACCENT, ms=10, mew=1.2, gid="pulse", zorder=5)
         ax.text(x + 11, y - 9, tag, fontsize=7.5, family="monospace", color=ACCENT,
                 path_effects=halo, zorder=6)
@@ -226,11 +241,11 @@ def _kf(name, frames):
 
 
 def generate_timeline_svg():
-    W, H = 900, 410
+    W, H = 900, 440
     n = len(TIMELINE)
-    x_first, x_last = 130, W - 130
+    x_first, x_last = 150, W - 150
     step = (x_last - x_first) / (n - 1) if n > 1 else 0
-    ly = 210
+    ly = 225
     lx0, lx1 = 50, W - 50
     L = lx1 - lx0
 
@@ -315,8 +330,8 @@ def generate_timeline_svg():
         )
 
         # text block
-        t_lines = textwrap.wrap(item["title"], 24)
-        s_lines = textwrap.wrap(item.get("sub", ""), 32)
+        t_lines = textwrap.wrap(item["title"], 22)
+        s_lines = textwrap.wrap(item.get("sub", ""), 34)
         block_h = len(t_lines) * 22 + 8 + len(s_lines) * 17
         if above:
             top = ly - 60 - block_h
@@ -330,10 +345,10 @@ def generate_timeline_svg():
         g = [f'<g class="step s{i}">']
         g.append(f'<line x1="{cx:.1f}" y1="{stem[0]}" x2="{cx:.1f}" y2="{stem[1]}" stroke="{ACCENT}" stroke-width="1.5" stroke-dasharray="3 3"/>')
         label = item.get("when") or f"STEP {i + 1:02d}"
-        g.append(f'<text x="{cx:.1f}" y="{label_y}" font-size="12" fill="{ACCENT}" text-anchor="middle" letter-spacing="2">{html.escape(label)}</text>')
+        g.append(f'<text x="{cx:.1f}" y="{label_y}" font-size="13" fill="{ACCENT}" text-anchor="middle" letter-spacing="2">{html.escape(label)}</text>')
         y = top + 16
         for line in t_lines:
-            g.append(f'<text x="{cx:.1f}" y="{y}" font-size="17" font-weight="bold" fill="{WALL}" text-anchor="middle">{html.escape(line)}</text>')
+            g.append(f'<text x="{cx:.1f}" y="{y}" font-size="18" font-weight="bold" fill="{WALL}" text-anchor="middle">{html.escape(line)}</text>')
             y += 22
         y += 2
         for line in s_lines:
