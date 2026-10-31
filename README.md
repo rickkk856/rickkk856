@@ -10,9 +10,9 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <table width="100%">
   <tr><td>
     <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Nemetschek Group Launches &#x27;Max Solutions,&#x27; Integrating AI Across AEC Workflows</b><br/>
-    The Nemetschek Group has introduced its &#x27;Max Solutions&#x27; portfolio, a new family of premium AI offerings including Archicad Max for architecture, Allplan Max for engineering, and Bluebeam Max for construction. These solutions, powered by the Nemetschek Intelligence Platform, aim to automate repetitive tasks, enhance project data accessibility, and improve quality, keeping professionals in control of critical decisions.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFIAExtXGOw2LdeDGht2VBepFTgK8-rI57lVv5Gs0-hFk6RjGHck-ZNXy_HxLDMJeGliJBRKsI2xJu0yknmpC0yj9otHVHI0vl8TySb1Xbmn_7OL1pwBoM1SJrjbyPKy66E6uYxoofhHkmjhA1QmLCIy4cLUMhnwAYbGmNsVrhG0WcZ5RVzG5pXPDxhGy4=">Nemetschek Group</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
+    <b>Nemetschek Group Launches Max AI Solutions for Architecture, Engineering, and Construction</b><br/>
+    The Nemetschek Group has introduced its &#x27;Max&#x27; family of premium AI offerings—Archicad Max, Allplan Max, and Bluebeam Max—designed to integrate AI into existing workflows across architecture, engineering, and construction. Powered by the Nemetschek Intelligence Platform, these solutions aim to automate repetitive tasks, improve data accessibility, and enhance project quality while keeping professionals in control.<br/><br/>
+    <sub>Source: <a href="https://www.nemetschek.com/en/company/news/nemetschek-group-brings-ai-to-design-engineering-and-construction-with-newly-released-max-solutions">Nemetschek Group Press Release</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
   </td></tr>
 </table>
 <br/>
