@@ -10,9 +10,9 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <table width="100%">
   <tr><td>
     <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Autodesk Fusion Updates with AI Visualization and Automated Drawing Commands</b><br/>
-    Autodesk&#x27;s October 2026 update to Fusion introduces new AI-powered capabilities, including an AI Visualization Command for rapid scene and environment rendering from natural language prompts, and Automated Drawings for streamlined drawing creation. These enhancements aim to boost productivity and integrate intelligent automation into design workflows for Fusion Design Extension users.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMGnnecWoV8WzjDIkgMsfXWZzCkBsXEh_DY8j1OADEOQxiL-yO3bOorb34JlivP-xE6w8B_a_SKRXlrpMgjaKaC0pz5cYjnDMrydIULUfMxkvJXypFRTGeLKKW9LciHrMgj2czYCXPPkYGzAcGKpS_52EtgRr_Qad0miGm0YBK5ASt8m_26kepavFpkFiF1G48ijaq5ITahpI">Fusion Blog - Autodesk</a> · 2026-10-21 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
+    <b>Snaptrude Agent Launched to Enhance BIM Workflows with AI Capabilities</b><br/>
+    Snaptrude has released its new AI-powered Agent, designed to integrate with Building Information Modeling (BIM) workflows. This development aims to streamline design processes and improve efficiency within architectural, engineering, and construction projects.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEchQask_2OGoy3rz8d_nSeFdsjzHsXcz6HxQ5z8kVj8ATXH_9JyqrVkZ7eDxHSXm9gFunUnTXAqNyVzgc9WwM6kvEfzQr1oAFIyL_2oArmgZ8zrkCJa45DStRUK8_jsQkiOWWAYVi-753S1398lmBiPRB6f4E8g5oA0EF2HppUdbg=">AEC Magazine</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
   </td></tr>
 </table>
 <br/>
