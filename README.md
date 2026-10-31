@@ -9,10 +9,17 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <br/><br/>
 <table width="100%">
   <tr><td>
+<<<<<<< HEAD
     <sub><b>INSIGHT OF THE DAY</b> · GENERATIVE AI</sub><br/><br/>
     <b>Generative AI keeps reshaping architecture and real estate</b><br/>
     From automated valuation to generative design, AI is moving from pilots to production.<br/><br/>
     <sub>via Static fallback · last good run 2026-10-31</sub>
+=======
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>Snaptrude Agent Launched to Enhance BIM Workflows with AI Capabilities</b><br/>
+    Snaptrude has released its new AI-powered Agent, designed to integrate with Building Information Modeling (BIM) workflows. This development aims to streamline design processes and improve efficiency within architectural, engineering, and construction projects.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEchQask_2OGoy3rz8d_nSeFdsjzHsXcz6HxQ5z8kVj8ATXH_9JyqrVkZ7eDxHSXm9gFunUnTXAqNyVzgc9WwM6kvEfzQr1oAFIyL_2oArmgZ8zrkCJa45DStRUK8_jsQkiOWWAYVi-753S1398lmBiPRB6f4E8g5oA0EF2HppUdbg=">AEC Magazine</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
+>>>>>>> faa7a770acd809dac8690c0c40e3c18f2cefe3cb
   </td></tr>
 </table>
 <br/>
