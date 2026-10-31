@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" width="1200" height="290" font-family="'JetBrains Mono','Fira Code','SF Mono',Consolas,'Courier New',monospace" role="img" aria-label="Generative floor plan banner">
+<defs>
+<pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1b2631" stroke-width="0.5"/></pattern>
+<pattern id="major" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(#minor)"/><path d="M 100 0 L 0 0 0 100" fill="none" stroke="#1b2631" stroke-width="1.2"/></pattern>
+<pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#00bfff" stroke-width="1" opacity="0.45"/></pattern>
+</defs>
+<rect width="1200" height="290" rx="10" fill="#0b0f14"/>
+<rect width="1200" height="290" rx="10" fill="url(#major)"/>
+<rect x="40.0" y="30.0" width="215.3" height="200.0" fill="url(#hatch)" opacity="1"/>
+<rect x="255.3" y="30.0" width="212.8" height="106.3" fill="#00bfff" opacity="0.10"/>
+<rect x="468.1" y="142.7" width="188.1" height="87.3" fill="#00bfff" opacity="0.10"/>
+<line x1="468.1" y1="30.0" x2="468.1" y2="113.3" stroke="#8b98a5" stroke-width="1.6"/><line x1="468.1" y1="139.3" x2="468.1" y2="230.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="468.1" y1="113.3" x2="494.1" y2="113.3" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 494.1 113.3 A 26 26 0 0 1 468.1 139.3" stroke="#00bfff" stroke-width="1" fill="none"/>
+<line x1="255.3" y1="30.0" x2="255.3" y2="173.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="255.3" y1="199.0" x2="255.3" y2="230.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="255.3" y1="173.0" x2="281.3" y2="173.0" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 281.3 173.0 A 26 26 0 0 1 255.3 199.0" stroke="#00bfff" stroke-width="1" fill="none"/>
+<line x1="255.3" y1="136.3" x2="398.1" y2="136.3" stroke="#8b98a5" stroke-width="1.6"/><line x1="424.1" y1="136.3" x2="468.1" y2="136.3" stroke="#8b98a5" stroke-width="1.6"/><line x1="398.1" y1="136.3" x2="398.1" y2="110.3" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 398.1 110.3 A 26 26 0 0 1 424.1 136.3" stroke="#00bfff" stroke-width="1" fill="none"/>
+<line x1="656.2" y1="30.0" x2="656.2" y2="57.9" stroke="#8b98a5" stroke-width="1.6"/><line x1="656.2" y1="83.9" x2="656.2" y2="230.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="656.2" y1="57.9" x2="682.2" y2="57.9" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 682.2 57.9 A 26 26 0 0 1 656.2 83.9" stroke="#00bfff" stroke-width="1" fill="none"/>
+<line x1="468.1" y1="142.7" x2="502.1" y2="142.7" stroke="#8b98a5" stroke-width="1.6"/><line x1="528.1" y1="142.7" x2="656.2" y2="142.7" stroke="#8b98a5" stroke-width="1.6"/><line x1="502.1" y1="142.7" x2="502.1" y2="168.7" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 502.1 168.7 A 26 26 0 0 0 528.1 142.7" stroke="#00bfff" stroke-width="1" fill="none"/>
+<line x1="656.2" y1="119.0" x2="714.1" y2="119.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="740.1" y1="119.0" x2="800.0" y2="119.0" stroke="#8b98a5" stroke-width="1.6"/><line x1="714.1" y1="119.0" x2="714.1" y2="145.0" stroke="#00bfff" stroke-width="1" fill="none"/><path d="M 714.1 145.0 A 26 26 0 0 0 740.1 119.0" stroke="#00bfff" stroke-width="1" fill="none"/>
+<rect x="40" y="30" width="760" height="200" fill="none" stroke="#e6edf3" stroke-width="3.5"/>
+<text x="147.7" y="133.0" font-size="10" fill="#6e7b88" text-anchor="middle">R01 · 29.8 m²</text>
+<text x="361.7" y="86.2" font-size="10" fill="#6e7b88" text-anchor="middle">R02 · 15.7 m²</text>
+<text x="361.7" y="186.2" font-size="10" fill="#6e7b88" text-anchor="middle">R03 · 13.8 m²</text>
+<text x="562.1" y="89.3" font-size="10" fill="#6e7b88" text-anchor="middle">R04 · 14.7 m²</text>
+<text x="562.1" y="189.3" font-size="10" fill="#6e7b88" text-anchor="middle">R05 · 11.4 m²</text>
+<text x="728.1" y="77.5" font-size="10" fill="#6e7b88" text-anchor="middle">R06 · 8.9 m²</text>
+<text x="728.1" y="177.5" font-size="10" fill="#6e7b88" text-anchor="middle">R07 · 11.1 m²</text>
+<line x1="40" y1="254" x2="800" y2="254" stroke="#00bfff" stroke-width="1"/>
+<line x1="40" y1="248" x2="40" y2="260" stroke="#00bfff" stroke-width="1"/>
+<line x1="36" y1="258" x2="44" y2="250" stroke="#00bfff" stroke-width="1"/>
+<line x1="800" y1="248" x2="800" y2="260" stroke="#00bfff" stroke-width="1"/>
+<line x1="796" y1="258" x2="804" y2="250" stroke="#00bfff" stroke-width="1"/>
+<rect x="380.0" y="246" width="80" height="16" fill="#0b0f14"/><text x="420.0" y="258" font-size="11" fill="#00bfff" text-anchor="middle">20.00 m</text>
+<rect x="830" y="30" width="330" height="220" fill="#0b0f14" fill-opacity="0.85" stroke="#8b98a5" stroke-width="1.2"/>
+<text x="848" y="70" font-size="21" font-weight="bold" fill="#e6edf3" letter-spacing="0.5">RICARDO RODRIGUES</text>
+<text x="848" y="92" font-size="11" fill="#00bfff" letter-spacing="0.5">AI ENGINEER · COMPUTATIONAL DESIGN</text>
+<line x1="830" y1="110" x2="1160" y2="110" stroke="#8b98a5" stroke-width="1"/>
+<text x="848" y="136" font-size="10" fill="#6e7b88">SHEET</text>
+<text x="930" y="136" font-size="11" fill="#e6edf3">A-01 / GENERATIVE PLAN</text>
+<text x="848" y="162" font-size="10" fill="#6e7b88">SCALE</text>
+<text x="930" y="162" font-size="11" fill="#e6edf3">1:100</text>
+<text x="848" y="188" font-size="10" fill="#6e7b88">DATE</text>
+<text x="930" y="188" font-size="11" fill="#e6edf3">2026-10-31</text>
+<text x="848" y="214" font-size="10" fill="#6e7b88">SEED</text>
+<text x="930" y="214" font-size="11" fill="#e6edf3">20261031</text>
+<text x="848" y="240" font-size="10" fill="#6e7b88">LOCATION</text>
+<text x="930" y="240" font-size="11" fill="#e6edf3">SÃO PAULO, BR</text>
+</svg>

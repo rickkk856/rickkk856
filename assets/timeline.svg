@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="1200" height="230" font-family="'JetBrains Mono','Fira Code','SF Mono',Consolas,'Courier New',monospace" role="img" aria-label="Career timeline">
+<rect width="1200" height="230" rx="10" fill="#0b0f14"/>
+<text x="40" y="34" font-size="11" fill="#00bfff" letter-spacing="2">FROM SKETCH TO CODE</text>
+<line x1="60" y1="100" x2="1140" y2="100" stroke="#8b98a5" stroke-width="1.5"/>
+<line x1="60" y1="96" x2="60" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="84" y1="96" x2="84" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="108" y1="96" x2="108" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="132" y1="96" x2="132" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="156" y1="96" x2="156" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="180" y1="96" x2="180" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="204" y1="96" x2="204" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="228" y1="96" x2="228" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="252" y1="96" x2="252" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="276" y1="96" x2="276" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="300" y1="96" x2="300" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="324" y1="96" x2="324" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="348" y1="96" x2="348" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="372" y1="96" x2="372" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="396" y1="96" x2="396" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="420" y1="96" x2="420" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="444" y1="96" x2="444" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="468" y1="96" x2="468" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="492" y1="96" x2="492" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="516" y1="96" x2="516" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="540" y1="96" x2="540" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="564" y1="96" x2="564" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="588" y1="96" x2="588" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="612" y1="96" x2="612" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="636" y1="96" x2="636" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="660" y1="96" x2="660" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="684" y1="96" x2="684" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="708" y1="96" x2="708" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="732" y1="96" x2="732" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="756" y1="96" x2="756" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="780" y1="96" x2="780" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="804" y1="96" x2="804" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="828" y1="96" x2="828" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="852" y1="96" x2="852" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="876" y1="96" x2="876" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="900" y1="96" x2="900" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="924" y1="96" x2="924" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="948" y1="96" x2="948" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="972" y1="96" x2="972" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="996" y1="96" x2="996" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1020" y1="96" x2="1020" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1044" y1="96" x2="1044" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1068" y1="96" x2="1068" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1092" y1="96" x2="1092" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1116" y1="96" x2="1116" y2="104" stroke="#1b2631" stroke-width="1"/>
+<line x1="1140" y1="96" x2="1140" y2="104" stroke="#1b2631" stroke-width="1"/>
+<rect x="114.0" y="94.0" width="12" height="12" fill="#0b0f14" stroke="#00bfff" stroke-width="2"/>
+<text x="120.0" y="134" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">Architecture</text>
+<text x="120.0" y="154" font-size="11" fill="#6e7b88" text-anchor="middle">Space, design and the built</text>
+<text x="120.0" y="169" font-size="11" fill="#6e7b88" text-anchor="middle">environment</text>
+<rect x="354.0" y="94.0" width="12" height="12" fill="#0b0f14" stroke="#00bfff" stroke-width="2"/>
+<text x="360.0" y="134" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">Computational Design</text>
+<text x="360.0" y="154" font-size="11" fill="#6e7b88" text-anchor="middle">Parametric and generative</text>
+<text x="360.0" y="169" font-size="11" fill="#6e7b88" text-anchor="middle">workflows</text>
+<rect x="594.0" y="94.0" width="12" height="12" fill="#0b0f14" stroke="#00bfff" stroke-width="2"/>
+<text x="600.0" y="134" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">MSc · Architectural</text>
+<text x="600.0" y="151" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">Design with AI</text>
+<text x="600.0" y="171" font-size="11" fill="#6e7b88" text-anchor="middle">Where AI meets architecture</text>
+<rect x="834.0" y="94.0" width="12" height="12" fill="#0b0f14" stroke="#00bfff" stroke-width="2"/>
+<text x="840.0" y="134" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">AI Models in</text>
+<text x="840.0" y="151" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">Production</text>
+<text x="840.0" y="171" font-size="11" fill="#6e7b88" text-anchor="middle">5+ years building with AI</text>
+<rect x="1072.0" y="92.0" width="16" height="16" fill="#00bfff" stroke="#00bfff" stroke-width="2"/>
+<text x="1080.0" y="134" font-size="13" font-weight="bold" fill="#e6edf3" text-anchor="middle">Senior AI Engineer</text>
+<text x="1080.0" y="154" font-size="11" fill="#6e7b88" text-anchor="middle">Fintech, home equity and</text>
+<text x="1080.0" y="169" font-size="11" fill="#6e7b88" text-anchor="middle">real estate-backed credit</text>
+</svg>
