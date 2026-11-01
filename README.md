@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261031" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261101" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Nemetschek Group Launches Max AI Solutions for Architecture, Engineering, and Construction</b><br/>
-    The Nemetschek Group has introduced its &#x27;Max&#x27; family of premium AI offerings—Archicad Max, Allplan Max, and Bluebeam Max—designed to integrate AI into existing workflows across architecture, engineering, and construction. Powered by the Nemetschek Intelligence Platform, these solutions aim to automate repetitive tasks, improve data accessibility, and enhance project quality while keeping professionals in control.<br/><br/>
-    <sub>Source: <a href="https://www.nemetschek.com/en/company/news/nemetschek-group-brings-ai-to-design-engineering-and-construction-with-newly-released-max-solutions">Nemetschek Group Press Release</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-10-31</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>PayJoy Acquires Finia AI Assets to Bolster AI-Powered Credit Assessment in Latin America</b><br/>
+    PayJoy has acquired strategic technology and data assets from Finia AI, a Mexican fintech specializing in AI-powered credit assessment. This move aims to strengthen PayJoy&#x27;s underwriting capabilities and enable the development of financial products for underserved consumers and small businesses across Latin America.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe6_Bv2OIEskYMPqiQMDoRw5RMHhT5Wbd2Dda0FE1lOSAe7b9N198nsys10DAVkfjHaKzRaJylwqcWrs6Pt18ERARUkiKmIMQ4jivnSqtvnUbKHF46mgo-vsL69VcMkuhdhkFYS112PJWsnxRUeWNMEf5O5mnEWbQP">Hispanic Executive</a> · 2026-10-21 · via Google Gemini 2.5 Flash · updated 2026-11-01</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261031" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261101" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
