@@ -10,9 +10,9 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <table width="100%">
   <tr><td>
     <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Built Technologies Launches AI-Powered Document Intelligence, Cutting Processing from Days to Minutes</b><br/>
-    Built Technologies has deployed an AI-powered document processing engine on Amazon Bedrock, designed to modernize real estate finance workflows. This solution significantly reduces the time required for classification and extraction tasks from several days to mere minutes per package, forming a foundational element of the company&#x27;s AI strategy.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyT41weVaVTfKBLWde7zZqG3FI_PLVpR7p96MogrK324kd4ZV9cDrbCx4R-GCETaanbqrc6Gu99Nh_c1TGekECGaQrzFW8wJWkGJg1kGaDRBVB2xfd5aOZeB6w57M5b-r4nCRu2A1Sq80KJZSa5VXCLC1QG15E8zWHZkzj6VGqPrJ78fINqz5YpTDHAl2gQTNet-zOq3p0ftYNBLVI9NIN8erfOnO0ySNUqn6ENUbL06uGUJN97iKnTXsVJBy8SkTr6iECS8RkyOjdUW7fpEcxUKYwUP1EhiJeDVfuSR-js0d05A==">Built Technologies builds an AI-powered document intelligence solution on AWS to power agents across real estate finance</a> · 2026-07-15 · via Google Gemini 2.5 Flash · updated 2026-11-02</sub>
+    <b>Built Technologies and AWS Launch AI-Powered Document Intelligence for Real Estate Finance</b><br/>
+    Built Technologies, in collaboration with AWS, has developed an AI-powered document intelligence solution to automate and accelerate real estate finance workflows. This new engine can classify, extract, and analyze complex financial documents, reducing processing times from days to minutes.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3n9nBBJ4nrBidjYmsCnjhF8FHgowT4u4wL2itXWc4LA4m9pdqrLuBPA25V9vMIiLkHA3hFfVs3XfexKtFmP1q2IjqnowT2ncw610XQCPlhJT3lXs4oHkdzEcu-llsPQ5ZAAkE9e2cUtn3MsHN5zfFIeUY7YKI58XLSu4QzXgx52G-NYltxx33n7buyTX1zViC1RvzDnXUHgDj0_YbOx02VMuStc07lNRR9jSiOxPQE5FKBFtzt9J27z0swf0IEKtJlvB1dlLPmpP11haTWJ81BqKYKeyr4CSrc71fFFDAs9uhpQ==">amazon.com</a> · 2026-07-15 · via Google Gemini 2.5 Flash · updated 2026-11-02</sub>
   </td></tr>
 </table>
 <br/>
