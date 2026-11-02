@@ -84,13 +84,23 @@ SYSTEM_PROMPT = (
 # ===========================================================================
 # 1. Generative banner: topographic field + data graph (matplotlib + numpy)
 # ===========================================================================
-BANNER_CSS = (
-    ".flow{stroke-dasharray:7 11;animation:flow 6s linear infinite}"
-    "@keyframes flow{to{stroke-dashoffset:-72}}"
-    ".pulse{animation:pulse 3.2s ease-in-out infinite}"
-    "@keyframes pulse{0%,100%{opacity:.2}50%{opacity:1}}"
-    "@media (prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}"
-)
+# Animation CSS. "__DX__" is replaced by the scan travel distance (SVG user units).
+# Per-element timing (duration, delay, direction) is injected inline from a daily seed,
+# so the motion never looks like a synchronized loop.
+BANNER_CSS = "".join([
+    ".flow,.packet,.pulse,.layer{animation-iteration-count:infinite}",
+    ".flow{stroke-dasharray:7 11;animation-name:flow;animation-duration:6s;animation-timing-function:linear}",
+    "@keyframes flow{to{stroke-dashoffset:-72}}",
+    ".packet{stroke-dasharray:1.5 16;animation-name:packet;animation-duration:6s;animation-timing-function:linear}",
+    "@keyframes packet{to{stroke-dashoffset:-175}}",
+    ".pulse{animation-name:pulse;animation-duration:3.2s;animation-timing-function:ease-in-out}",
+    "@keyframes pulse{0%,100%{opacity:.2}50%{opacity:1}}",
+    "@keyframes breathe{0%,100%{opacity:.45}50%{opacity:1}}",
+    "@keyframes drift{from{transform:translate(0,0)}to{transform:translate(var(--dx),var(--dy))}}",
+    ".scan{animation:scan 13s ease-in-out infinite}",
+    "@keyframes scan{0%{transform:translateX(0)}85%,100%{transform:translateX(__DX__px)}}",
+    "@media (prefers-reduced-motion:reduce){.flow,.packet,.pulse,.layer,.scan{animation:none!important}}",
+])
 
 NODE_TAGS = [
     "AGENTS", "LLMs", "RAG", "GEOSPATIAL SCIENCES", "TIME-SERIES ANALYSIS", "AWS", "GCP",
@@ -104,7 +114,8 @@ MAX_LABELS = 9  # keywords shown per day (shuffled by the daily seed)
 def generate_banner_svg(now):
     """Abstract 'terrain of ideas': isolines of a daily-seeded field with a data graph on top.
 
-    Returns the SVG string, or None if numpy/matplotlib are not installed.
+    Layout and motion are both seeded by the date. Returns the SVG string,
+    or None if numpy/matplotlib are not installed.
     """
     try:
         import numpy as np
@@ -112,6 +123,7 @@ def generate_banner_svg(now):
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
         import matplotlib.patheffects as pe
+        from matplotlib.collections import LineCollection
         from matplotlib.colors import LinearSegmentedColormap
         from matplotlib.patches import FancyBboxPatch, Rectangle
     except ImportError:
@@ -119,9 +131,31 @@ def generate_banner_svg(now):
         return None
 
     seed = int(now.strftime("%Y%m%d"))
-    rng = np.random.default_rng(seed)
+    rng = np.random.default_rng(seed)        # layout
+    arng = np.random.default_rng(seed + 1)   # motion (separate stream: layout stays stable)
     W, H = 1200, 340
     matplotlib.rcParams["svg.hashsalt"] = str(seed)
+
+    # Per-element animation timing, injected into the SVG afterwards
+    styles = {}
+
+    def motion(key, dur, reverse_prob=0.5):
+        d = float(arng.uniform(*dur))
+        styles[key] = (
+            f"animation-duration:{d:.1f}s;animation-delay:-{float(arng.uniform(0, d)):.1f}s;"
+            f"animation-direction:{'reverse' if arng.random() < reverse_prob else 'normal'}"
+        )
+        return key
+
+    def layer_motion(key):
+        b, dr = float(arng.uniform(7, 14)), float(arng.uniform(16, 28))
+        styles[key] = (
+            f"--dx:{float(arng.uniform(-2.2, 2.2)):.1f}px;--dy:{float(arng.uniform(-1.6, 1.6)):.1f}px;"
+            f"animation-name:breathe,drift;animation-duration:{b:.1f}s,{dr:.1f}s;"
+            f"animation-delay:-{float(arng.uniform(0, b)):.1f}s,-{float(arng.uniform(0, dr)):.1f}s;"
+            "animation-direction:normal,alternate;animation-timing-function:ease-in-out"
+        )
+        return key
 
     # --- Smooth random field (FFT low-pass) + a few "hills" for composition
     gx, gy = 320, 91
@@ -141,7 +175,7 @@ def generate_banner_svg(now):
     Y = yy * (H / (gy - 1))
     levels = np.linspace(0.05, 0.95, 24)
 
-    # Isolines (computed on a throwaway figure, drawn as plain lines so we control the SVG groups)
+    # Isolines (computed on a throwaway figure, then drawn by us so we control the SVG groups)
     tmp = plt.figure()
     cs = tmp.add_subplot().contour(X, Y, field, levels=levels)
     all_segs = [list(s) for s in cs.allsegs]
@@ -158,16 +192,24 @@ def generate_banner_svg(now):
     gxs, gys = np.meshgrid(np.arange(20, W, 30), np.arange(20, H, 30))
     ax.scatter(gxs.ravel(), gys.ravel(), s=0.8, color="#2a3745", linewidths=0, zorder=1)
 
+    # Major isolines: one group per contour, each with its own flow speed / direction.
+    # Minor isolines: one group per level that "breathes" and drifts slightly.
     cmap = LinearSegmentedColormap.from_list("blueprint", ["#0f2a3f", "#0a6c9c", ACCENT, "#bfeaff"])
+    flow_id = 0
     for i, segs in enumerate(all_segs):
         t = (levels[i] - levels[0]) / (levels[-1] - levels[0])
-        major = i % 5 == 0
-        for seg in segs:
-            if len(seg) < 3:
-                continue
-            ax.plot(seg[:, 0], seg[:, 1], color=cmap(t), lw=1.2 if major else 0.55,
-                    alpha=0.95 if major else 0.30 + 0.45 * t, solid_capstyle="round",
-                    gid="flow" if major else None, zorder=2)
+        good = [seg for seg in segs if len(seg) >= 3]
+        if not good:
+            continue
+        if i % 5 == 0:
+            for seg in good:
+                flow_id += 1
+                ax.plot(seg[:, 0], seg[:, 1], color=cmap(t), lw=1.2, alpha=0.95,
+                        solid_capstyle="round", gid=motion(f"flow{flow_id}", (5, 12)), zorder=2)
+        else:
+            lc = LineCollection(good, colors=[cmap(t)], linewidths=0.55, alpha=0.30 + 0.45 * t, zorder=2)
+            lc.set_gid(layer_motion(f"layer{i}"))
+            ax.add_collection(lc)
 
     # --- Data graph overlay
     pts = np.column_stack([rng.uniform(40, 800, 44), rng.uniform(34, H - 34, 44)])
@@ -178,8 +220,12 @@ def generate_banner_svg(now):
         for j in np.argsort(dist[i])[:2]:
             if dist[i, j] < 190:
                 edges.add(tuple(sorted((i, int(j)))))
-    for i, j in edges:
-        ax.plot([pts[i, 0], pts[j, 0]], [pts[i, 1], pts[j, 1]], color=ACCENT, lw=0.7, alpha=0.40, zorder=3)
+    for n, (i, j) in enumerate(sorted(edges)):
+        xs, ys = [pts[i, 0], pts[j, 0]], [pts[i, 1], pts[j, 1]]
+        ax.plot(xs, ys, color=ACCENT, lw=0.7, alpha=0.40, zorder=3)
+        # "data packets" travelling along the edge (dotted line whose dashes slide)
+        ax.plot(xs, ys, color="#bfeaff", lw=1.6, alpha=0.9, solid_capstyle="round",
+                gid=motion(f"packet{n}", (4, 9)), zorder=3)
     ax.scatter(pts[:, 0], pts[:, 1], s=9, color=WALL, linewidths=0, alpha=0.9, zorder=4)
 
     # Labeled nodes: résumé keywords, shuffled daily, placed without overlapping
@@ -191,44 +237,58 @@ def generate_banner_svg(now):
         x, y = pts[k]
         tag = tags[len(placed)]
         box = (x - 8, y - 22, x + 11 + len(tag) * 6.4 + 8, y + 8)
-        if box[2] > 840 or box[1] < 8:
+        if box[2] > 836 or box[1] < 8:
             continue
         if any(not (box[2] < o[0] or box[0] > o[2] or box[3] < o[1] or box[1] > o[3]) for o in boxes):
             continue
         boxes.append(box)
         placed.append((x, y, tag))
     halo = [pe.withStroke(linewidth=3, foreground=BG)]
-    for x, y, tag in placed:
-        ax.plot([x], [y], "o", mfc="none", mec=ACCENT, ms=10, mew=1.2, gid="pulse", zorder=5)
+    for n, (x, y, tag) in enumerate(placed):
+        ax.plot([x], [y], "o", mfc="none", mec=ACCENT, ms=10, mew=1.2,
+                gid=motion(f"pulse{n}", (2.4, 4.8), reverse_prob=0), zorder=5)
         ax.text(x + 11, y - 9, tag, fontsize=7.5, family="monospace", color=ACCENT,
                 path_effects=halo, zorder=6)
 
-    # --- Title block
-    bx, by, bw, bh = 860, 30, 310, 280
-    ax.add_patch(Rectangle((bx, by), bw, bh, fc=BG, ec=LINE, lw=0.9, alpha=0.9, zorder=10))
-    ax.text(bx + 18, by + 42, NAME, fontsize=16, weight="bold", family="monospace", color=WALL, zorder=11)
-    ax.text(bx + 18, by + 66, ROLE, fontsize=7.2, family="monospace", color=ACCENT, zorder=11)
-    ax.plot([bx, bx + bw], [by + 86, by + 86], color=LINE, lw=0.8, zorder=11)
-    rows = [
-        ("SHEET", "A-02 / GENERATIVE FIELD"),
-        ("ISOLINES", str(len(levels))),
-        ("NODES", str(len(pts))),
-        ("DATE", now.strftime("%Y-%m-%d")),
-        ("SEED", str(seed)),
-        ("LOCATION", LOCATION),
-    ]
-    for n, (k, v) in enumerate(rows):
-        ry = by + 118 + n * 31
-        ax.text(bx + 18, ry, k, fontsize=7, family="monospace", color=MUTED, zorder=11)
-        ax.text(bx + 105, ry, v, fontsize=7.8, family="monospace", color=WALL, zorder=11)
+    # --- Title block (name, role, date, location)
+    bx, by, bw, bh = 850, 40, 320, 260
+    ax.add_patch(Rectangle((bx, by), bw, bh, fc=BG, ec=LINE, lw=0.9, alpha=0.92, zorder=10))
+    ax.text(bx + 20, by + 56, NAME, fontsize=18, weight="bold", family="monospace", color=WALL, zorder=11)
+    ax.text(bx + 20, by + 84, ROLE, fontsize=9.3, family="monospace", color=ACCENT, zorder=11)
+    ax.plot([bx, bx + bw], [by + 106, by + 106], color=LINE, lw=0.8, zorder=11)
+    ax.text(bx + 20, by + 146, "DATE", fontsize=8.5, family="monospace", color=MUTED, zorder=11)
+    ax.text(bx + 20, by + 172, now.strftime("%Y-%m-%d"), fontsize=14, family="monospace", color=WALL, zorder=11)
+    ax.text(bx + 20, by + 208, "LOCATION", fontsize=8.5, family="monospace", color=MUTED, zorder=11)
+    ax.text(bx + 20, by + 234, LOCATION, fontsize=14, family="monospace", color=WALL, zorder=11)
 
     buf = io.StringIO()
     fig.savefig(buf, format="svg", transparent=True, metadata={"Date": None})
     plt.close(fig)
-
     svg = buf.getvalue()
-    svg = svg.replace('<g id="flow">', '<g class="flow">').replace('<g id="pulse">', '<g class="pulse">')
-    svg = re.sub(r"(<svg[^>]*>)", lambda m: m.group(1) + f"<style>{BANNER_CSS}</style>", svg, count=1)
+
+    # --- Post-process: inject per-element motion + a slow "scanner" sweep
+    def restyle(m):
+        return f'<g class="{m.group(1)}" style="{styles[m.group(1) + m.group(2)]}">'
+
+    svg = re.sub(r'<g id="(flow|packet|pulse|layer)(\d+)">', restyle, svg)
+
+    vb = re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', svg)
+    vb_w, vb_h = float(vb.group(1)), float(vb.group(2))
+    k = vb_w / W  # data units -> SVG user units
+    scan_dur = float(arng.uniform(11, 17))
+    scan = (
+        '<defs><linearGradient id="scanGrad" x1="0" x2="1" y1="0" y2="0">'
+        '<stop offset="0" stop-color="#00bfff" stop-opacity="0"/>'
+        '<stop offset="0.5" stop-color="#00bfff" stop-opacity="0.14"/>'
+        '<stop offset="1" stop-color="#00bfff" stop-opacity="0"/></linearGradient>'
+        f'<clipPath id="scanClip"><rect x="0" y="0" width="{840 * k:.1f}" height="{vb_h:.1f}"/></clipPath></defs>'
+        f'<g clip-path="url(#scanClip)"><rect class="scan" x="{-170 * k:.1f}" y="0" width="{170 * k:.1f}" '
+        f'height="{vb_h:.1f}" fill="url(#scanGrad)" style="animation-duration:{scan_dur:.1f}s"/></g>'
+    )
+    svg = svg.replace("</svg>", scan + "</svg>")
+
+    css = BANNER_CSS.replace("__DX__", f"{1030 * k:.1f}")
+    svg = re.sub(r"(<svg[^>]*>)", lambda m: m.group(1) + f"<style>{css}</style>", svg, count=1)
     return svg
 
 
