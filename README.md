@@ -5,33 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<<<<<<< HEAD
 <img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261102" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENERATIVE AI</sub><br/><br/>
-    <b>Generative AI keeps reshaping architecture and real estate</b><br/>
-    From automated valuation to generative design, AI is moving from pilots to production.<br/><br/>
-    <sub>via Static fallback · last good run 2026-11-02</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Built Technologies Launches AI-Powered Document Intelligence, Cutting Processing from Days to Minutes</b><br/>
+    Built Technologies has deployed an AI-powered document processing engine on Amazon Bedrock, designed to modernize real estate finance workflows. This solution significantly reduces the time required for classification and extraction tasks from several days to mere minutes per package, forming a foundational element of the company&#x27;s AI strategy.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyT41weVaVTfKBLWde7zZqG3FI_PLVpR7p96MogrK324kd4ZV9cDrbCx4R-GCETaanbqrc6Gu99Nh_c1TGekECGaQrzFW8wJWkGJg1kGaDRBVB2xfd5aOZeB6w57M5b-r4nCRu2A1Sq80KJZSa5VXCLC1QG15E8zWHZkzj6VGqPrJ78fINqz5YpTDHAl2gQTNet-zOq3p0ftYNBLVI9NIN8erfOnO0ySNUqn6ENUbL06uGUJN97iKnTXsVJBy8SkTr6iECS8RkyOjdUW7fpEcxUKYwUP1EhiJeDVfuSR-js0d05A==">Built Technologies builds an AI-powered document intelligence solution on AWS to power agents across real estate finance</a> · 2026-07-15 · via Google Gemini 2.5 Flash · updated 2026-11-02</sub>
   </td></tr>
 </table>
 <br/>
 <img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261102" alt="Career timeline: from architecture to AI engineering"/>
-=======
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261101" alt="Generative topographic banner — Ricardo Rodrigues"/>
-<br/><br/>
-<table width="100%">
-  <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>PayJoy Acquires Finia AI Assets to Bolster AI-Powered Credit Assessment in Latin America</b><br/>
-    PayJoy has acquired strategic technology and data assets from Finia AI, a Mexican fintech specializing in AI-powered credit assessment. This move aims to strengthen PayJoy&#x27;s underwriting capabilities and enable the development of financial products for underserved consumers and small businesses across Latin America.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEe6_Bv2OIEskYMPqiQMDoRw5RMHhT5Wbd2Dda0FE1lOSAe7b9N198nsys10DAVkfjHaKzRaJylwqcWrs6Pt18ERARUkiKmIMQ4jivnSqtvnUbKHF46mgo-vsL69VcMkuhdhkFYS112PJWsnxRUeWNMEf5O5mnEWbQP">Hispanic Executive</a> · 2026-10-21 · via Google Gemini 2.5 Flash · updated 2026-11-01</sub>
-  </td></tr>
-</table>
-<br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261101" alt="Career timeline: from architecture to AI engineering"/>
->>>>>>> a40814a62a933cac703d4b598e2d62929d4d57a3
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
