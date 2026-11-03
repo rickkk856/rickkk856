@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261102" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261103" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Built Technologies and AWS Launch AI-Powered Document Intelligence for Real Estate Finance</b><br/>
-    Built Technologies, in collaboration with AWS, has developed an AI-powered document intelligence solution to automate and accelerate real estate finance workflows. This new engine can classify, extract, and analyze complex financial documents, reducing processing times from days to minutes.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3n9nBBJ4nrBidjYmsCnjhF8FHgowT4u4wL2itXWc4LA4m9pdqrLuBPA25V9vMIiLkHA3hFfVs3XfexKtFmP1q2IjqnowT2ncw610XQCPlhJT3lXs4oHkdzEcu-llsPQ5ZAAkE9e2cUtn3MsHN5zfFIeUY7YKI58XLSu4QzXgx52G-NYltxx33n7buyTX1zViC1RvzDnXUHgDj0_YbOx02VMuStc07lNRR9jSiOxPQE5FKBFtzt9J27z0swf0IEKtJlvB1dlLPmpP11haTWJ81BqKYKeyr4CSrc71fFFDAs9uhpQ==">amazon.com</a> · 2026-07-15 · via Google Gemini 2.5 Flash · updated 2026-11-02</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>Nemetschek Group Integrates AI Functions Across Architectural, Engineering, and Construction Tools</b><br/>
+    The Nemetschek Group has launched its &quot;Max&quot; offerings, embedding AI functions into core software like Archicad Max, Allplan Max, and Bluebeam Max. These new tools aim to automate repetitive tasks, enhance project information access, and improve quality throughout the building lifecycle, from early design to construction.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGR9AFtRpPTDaoJV5omfttCpv3kIXpvoTjFj_OZyN5aYATAVZ8nLhyqdr22xQa_FmofHlXLe2iuUPH6GyU2thYbKDa4MzL5LWTHGnKrpVJ4bnU4ckjGJvxF5P8tsH98Dse2xKwGTVIqa8RsGnXAetdv_UoAnWUHYN5KWAr0DRnYVGUGLYkN_P7bSjTlvPU=">Engineering.com</a> · 2026-11-02 · via Google Gemini 2.5 Flash · updated 2026-11-03</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261102" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261103" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
