@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261104" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261105" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Grupo BC Rebrands to BC Technologies, Enhancing AI-Powered Mortgage and Credit Solutions in Latin America</b><br/>
-    Grupo BC has rebranded as BC Technologies, marking its evolution into a leading AI-powered technology processor and software provider for end-to-end mortgage and credit lifecycles across Iberia and Latin America. This move underscores the company&#x27;s focus on integrating AI to power mission-critical financial workflows for institutions in the region.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-OgZ4xTytwCKD0_2Qp_dPwUQWKmeHkdQnylP0yeFFkfCfojqdXKwQbUqZQ_wr7Bal9DYb-w0n-E0yZHGOOk7b53V9vjKey7dAFol_X-VWFd4rSTmXpWNK9-fdZ0Wqb5XKi2gCZZ3WBeyuTOGMD8xs0Qrg-IPGccBXEEnpHDJbj4PXsBxTKJCm9GSXfKqImqv1VkIkboLmBl19oYRS8YWK07vCV1BCp5UkI78TIKtBt9vdxvwcvrcDGPDOYE_eDQNoqASG7SxQPEeRKIyEBIt29Mo4SaRnoX5jMCCkawq7t7xNzJkVdg8JQe23OSzVkmsmFaILZoNEQgnTsUjeG9Y_ilA=">Business Wire</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-11-04</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>New AI-Run Mortgage Startup, LenDb.ai, Launches Loan Officer Database for AI Assistants</b><br/>
+    LenDb.ai, a new mortgage technology startup, has launched a free database containing over 224,000 U.S. loan officer records for use by AI assistants like ChatGPT and Claude. The platform aims to connect borrowers with originators based on specific criteria such as location, licensing, loan specialties, and languages spoken, and also utilizes an AI agent for much of its daily operations.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO5mqYlCMVI513cNb8x5PwnQJHClIAgmZhPr6kKponKofXQIOE7fHhv7F-k9og1ErnPMzmzzWTaiw1BYe8Xh_JYDyCDUHLaaKFJZ_p6yhFUmqUCh9G7V3wOa412AdHK6cy22PfAT82L3qCoGRgcf6So9X6s8F6M28bYjWZ7f5g0ssF24DFaOwFVNi4WyeyKVl6ojxcjY-GLBVyK-nmxQ==">nationalmortgageprofessional.com</a> · 2026-11-05 · via Google Gemini 2.5 Flash · updated 2026-11-05</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261104" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261105" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
