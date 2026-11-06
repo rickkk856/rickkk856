@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261105" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261106" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>New AI-Run Mortgage Startup, LenDb.ai, Launches Loan Officer Database for AI Assistants</b><br/>
-    LenDb.ai, a new mortgage technology startup, has launched a free database containing over 224,000 U.S. loan officer records for use by AI assistants like ChatGPT and Claude. The platform aims to connect borrowers with originators based on specific criteria such as location, licensing, loan specialties, and languages spoken, and also utilizes an AI agent for much of its daily operations.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO5mqYlCMVI513cNb8x5PwnQJHClIAgmZhPr6kKponKofXQIOE7fHhv7F-k9og1ErnPMzmzzWTaiw1BYe8Xh_JYDyCDUHLaaKFJZ_p6yhFUmqUCh9G7V3wOa412AdHK6cy22PfAT82L3qCoGRgcf6So9X6s8F6M28bYjWZ7f5g0ssF24DFaOwFVNi4WyeyKVl6ojxcjY-GLBVyK-nmxQ==">nationalmortgageprofessional.com</a> · 2026-11-05 · via Google Gemini 2.5 Flash · updated 2026-11-05</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>Graphisoft Unveils 2026 Product Portfolio with Enhanced AI for Architectural Design</b><br/>
+    Graphisoft introduced its 2026 product portfolio on October 7, 2026, featuring new AI capabilities for Archicad to enhance architectural, engineering, and construction workflows. The update includes AI-assisted functionalities, planned Model Context Protocol (MCP) connectivity, and a major update to its AI Assistant, aiming for data-informed design across the project lifecycle.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNJOE1Ku0SwgiOfHe-LJ9fiblOq_2M6ra-bUXmmUgcQUkVZAkxq5KJj5Spgqup670c07oqzSgbTNhjD3JP68xaarjPhTtWdTsICHN9YptzwxsR_fGxON5Ho-dSmThzT_Kv-s4XAN0y6k_OBT90cVdCYihPQBOe9gJmYQUN7OTfsOLzNWlr6ACWhDIc_n-ublFei6m7Oq0ZqyAbdx3mNtZBKH9fm_YetGD1YvVP2Vwe8wjmt2wcAfzw0Ni7WOJnm2YGaDr7FcTjxQfCU7xjG1oBhL4r9avZ-s0OZmdGhwXvYG-XVPWVr_j8CKjC">graphisoft.com</a> · 2026-10-07 · via Google Gemini 2.5 Flash · updated 2026-11-06</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261105" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261106" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
