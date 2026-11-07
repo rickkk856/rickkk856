@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261106" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261107" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Graphisoft Unveils 2026 Product Portfolio with Enhanced AI for Architectural Design</b><br/>
-    Graphisoft introduced its 2026 product portfolio on October 7, 2026, featuring new AI capabilities for Archicad to enhance architectural, engineering, and construction workflows. The update includes AI-assisted functionalities, planned Model Context Protocol (MCP) connectivity, and a major update to its AI Assistant, aiming for data-informed design across the project lifecycle.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNJOE1Ku0SwgiOfHe-LJ9fiblOq_2M6ra-bUXmmUgcQUkVZAkxq5KJj5Spgqup670c07oqzSgbTNhjD3JP68xaarjPhTtWdTsICHN9YptzwxsR_fGxON5Ho-dSmThzT_Kv-s4XAN0y6k_OBT90cVdCYihPQBOe9gJmYQUN7OTfsOLzNWlr6ACWhDIc_n-ublFei6m7Oq0ZqyAbdx3mNtZBKH9fm_YetGD1YvVP2Vwe8wjmt2wcAfzw0Ni7WOJnm2YGaDr7FcTjxQfCU7xjG1oBhL4r9avZ-s0OZmdGhwXvYG-XVPWVr_j8CKjC">graphisoft.com</a> · 2026-10-07 · via Google Gemini 2.5 Flash · updated 2026-11-06</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>AI and Automation Poised to Transform Brazil&#x27;s Home Equity Lending Market</b><br/>
+    A recent podcast discussion featuring Bruno Gama, CEO of FlowCredi, highlights the significant growth potential of Brazil&#x27;s home equity loan market and emphasizes how AI and automation are set to revolutionize credit operations, property valuation, and document verification within this sector. This technological integration aims to reduce friction in the lending process and expand access to liquidity for consumers.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHxpoTPyrE_pdDGzgU02tKscvqZ5i7CaNZHwmS6LbVxad_FlWpXLlghQqq6ocGjYxCgbs654sMRsbcTId23ooj6_RZs1nwEz13ZZChTeq71TQ8BRNCVrj0MQ9ZAHdfD140I3c2Vg==">let&#x27;s money (YouTube)</a> · 2026-10-28 · via Google Gemini 2.5 Flash · updated 2026-11-07</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261106" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261107" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
