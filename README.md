@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261107" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261108" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>AI and Automation Poised to Transform Brazil&#x27;s Home Equity Lending Market</b><br/>
-    A recent podcast discussion featuring Bruno Gama, CEO of FlowCredi, highlights the significant growth potential of Brazil&#x27;s home equity loan market and emphasizes how AI and automation are set to revolutionize credit operations, property valuation, and document verification within this sector. This technological integration aims to reduce friction in the lending process and expand access to liquidity for consumers.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHxpoTPyrE_pdDGzgU02tKscvqZ5i7CaNZHwmS6LbVxad_FlWpXLlghQqq6ocGjYxCgbs654sMRsbcTId23ooj6_RZs1nwEz13ZZChTeq71TQ8BRNCVrj0MQ9ZAHdfD140I3c2Vg==">let&#x27;s money (YouTube)</a> · 2026-10-28 · via Google Gemini 2.5 Flash · updated 2026-11-07</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Svermo Launches Deal AI for Real Estate Acquisition Teams</b><br/>
+    Svermo launched Deal AI on October 6, 2026, an AI platform that reviews offering memorandums, rent rolls and financial statements, flags missing documents and inconsistencies, and helps real estate acquisition teams prioritize deals before underwriting begins.<br/><br/>
+    <sub>Source: <a href="https://www.svermo.ai/news/svermo-adds-deal-ai-to-help-real-estate-acquisition-teams">Svermo</a> · 2026-10-06 · via OpenRouter (cohere/north-mini-code:free) · updated 2026-11-08</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261107" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261108" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
