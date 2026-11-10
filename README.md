@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261109" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261110" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Buildora IQ Introduces Architect AI for Integrated Property Analysis and Generative Architectural Design</b><br/>
-    Buildora IQ, an emerging PropTech company, has launched Architect AI, a new feature that unifies property-specific development analysis, construction cost estimation, interactive site planning, and preliminary architectural design generation within a single platform. This tool enables users to create preliminary site plans, dimensioned floor plans, and architectural drawing sets for various residential projects in minutes.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtIWkock2p5eQejaqfLVs-CS4BQ7qSf1cFUeT_Mm2pDEI0ALEZ3PEVu8p5fx0J7ftspZZoisItNbXwS6dIPwJEl92VU7rsl-Axbzdsn5wXizTfq_61EeA-unbTjlO8x2SiwsNvn2Ul6knzJsAz1OEi_GH7miwwxpyGQS93P45BoqkXzp3wGS41PY3gfDlmZbWYSEMMAuxUDGdbysY=">openPR.com</a> · 2026-11-09 · via Google Gemini 2.5 Flash · updated 2026-11-09</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>Estating Raises €10M Series A to Expand AI-Powered Real Estate Asset Infrastructure in Latin America</b><br/>
+    Luxembourg and Madrid-based fintech Estating secured up to €10 million in Series A funding to scale its platform for issuing and managing real-world assets, primarily real estate. The capital will fund AI integration across its operations and facilitate expansion into new Latin American markets, among other regions.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSRdiYH9YlEIXzRgeQ_-DiaJI68cwfu6W9qXzEkdwT0FLV6K7700i5nuKEzgVZFRDPB9iVk8QJbkC1NZTvMlsWGMsvne55sm1uZNKXCDJ4GGqmf8wDz6iSfe8GMHLh6QWZRvvvUW_lp3w5AunA-e098EHkPZYJZ3AbXlbF6CJ-HYWFaAsTSxeF2A2-dARw6Se2BanpUNYj55__RTDiGH8">Dealroom News</a> · 2026-11-10 · via Google Gemini 2.5 Flash · updated 2026-11-10</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261109" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261110" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
