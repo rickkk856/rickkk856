@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261110" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261111" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Estating Raises €10M Series A to Expand AI-Powered Real Estate Asset Infrastructure in Latin America</b><br/>
-    Luxembourg and Madrid-based fintech Estating secured up to €10 million in Series A funding to scale its platform for issuing and managing real-world assets, primarily real estate. The capital will fund AI integration across its operations and facilitate expansion into new Latin American markets, among other regions.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSRdiYH9YlEIXzRgeQ_-DiaJI68cwfu6W9qXzEkdwT0FLV6K7700i5nuKEzgVZFRDPB9iVk8QJbkC1NZTvMlsWGMsvne55sm1uZNKXCDJ4GGqmf8wDz6iSfe8GMHLh6QWZRvvvUW_lp3w5AunA-e098EHkPZYJZ3AbXlbF6CJ-HYWFaAsTSxeF2A2-dARw6Se2BanpUNYj55__RTDiGH8">Dealroom News</a> · 2026-11-10 · via Google Gemini 2.5 Flash · updated 2026-11-10</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>JLL Survey: 83% of Real Estate Investors Integrate AI, Primarily for Operational Efficiency</b><br/>
+    A recent JLL report reveals that 83% of real estate investors have scaled or fully embedded at least one AI activity, with 81% utilizing enterprise Large Language Models. While investors aim for topline revenue opportunities, the greatest benefits observed so far are in operational efficiency, particularly within asset and property management.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWLmzezhY59WdfwE9niZtMiKUFJR9UeUcx2nApW4rFvoJudAeJJbv0oJ9LE96gPoBtuciVPYCuaK7Lb_qJzZbJxCsq7cgX065meDie9AuW9j0uXx7G8saxrtTMTtoIvh7rzitvYZDJo5q4EjEpgjC_Fab6MQlSJTQmG__mQNAFrwvDDKTLPQ">JLL</a> · 2026-11-11 · via Google Gemini 2.5 Flash · updated 2026-11-11</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261110" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261111" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
