@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261111" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261112" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>JLL Survey: 83% of Real Estate Investors Integrate AI, Primarily for Operational Efficiency</b><br/>
-    A recent JLL report reveals that 83% of real estate investors have scaled or fully embedded at least one AI activity, with 81% utilizing enterprise Large Language Models. While investors aim for topline revenue opportunities, the greatest benefits observed so far are in operational efficiency, particularly within asset and property management.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWLmzezhY59WdfwE9niZtMiKUFJR9UeUcx2nApW4rFvoJudAeJJbv0oJ9LE96gPoBtuciVPYCuaK7Lb_qJzZbJxCsq7cgX065meDie9AuW9j0uXx7G8saxrtTMTtoIvh7rzitvYZDJo5q4EjEpgjC_Fab6MQlSJTQmG__mQNAFrwvDDKTLPQ">JLL</a> · 2026-11-11 · via Google Gemini 2.5 Flash · updated 2026-11-11</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>xFigura Unveils Multimodal Generative Design Platform for Streamlined Architectural Workflows</b><br/>
+    xFigura, a new generative design platform, has launched, consolidating 90 distinct AI models into a unified &quot;canvas&quot; environment for architectural concept and project development. This platform aims to simplify the design process by allowing users to access text, drawings, and 3D models within a single interface, offering an intuitive experience for architects.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqYpnlc3c0xsqXKRvkvffPuD6pKDW-0Urxod2jYnqhDbWjxfQljHWFS7QqjcFQ_dhdLY_xmL0vL3Mci5CpIFIE4RMdEbSz5NTnQZKVlyGJQsn37GU0qW0Ml-rJT0WRubNGkiMm1isYFyHrULt-7UfHvqYrYeAQbTK2SA1Nq_-HCwj5HU9qhX4B_qzFQw==">Metropolis</a> · 2026-11-10 · via Google Gemini 2.5 Flash · updated 2026-11-12</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261111" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261112" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
