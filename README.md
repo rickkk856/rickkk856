@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261112" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261113" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>xFigura Unveils Multimodal Generative Design Platform for Streamlined Architectural Workflows</b><br/>
-    xFigura, a new generative design platform, has launched, consolidating 90 distinct AI models into a unified &quot;canvas&quot; environment for architectural concept and project development. This platform aims to simplify the design process by allowing users to access text, drawings, and 3D models within a single interface, offering an intuitive experience for architects.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqYpnlc3c0xsqXKRvkvffPuD6pKDW-0Urxod2jYnqhDbWjxfQljHWFS7QqjcFQ_dhdLY_xmL0vL3Mci5CpIFIE4RMdEbSz5NTnQZKVlyGJQsn37GU0qW0Ml-rJT0WRubNGkiMm1isYFyHrULt-7UfHvqYrYeAQbTK2SA1Nq_-HCwj5HU9qhX4B_qzFQw==">Metropolis</a> · 2026-11-10 · via Google Gemini 2.5 Flash · updated 2026-11-12</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>Brazilian Real Estate Firms Accelerate Sales Cycles with AI Adoption</b><br/>
+    Brazilian real estate companies are increasingly deploying AI to enhance lead management and pricing strategies, aiming to shorten lengthy home sales processes. This adoption is driven by the potential for faster revenue recognition and improved cash conversion for builders and brokers, as AI helps convert serious buyers more efficiently by tracking behavior and delivering targeted offers.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOHjl0Na_IRm5f_CcRJQ6pRdDCsisgZFOEphB1A52NsUqq2S0LhJcU0oPf89r53l0TlU9O0aNC-l3idPjzvXI8YOiCQ3G5ojQ9fFqhLMign_3d55FfSl-j39_j8-M4BhuTZYrKLOky21vygflBBuyplWXJGe90OH0XcLc-cSC9sw==">adalytica.com</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-11-13</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261112" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261113" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
