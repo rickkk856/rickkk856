@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261113" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261114" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Brazilian Real Estate Firms Accelerate Sales Cycles with AI Adoption</b><br/>
-    Brazilian real estate companies are increasingly deploying AI to enhance lead management and pricing strategies, aiming to shorten lengthy home sales processes. This adoption is driven by the potential for faster revenue recognition and improved cash conversion for builders and brokers, as AI helps convert serious buyers more efficiently by tracking behavior and delivering targeted offers.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOHjl0Na_IRm5f_CcRJQ6pRdDCsisgZFOEphB1A52NsUqq2S0LhJcU0oPf89r53l0TlU9O0aNC-l3idPjzvXI8YOiCQ3G5ojQ9fFqhLMign_3d55FfSl-j39_j8-M4BhuTZYrKLOky21vygflBBuyplWXJGe90OH0XcLc-cSC9sw==">adalytica.com</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-11-13</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Generative AI in Real Estate Market Projected to Surpass $1.4 Billion by 2035, Led by Property Valuation</b><br/>
+    The global generative AI in real estate market is forecast to grow from $544.29 million in 2026 to approximately $1,427.36 million by 2035, exhibiting an 11.33% CAGR. Property valuation is identified as the dominant application driving this significant market expansion.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG36yJm1o0thI2Xcz3PU5ny0S1dBrL7_31NrKGNU3XvJ9SEa30kL_FNOqgkY6wgbRxJBmNeluRaGV96oobracfwVZKvg27cUwbugr7XJTMvHez8PFlxC2Xvz21dIvfNiNULvoYhA6mOhlzjKGaL514RvFpOjUaz4VSjGn50LY5FAw==">precedenceresearch.com</a> · 2026-09-17 · via Google Gemini 2.5 Flash · updated 2026-11-14</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261113" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261114" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
