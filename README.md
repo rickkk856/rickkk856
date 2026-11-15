@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261114" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261115" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Generative AI in Real Estate Market Projected to Surpass $1.4 Billion by 2035, Led by Property Valuation</b><br/>
-    The global generative AI in real estate market is forecast to grow from $544.29 million in 2026 to approximately $1,427.36 million by 2035, exhibiting an 11.33% CAGR. Property valuation is identified as the dominant application driving this significant market expansion.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG36yJm1o0thI2Xcz3PU5ny0S1dBrL7_31NrKGNU3XvJ9SEa30kL_FNOqgkY6wgbRxJBmNeluRaGV96oobracfwVZKvg27cUwbugr7XJTMvHez8PFlxC2Xvz21dIvfNiNULvoYhA6mOhlzjKGaL514RvFpOjUaz4VSjGn50LY5FAw==">precedenceresearch.com</a> · 2026-09-17 · via Google Gemini 2.5 Flash · updated 2026-11-14</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>MIT Develops AI Copilot to Enhance Structural Engineering with Human Feedback</b><br/>
+    Researchers at MIT have unveiled a new AI copilot that integrates human feedback into topology optimization for structural engineering, aiming to make algorithmic design more collaborative, manufacturable, and trustworthy. The system reportedly improves manufacturability and linear buckling load by 39% with only about 15 seconds added to design time.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGolapwSWzYKyAfG3iP6FuHqGNOvrhzPaGsCJTsD2cSGo5-Gw-sywyt0vp3oGoXs_x3z4tNCheDkx34D8FFq4ZTUmOE5NdQxWYjfR6d09U5cdorZiibS-sHyLzBFpIqudPisfEW3CuKrOMxXz5LP3rfeghLomdlwQ7WGpuEEFs9hcuXmxX8ItPDIXkqIbR8ImvmYaIQ_w==">Welcome.AI</a> · 2026-11-12 · via Google Gemini 2.5 Flash · updated 2026-11-15</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261114" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261115" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
