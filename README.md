@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261115" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261116" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>MIT Develops AI Copilot to Enhance Structural Engineering with Human Feedback</b><br/>
-    Researchers at MIT have unveiled a new AI copilot that integrates human feedback into topology optimization for structural engineering, aiming to make algorithmic design more collaborative, manufacturable, and trustworthy. The system reportedly improves manufacturability and linear buckling load by 39% with only about 15 seconds added to design time.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGolapwSWzYKyAfG3iP6FuHqGNOvrhzPaGsCJTsD2cSGo5-Gw-sywyt0vp3oGoXs_x3z4tNCheDkx34D8FFq4ZTUmOE5NdQxWYjfR6d09U5cdorZiibS-sHyLzBFpIqudPisfEW3CuKrOMxXz5LP3rfeghLomdlwQ7WGpuEEFs9hcuXmxX8ItPDIXkqIbR8ImvmYaIQ_w==">Welcome.AI</a> · 2026-11-12 · via Google Gemini 2.5 Flash · updated 2026-11-15</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>Brazilian Fintech Creditas Leverages AI for Secured Lending Against Homes and Cars</b><br/>
+    Brazilian fintech Creditas is significantly expanding its use of AI in secured lending against homes and cars, reporting a fivefold increase in productivity per employee over four years. This AI integration enables the company to offer cheaper consumer financing, thereby driving higher demand for credit in Brazil.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNXb6Gm3ZTSYKr2MyWisfh5lCPMxjT9APb58c9GVQaLlWajRn5tgdhtJ5iUtwoZ73jydh-0WhaezBJu_vSTfRZ9fkOlvLcl8GILgUpxzwlyVPMlaLOTM9dpM1k6s-U_8wtWWGsIbrhwSWtciOLB0pWKTbMwDbFMXlZjxjje_bKBPBR4CidUR5_Wh4AXzO3OVX_UDaDFU1F">fintech.tv</a> · 2026-10-14 · via Google Gemini 2.5 Flash · updated 2026-11-16</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261115" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261116" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
