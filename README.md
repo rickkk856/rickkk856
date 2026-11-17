@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261116" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261117" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Brazilian Fintech Creditas Leverages AI for Secured Lending Against Homes and Cars</b><br/>
-    Brazilian fintech Creditas is significantly expanding its use of AI in secured lending against homes and cars, reporting a fivefold increase in productivity per employee over four years. This AI integration enables the company to offer cheaper consumer financing, thereby driving higher demand for credit in Brazil.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNXb6Gm3ZTSYKr2MyWisfh5lCPMxjT9APb58c9GVQaLlWajRn5tgdhtJ5iUtwoZ73jydh-0WhaezBJu_vSTfRZ9fkOlvLcl8GILgUpxzwlyVPMlaLOTM9dpM1k6s-U_8wtWWGsIbrhwSWtciOLB0pWKTbMwDbFMXlZjxjje_bKBPBR4CidUR5_Wh4AXzO3OVX_UDaDFU1F">fintech.tv</a> · 2026-10-14 · via Google Gemini 2.5 Flash · updated 2026-11-16</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Bank of America Report: 20% of Homebuyers Use AI for Research, Valuations</b><br/>
+    A recent Bank of America 2026 Homebuyer Insights Report indicates that 20% of prospective buyers and current homeowners used AI tools or chatbots for homebuying research within the past year, with Gen Z adoption reaching 32%. A majority of these AI users, 57%, leveraged the technology to estimate affordability and mortgage costs, and 52% utilized it for researching neighborhoods and property values.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqbYlG7gQTAJmidevU93mbIgXVYh7nuEwFGgnXnqif_8AVROIJTS3kHUgjrh0b-6-oh0k36o6YcXE8wBjJg3cWxaulSPCeqw_Wn1ycayNPBEn3uKiV0zJj0QOKpzhnY35Bok1RbUtG_RkKExfQ4uOSStTLv459_Ypubamo8BGhqfaTQUzKpvREAiVqHGlkR6CnYmBoJ3Bs2VcDcJM=">PYMNTS.com</a> · 2026-11-16 · via Google Gemini 2.5 Flash · updated 2026-11-17</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261116" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261117" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
