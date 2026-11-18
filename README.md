@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261117" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261118" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Bank of America Report: 20% of Homebuyers Use AI for Research, Valuations</b><br/>
-    A recent Bank of America 2026 Homebuyer Insights Report indicates that 20% of prospective buyers and current homeowners used AI tools or chatbots for homebuying research within the past year, with Gen Z adoption reaching 32%. A majority of these AI users, 57%, leveraged the technology to estimate affordability and mortgage costs, and 52% utilized it for researching neighborhoods and property values.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEqbYlG7gQTAJmidevU93mbIgXVYh7nuEwFGgnXnqif_8AVROIJTS3kHUgjrh0b-6-oh0k36o6YcXE8wBjJg3cWxaulSPCeqw_Wn1ycayNPBEn3uKiV0zJj0QOKpzhnY35Bok1RbUtG_RkKExfQ4uOSStTLv459_Ypubamo8BGhqfaTQUzKpvREAiVqHGlkR6CnYmBoJ3Bs2VcDcJM=">PYMNTS.com</a> · 2026-11-16 · via Google Gemini 2.5 Flash · updated 2026-11-17</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>Over 60% of Institutional Real Estate Firms Adopt AI, Including Generative Design, in Core Workflows</b><br/>
+    A recent update highlights that a 2026 PwC report indicates more than 60% of institutional real estate firms have integrated AI, encompassing generative AI for tasks like design, into at least one core workflow. This signifies a mainstream adoption of AI and generative design across the real estate lifecycle.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET0UwOnFokSUSDrrd-ONMScgB03Vl6v6Jt1TqjjZbJZnpDQhU_tdTnUYhLh9_TLEcsSI6eBZAAIixKfIkizNLrevFdicRi5UE6t86eNcCd6doFU7htOXV2yD9YW5JaO4CO7jztPuxNhXKLPvVWh4yO8B7lqRfWzcqP73DdDl4a3KIOGJhvlnn4OwS55QkS7UU=">solguruz.com</a> · 2026-10-14 · via Google Gemini 2.5 Flash · updated 2026-11-18</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261117" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261118" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
