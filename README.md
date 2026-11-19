@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261118" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261119" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Over 60% of Institutional Real Estate Firms Adopt AI, Including Generative Design, in Core Workflows</b><br/>
-    A recent update highlights that a 2026 PwC report indicates more than 60% of institutional real estate firms have integrated AI, encompassing generative AI for tasks like design, into at least one core workflow. This signifies a mainstream adoption of AI and generative design across the real estate lifecycle.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQET0UwOnFokSUSDrrd-ONMScgB03Vl6v6Jt1TqjjZbJZnpDQhU_tdTnUYhLh9_TLEcsSI6eBZAAIixKfIkizNLrevFdicRi5UE6t86eNcCd6doFU7htOXV2yD9YW5JaO4CO7jztPuxNhXKLPvVWh4yO8B7lqRfWzcqP73DdDl4a3KIOGJhvlnn4OwS55QkS7UU=">solguruz.com</a> · 2026-10-14 · via Google Gemini 2.5 Flash · updated 2026-11-18</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>Palomma Secures $14M for AI-Driven Real Estate Fintech Expansion in Latin America</b><br/>
+    Palomma, an artificial intelligence and financial services platform for the real estate sector, recently closed a US$14 million investment round. This capital infusion, led by Mexican fund Cometa, will consolidate its operations in Colombia and pave the way for international expansion within Latin America.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRrxn34xxb0foVg8l_-fi4ZNDEUXq9YTlY7PFGZHY3jHl5agrj5ypR1SlJ6lUu_WDAT_d1ctIaSvHquA7b1W5s3Q2LHjCniW1RJUaHG0H-GmL9Fsvuj4GI0bft5A_hjy-v6FRMj5hkMeC5YB4Vvcqx-9GGaz1SnwK3N763v8IArWye4BHwHUxRFCAhGRG-sRPTZbFUfDmF8e_jiJlu-e8GbQ==">FinTech Futures</a> · 2026-11-11 · via Google Gemini 2.5 Flash · updated 2026-11-19</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261118" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261119" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
