@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261119" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261120" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Palomma Secures $14M for AI-Driven Real Estate Fintech Expansion in Latin America</b><br/>
-    Palomma, an artificial intelligence and financial services platform for the real estate sector, recently closed a US$14 million investment round. This capital infusion, led by Mexican fund Cometa, will consolidate its operations in Colombia and pave the way for international expansion within Latin America.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRrxn34xxb0foVg8l_-fi4ZNDEUXq9YTlY7PFGZHY3jHl5agrj5ypR1SlJ6lUu_WDAT_d1ctIaSvHquA7b1W5s3Q2LHjCniW1RJUaHG0H-GmL9Fsvuj4GI0bft5A_hjy-v6FRMj5hkMeC5YB4Vvcqx-9GGaz1SnwK3N763v8IArWye4BHwHUxRFCAhGRG-sRPTZbFUfDmF8e_jiJlu-e8GbQ==">FinTech Futures</a> · 2026-11-11 · via Google Gemini 2.5 Flash · updated 2026-11-19</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Strutt &amp; Parker Launches AI-Powered Natural-Language Property Search for Farms and Estates</b><br/>
+    UK property agency Strutt &amp; Parker has introduced an AI-powered natural-language search facility on its new website, allowing prospective buyers to describe desired farms or rural estates in everyday language instead of using traditional filters. This development aims to streamline the property search process and enhance integration with generative AI platforms.<br/><br/>
+    <sub>Source: <a href="https://www.southwestfarmer.co.uk/news/24734893.strutt-parker-launches-ai-search-farms-estates/">South West Farmer</a> · 2026-11-20 · via Google Gemini 2.5 Flash · updated 2026-11-20</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261119" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261120" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
