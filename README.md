@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261121" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261122" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
-    <b>Study Finds Generative AI Needs Symbolic Rules to Replicate Architectural Principles</b><br/>
-    A recent computational architecture experiment demonstrated that diffusion-based generative AI systems, when trained solely on visual examples, struggle to reproduce structural proportional rules and bilateral symmetry. Researchers concluded that explicit symbolic constraints are necessary for these models to replicate fundamental architectural design systems accurately.<br/><br/>
-    <sub>Source: <a href="https://bioengineer.org/generative-architectural-models-require-symbolic-rules-to-reproduce/">Bioengineer.org</a> · 2026-11-21 · via Google Gemini 2.5 Flash · updated 2026-11-21</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
+    <b>Brazil&#x27;s Fintech Sector Sees AI Reshaping Credit Lending Amidst Dynamic Growth</b><br/>
+    A recent Q3 2026 report highlights that Brazil&#x27;s fintech market remains highly dynamic, with strong adoption in digital payments and lending. Artificial intelligence is noted as a key factor reshaping competition and driving the next phase of growth for credit fintechs, which are expanding their lending activities despite a challenging operational environment.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqtZ23AZy7IVgKZb6KKWR1r6b8A1ewVfD8clhimjr-aN0ES4upmKjFKA7zDpUgSXEcH1vC-z0yoxyXdIdp6phbPxPGuXnAKO42k0XZ1BstCL2jJa6yoYjvUkKGOAkVu4pewmM3ozHNqQUL9bRdZ-pmARvuVpesWxYEk-W6hHenkYd4H_ij3Vfwv0Vg">ISI Markets</a> · 2026-11-19 · via Google Gemini 2.5 Flash · updated 2026-11-22</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261121" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261122" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
