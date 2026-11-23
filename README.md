@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261122" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261123" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>Brazil&#x27;s Fintech Sector Sees AI Reshaping Credit Lending Amidst Dynamic Growth</b><br/>
-    A recent Q3 2026 report highlights that Brazil&#x27;s fintech market remains highly dynamic, with strong adoption in digital payments and lending. Artificial intelligence is noted as a key factor reshaping competition and driving the next phase of growth for credit fintechs, which are expanding their lending activities despite a challenging operational environment.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqtZ23AZy7IVgKZb6KKWR1r6b8A1ewVfD8clhimjr-aN0ES4upmKjFKA7zDpUgSXEcH1vC-z0yoxyXdIdp6phbPxPGuXnAKO42k0XZ1BstCL2jJa6yoYjvUkKGOAkVu4pewmM3ozHNqQUL9bRdZ-pmARvuVpesWxYEk-W6hHenkYd4H_ij3Vfwv0Vg">ISI Markets</a> · 2026-11-19 · via Google Gemini 2.5 Flash · updated 2026-11-22</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Lofty Debuts AI Index Quantifying Over 130,000 Hours Saved for Real Estate Agents</b><br/>
+    Lofty has launched the real estate industry&#x27;s first AI Index, reporting that its AI tools completed 1.13 million tasks in October 2026, saving agents nationwide an estimated 131,248 hours on activities like follow-ups, social media, and CRM updates. This benchmark aims to quantify the tangible impact of AI on agent productivity, aligning with the 81% of agents who prioritize time-saving when adopting new technology.<br/><br/>
+    <sub>Source: <a href="https://lofty.com/ai-index">Lofty</a> · 2026-11-12 · via Google Gemini 2.5 Flash · updated 2026-11-23</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261122" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261123" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
