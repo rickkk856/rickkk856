@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261123" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261124" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Lofty Debuts AI Index Quantifying Over 130,000 Hours Saved for Real Estate Agents</b><br/>
-    Lofty has launched the real estate industry&#x27;s first AI Index, reporting that its AI tools completed 1.13 million tasks in October 2026, saving agents nationwide an estimated 131,248 hours on activities like follow-ups, social media, and CRM updates. This benchmark aims to quantify the tangible impact of AI on agent productivity, aligning with the 81% of agents who prioritize time-saving when adopting new technology.<br/><br/>
-    <sub>Source: <a href="https://lofty.com/ai-index">Lofty</a> · 2026-11-12 · via Google Gemini 2.5 Flash · updated 2026-11-23</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>MIT Researchers Develop AI Copilot for Interactive Structural Engineering Design</b><br/>
+    Researchers at MIT unveiled an interactive generative AI copilot on November 13, 2026, designed to integrate human expertise directly into algorithmic topology optimization for structural engineering. This system allows human designers to provide feedback during the design process, leading to more easily manufacturable structures with enhanced buckling loads.<br/><br/>
+    <sub>Source: <a href="https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113">MIT News</a> · 2026-11-13 · via Google Gemini 2.5 Flash · updated 2026-11-24</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261123" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261124" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
