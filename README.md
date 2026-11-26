@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261125" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261126" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · FINTECH &AMP; HOME EQUITY</sub><br/><br/>
-    <b>BC Technologies Rebrands, Bolstering AI in Latin American Mortgage and Credit Markets</b><br/>
-    Grupo BC has rebranded as BC Technologies, signaling its strategic evolution into a leading AI-powered technology processor and software provider for mortgage and credit markets across Iberia and Latin America. The company&#x27;s platform now embeds AI agentic capabilities to enhance automation, accuracy, efficiency, regulatory compliance, and security within critical financial workflows.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWOV-DNSx5kUQ68OZ4vmqVfFyVMlJclDpRqCzXzYQcXVrVs2UtazYooolnavFNXfDKNH2QrbH7Xf9W8dtMSmQCjr07RoYmkgvPc1XNcv3mN_FIt8CF4Yun84cG2CbLK4LkJ107OT4dc24so8FZ31A6QguhzP7-NtIliz2Qmnv8j1uz4U5OV6hc05QxK78EH6K1sHbpMAqFLS4vHF-xagEt2FzuW9zEGB2vhoEkJ00yoh-33EyPw2xjSbEbTTHefn-xYx0bzznrxbM5cboGOZNCArfbKZFxq4FITf4j-dk2Mk1W2-Eb5g0cxc-DaW3G53DdnETVw74e56nzxoPr48x5hw==">Business Wire</a> · 2026-10-29 · via Google Gemini 2.5 Flash · updated 2026-11-25</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
+    <b>Generative AI Reshaping Real Estate Development and Homebuying Experience</b><br/>
+    A recent report highlights how Generative AI is transforming real estate development, enabling developers to evaluate land, plan projects, monitor construction, and enhance homebuyer engagement. Comprehensive GenAI adoption could accelerate project launches by 20-30% and boost sales velocity by 30-50%.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-2Z68tbhLL-6-LZh4kOTQHA9L3yO2gNXtqchdPaA0Mw7RslhM3KYQMxEiw0-JFIagMB3sWEfmZHF69ZTgGCr-NwHDf0Iud7s9T2p1Jxk__LT5bQ7LS3ixGAYdabY4IEhP_KyC_O1i9EfkWa37P5amgTuZlTWNT7HKJ5Uy03AVx1z7sdanAOTTUmO8BF-aFAAdYAwjFwQXLSZNa3uqTJzM6dm7glJdguTsN3oKHBOaU2u1-49s">outlookmoney.com</a> · 2026-11-23 · via Google Gemini 2.5 Flash · updated 2026-11-26</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261125" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261126" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
