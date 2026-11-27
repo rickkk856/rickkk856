@@ -5,18 +5,18 @@ Welcome to my GitHub profile. This space is dynamically updated with AI-powered 
 <!-- GENERATED_CONTENT_START -->
 
 <div align="center">
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261126" alt="Generative topographic banner — Ricardo Rodrigues"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/banner.svg?v=20261127" alt="Generative topographic banner — Ricardo Rodrigues"/>
 <br/><br/>
 <table width="100%">
   <tr><td>
-    <sub><b>INSIGHT OF THE DAY</b> · GENAI × REAL ESTATE</sub><br/><br/>
-    <b>Generative AI Reshaping Real Estate Development and Homebuying Experience</b><br/>
-    A recent report highlights how Generative AI is transforming real estate development, enabling developers to evaluate land, plan projects, monitor construction, and enhance homebuyer engagement. Comprehensive GenAI adoption could accelerate project launches by 20-30% and boost sales velocity by 30-50%.<br/><br/>
-    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-2Z68tbhLL-6-LZh4kOTQHA9L3yO2gNXtqchdPaA0Mw7RslhM3KYQMxEiw0-JFIagMB3sWEfmZHF69ZTgGCr-NwHDf0Iud7s9T2p1Jxk__LT5bQ7LS3ixGAYdabY4IEhP_KyC_O1i9EfkWa37P5amgTuZlTWNT7HKJ5Uy03AVx1z7sdanAOTTUmO8BF-aFAAdYAwjFwQXLSZNa3uqTJzM6dm7glJdguTsN3oKHBOaU2u1-49s">outlookmoney.com</a> · 2026-11-23 · via Google Gemini 2.5 Flash · updated 2026-11-26</sub>
+    <sub><b>INSIGHT OF THE DAY</b> · COMPUTATIONAL DESIGN</sub><br/><br/>
+    <b>MIT Team Develops Generative AI Copilot for Structural Engineering Design</b><br/>
+    Researchers at MIT have introduced an interactive generative AI copilot aimed at transforming structural engineering design by integrating human domain expertise into algorithmic topology optimization. This development allows designers to refine complex structures efficiently without restarting computationally intensive simulations.<br/><br/>
+    <sub>Source: <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHH7Js0XvGbQD0nlZilRBEnrVK_D73u4f7Fo8E2v-ZNODW592hLWD5dBMtvMxiN-iiOW3wnFul5MsePRKdkxyDSNsgHngjzk2URHAyO9me2rs0mzpCBYWRQRMKRIq2coa8UkcbsD0Fewgk6SQRoL-9ebgIAPka6o3oZqswL1IRafthmWIk=">CASRAI</a> · 2026-11-14 · via Google Gemini 2.5 Flash · updated 2026-11-27</sub>
   </td></tr>
 </table>
 <br/>
-<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261126" alt="Career timeline: from architecture to AI engineering"/>
+<img width="100%" src="https://raw.githubusercontent.com/rickkk856/rickkk856/main/assets/timeline.svg?v=20261127" alt="Career timeline: from architecture to AI engineering"/>
 <br/><br/>
 <h3 align="center">🛠️ Tech Stack</h3>
 <table align="center">
